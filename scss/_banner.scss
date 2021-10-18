@@ -1,0 +1,77 @@
+.banner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    
+    
+    h3{
+        
+        bottom: 0;
+        color: black;
+        z-index: 1;
+        
+    }
+    
+
+        video{
+            
+            
+            
+            z-index: -1;
+            
+            
+    
+            
+        }
+        
+        
+        
+
+
+
+        h1{
+            letter-spacing: 5px;
+            position: absolute;
+            font-size: 4rem;
+            text-transform: uppercase;
+            text-align: center;
+            background: rgba(0,0,0,0.2);
+            padding: 2rem;
+            border-radius: 20px 0;
+            justify-content: center;
+            animation: aparece 10s ;
+            top: 30vh;
+    
+            &::before, &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width:  50%;
+            }
+            &::before{
+                left: 0;
+                border-bottom: 6px solid #000;
+            }
+            &::after{
+                right: 0;
+                border-top: 6px solid #000;
+            }
+            
+        }
+        h2{
+            position: absolute;
+            text-transform: uppercase;
+            text-decoration: none;
+            z-index: 2;
+            color: white;
+            justify-content: center;
+            animation: aparece 10s ;
+            top: 60vh;
+        }
+        
+
+}

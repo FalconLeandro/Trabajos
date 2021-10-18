@@ -10,7 +10,7 @@
 /*header*/
 header{
     
-    z-index: 100;
+    z-index: 1;
 }
 .top-header{
     background-color: #222222;
@@ -18,9 +18,9 @@ header{
     display: flex;
     justify-content: space-between; 
     font-size: 13px;
-    height: 30px;
+    height: 25px;
     align-items: center;
-    padding: 0px 35px;
+    padding: 0px 10px;
 
 }
 .top-header div p{
@@ -69,12 +69,12 @@ nav ul li img{
 
 .banner{
     /*background-color: tomato;*/
-    background-image: url(https://s3-alpha-sig.figma.com/img/53ec/2946/b101b9298925dcc2ae1d629537e66036?Expires=1630281600&Signature=QvcxrAqA5pgLzqg9I3wrVn4TkYD4Q-aIgHp2i44IpkP3L9rIQb4YMft~qLHSgb3E14u2uHusNT4Rz64Bxm6sWz4hs2J4eQsstPXFnIJ8rvHjiwmXGPUZS8YecSXQ15gLS93GljYF9OIZ49schDs9dQPHkSEGDJul-yap38G7BhVv6-Xcg8~ZL~Nm-pirnwYIjYnk8etglIHVfAEsHQwi576RMR3Q-p45mbE9lClF9rItnvW15tp6qwgFS7ZmKr~cYl7ZAcNcQ6IuLa95R0sKCUSxag6MRIHTZybjM4QEIlM31wsO3Np3qrmtsAIaRmy9LwZqFmjTGdxYws~8dUPPLA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-image: url(../img/banner.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 550px;
-    padding: 15px;
+    padding: 70px;
     background-attachment: fixed;
     display: flex;
     justify-content: flex-end;
@@ -175,6 +175,7 @@ form{
     align-items: center;
     justify-content: space-around;
     padding: 15px;
+    margin-bottom: 3rem;
 }
 form input{
     border-style: none;

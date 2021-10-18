@@ -1,0 +1,56 @@
+@media screen and (max-width:480px){ //tamaño de ipod
+    
+    .main-header{
+        .menu-icon{
+            display: block;
+        }
+        .nav-links{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10rem 0;
+            width: 100vw;
+            height: 100vh;
+            font-size: 2rem;
+            color: #fff;
+            background: #272727;
+            transition:
+                opacity .8s .5s,
+                clip-path 1s .5s;
+            clip-path: circle(200px at top right);
+            .nav-link{
+                opacity: 0;
+                transform: translateX(100%);
+                width: 100%;
+                text-align: center;
+
+                a{
+                    display: block;
+                    padding: 2rem 0;
+                }
+            }
+
+        }
+        .menu-btn:checked ~ .nav-links{
+            opacity:1;
+            clip-path: circle(100% at center);
+
+            .nav-link{
+                opacity: 1;
+                transform: translateX(0);
+                transition: 
+                    opacity .4s ease-in-out 1s,
+                    transform .6s cubic-bezier(0.175, 0.885,0.32,1.275)1s;
+    
+            }
+        }
+
+        
+        
+    }
+
+}

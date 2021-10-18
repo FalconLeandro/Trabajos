@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/********** Body *******/
+
+*{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.descuento{
+    background-color: #1CD1B0;
+    padding: 0 0 0 1rem;
+    font-size: 1rem;
+}
+
+/******* Header *******/
+header{
+    font-size: 2rem;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    background-color: #00669F;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+header ul li{
+    display: inline-block;
+}
+nav{
+    background-color:#001D2D;
+    text-align: right;
+    padding-bottom: 9px;
+}
+
+/******main******/
+.container{
+    padding: 7rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    height: auto;
+    width: auto;
+    padding: 2rem;
+}
+
+.card-img{
+    height: 11.8rem;
+    background-size: cover;
+    position: relative;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.batman{
+    background-image: url('../img/fondobatman.svg');
+}
+.harley{
+    background-image: url('../img/fondoharley.svg');
+}
+.ww{
+    background-image: url('../img/wwfondo.svg');
+}
+.superman{
+    background-image: url('../img/supermanfondo.svg');
+}
+.batman #fotito, .harley #fotito, .ww #fotito, .superman #fotito {
+    position: absolute;
+    border-radius: 50%;
+    bottom: -60px;
+    height: 50%;
+    left: calc(50% - 60px);
+}
+
+.batman #corazon, .harley #corazon, .ww #corazon, .superman #corazon{
+    padding: 1.4rem;
+}
+
+.card-text{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background: #F3F3F3;
+    /* line-height: para poner interlineado */
+}
+.card-text p{
+    padding: 1rem;
+}
+
+/* .card-button a{
+    padding: 1rem;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00669F;
+} */
+
+footer{
+    background-color: #00669F;
+    color: white;
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.git{
+    text-decoration: none;
+    color: white;
+}
+
+/********** Responsive ************/  
+@media screen and (max-width: 768px){  /* tablet */
+    .container{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 50vw;
+    }
+    .descuento{
+        background-color:#D1891C;
+    }
+    h1{
+        color: white;
+    }
+    footer p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){ /* celular  */
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        width: 100vw;
+    }
+}
