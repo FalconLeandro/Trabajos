@@ -1,0 +1,31 @@
+.soft-skills{
+        height: 100vh;
+        background-image: url(../dist/img/pexels-alex-conchillos-3888585.jpg);
+        background-size: cover;
+        
+        h3{
+            text-align: center;
+        }
+    .ssContainer{
+        padding: 10%;
+        .softskills{
+            background-color: rgba(255,255,255,0.05);
+            
+            height: 50vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+             h4{
+                
+                color: white;
+                font-size: 3rem;
+                z-index: 99;
+                position: absolute;
+            }
+            
+        }
+    
+    }
+
+}
+
+ 

@@ -1,5 +1,5 @@
 .skillset{
-    
+    height: 100%;
     position: relative;
     background: rgb(0,0,0);
     overflow: hidden;
@@ -7,18 +7,19 @@
     div h3{
         z-index: 99;
         position: absolute;
+        left: 45vw;
     }
 
     
 
     &:before {
         content: "";
-        background-image:  url('../dist/img/pexels-łukasz-martenka-3207527.jpg');
+        background-image:  url('../dist/img/pexels-bekir-çelik-8618700.jpg');
         background-size: cover;
         position: absolute;
         z-index: 1;
         display: block;
-        opacity: 1;
+        opacity: .5;
         background-size: cover;
         width: 100%;
         height: 100%;
@@ -78,18 +79,7 @@
 
     }
     
-    .softskills{
-        height: 100vh;
-        
-         h4{
-            padding-top: 6rem;
-            color: white;
-            font-size: 3rem;
-            z-index: 99;
-            position: absolute;
-        }
-        
-    } 
+    
         
 }
 

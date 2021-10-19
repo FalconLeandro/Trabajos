@@ -260,12 +260,13 @@
 
 .portfolio .carousel {
   top: 60px;
+  padding: 0% 5%;
 }
 
 .portfolio .carousel .card {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 6px;
-  padding: 30px 0px;
+  padding: 15px 0px;
   text-align: center;
   -webkit-transition: all 1.2s ease;
   transition: all 1.2s ease;
@@ -317,22 +318,26 @@
 }
 
 .portfolio .carousel .card .box img {
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   opacity: .6;
   border-radius: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2.3vw;
 }
 
 .owl-dots {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 75px;
 }
 
 .owl-dot {
-  height: 13px;
-  width: 13px;
+  height: 18px;
+  width: 18px;
   outline: none !important;
   border-radius: 50%;
   margin-top: 0 5px;
@@ -343,7 +348,7 @@
 
 .owl-dot-active {
   width: 35px;
-  border-radius: 14px;
+  border-radius: 19px;
 }
 
 .owl-dot.active,
@@ -428,6 +433,7 @@
 }
 
 .skillset {
+  height: 100%;
   position: relative;
   background: black;
   overflow: hidden;
@@ -437,16 +443,17 @@
 .skillset div h3 {
   z-index: 99;
   position: absolute;
+  left: 45vw;
 }
 
 .skillset:before {
   content: "";
-  background-image: url("../dist/img/pexels-łukasz-martenka-3207527.jpg");
+  background-image: url("../dist/img/pexels-bekir-çelik-8618700.jpg");
   background-size: cover;
   position: absolute;
   z-index: 1;
   display: block;
-  opacity: 1;
+  opacity: .5;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -509,22 +516,40 @@
   top: 100%;
 }
 
-.skillset .softskills {
-  height: 100vh;
-}
-
-.skillset .softskills h4 {
-  padding-top: 6rem;
-  color: white;
-  font-size: 3rem;
-  z-index: 99;
-  position: absolute;
-}
-
 .hardskills-container .hardskills div:hover span {
   opacity: 1;
   -webkit-transform: translate(-60px);
           transform: translate(-60px);
+}
+
+.soft-skills {
+  height: 100vh;
+  background-image: url(../dist/img/pexels-alex-conchillos-3888585.jpg);
+  background-size: cover;
+}
+
+.soft-skills h3 {
+  text-align: center;
+}
+
+.soft-skills .ssContainer {
+  padding: 10%;
+}
+
+.soft-skills .ssContainer .softskills {
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 50vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.soft-skills .ssContainer .softskills h4 {
+  color: white;
+  font-size: 3rem;
+  z-index: 99;
+  position: absolute;
 }
 
 .contact {
