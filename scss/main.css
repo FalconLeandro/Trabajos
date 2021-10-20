@@ -564,6 +564,10 @@
           align-items: center;
   min-height: 100vh;
   background: #03080a;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact .container {
@@ -751,6 +755,15 @@
 .social a:hover {
   -webkit-transform: translate(-140px, 0);
           transform: translate(-140px, 0);
+}
+
+footer {
+  background-color: black;
+  text-align: justify;
+}
+
+footer .logo a {
+  background-color: white;
 }
 
 * {
