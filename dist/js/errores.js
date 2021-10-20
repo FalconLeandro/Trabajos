@@ -7,4 +7,4 @@ window.addEventListener("load", function(){
 
         let campoNombre = document
     })
-}
+})
