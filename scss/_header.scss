@@ -10,11 +10,14 @@
     z-index: 10;
     transition:  1s ease-out;
 
-    a{
+
+    .logo,a{
         text-decoration: none;
         color: inherit;
         text-transform: uppercase;
     }
+
+    
 
     .nav-links{
         display: flex;
