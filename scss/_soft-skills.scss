@@ -2,10 +2,8 @@
         height: 100vh;
         background-image: url(../dist/img/pexels-alex-conchillos-3888585.jpg);
         background-size: cover;
+        z-index: 3;
         
-        h3{
-            text-align: center;
-        }
     .ssContainer{
         padding: 10%;
         .softskills{
@@ -18,7 +16,7 @@
                 
                 color: white;
                 font-size: 3rem;
-                z-index: 99;
+                z-index: 1;
                 position: absolute;
             }
             

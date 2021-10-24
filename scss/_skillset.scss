@@ -4,15 +4,9 @@
     background: rgb(0,0,0);
     overflow: hidden;
     text-align: center;
-    div h3{
-        z-index: 99;
-        position: absolute;
-        left: 45vw;
-    }
+    z-index: 3;
 
-    
-
-    &:before {
+     &:before {
         content: "";
         background-image:  url('../dist/img/pexels-bekir-çelik-8618700.jpg');
         background-size: cover;
@@ -75,12 +69,7 @@
             }
         }
          
-        
-
     }
-    
-    
-        
 }
 
 

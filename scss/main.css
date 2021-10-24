@@ -13,6 +13,7 @@
           align-items: center;
   color: white;
   overflow: hidden;
+  top: 0;
 }
 
 .banner h3 {
@@ -235,7 +236,7 @@
   overflow: hidden;
   text-align: center;
   height: 100vh;
-  z-index: 99;
+  z-index: 3;
 }
 
 .portfolio:before {
@@ -249,13 +250,6 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
-}
-
-.portfolio h3 {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  padding-top: 2rem;
 }
 
 .portfolio .carousel {
@@ -382,10 +376,10 @@
 
 .about-me div div img {
   position: relative;
-  left: 180px;
+  left: 130px;
   border-radius: 50%;
   width: 25rem;
-  top: 50px;
+  top: 60px;
 }
 
 .about-me div .about-me_texto div {
@@ -406,7 +400,8 @@
   margin-bottom: 20px;
 }
 
-.about-me div .about-me_texto div h3 {
+.about-me div .about-me_texto div h2 {
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 2rem;
   font-weight: unset;
@@ -438,12 +433,7 @@
   background: black;
   overflow: hidden;
   text-align: center;
-}
-
-.skillset div h3 {
-  z-index: 99;
-  position: absolute;
-  left: 45vw;
+  z-index: 3;
 }
 
 .skillset:before {
@@ -526,10 +516,7 @@
   height: 100vh;
   background-image: url(../dist/img/pexels-alex-conchillos-3888585.jpg);
   background-size: cover;
-}
-
-.soft-skills h3 {
-  text-align: center;
+  z-index: 3;
 }
 
 .soft-skills .ssContainer {
@@ -548,31 +535,32 @@
 .soft-skills .ssContainer .softskills h4 {
   color: white;
   font-size: 3rem;
-  z-index: 99;
+  z-index: 1;
   position: absolute;
 }
 
 .contact {
+  min-height: 100vh;
+  background: #03080a;
+}
+
+.contact h3 {
+  text-align: end;
+  padding-right: 8rem;
+}
+
+.contact .container {
+  padding: 20px 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
-  background: #03080a;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.contact .container {
-  width: 80%;
-  padding: 20px;
 }
 
 .contact .container .row100 {
@@ -597,7 +585,8 @@
   position: relative;
   width: 100%;
   height: 40px;
-  color: #45f3ff;
+  color: white;
+  text-transform: uppercase;
 }
 
 .contact .container .row100 .col .inputBox input,
@@ -641,7 +630,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: #45f3ff;
+  background: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 2px;
@@ -681,7 +670,7 @@
   padding: 7px 35px;
   cursor: pointer;
   outline: none;
-  background: #45f3ff;
+  background: white;
   color: #000;
   font-size: 18px;
   border-radius: 2px;
@@ -698,9 +687,9 @@
 }
 
 .social {
-  z-index: 6;
+  z-index: 2;
   position: fixed;
-  bottom: 10px;
+  bottom: 3rem;
   right: 0;
   height: 100vh;
   display: -webkit-box;
@@ -789,5 +778,10 @@ footer .logo a {
   color: white;
   font-size: 2rem;
   z-index: 99;
+  text-align: end;
+  position: relative;
+  z-index: 1;
+  padding-top: 4rem;
+  padding-right: 8rem;
 }
 /*# sourceMappingURL=main.css.map */

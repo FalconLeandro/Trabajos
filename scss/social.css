@@ -1,7 +1,7 @@
 .social {
-  z-index: 6;
+  z-index: 2;
   position: fixed;
-  bottom: 10px;
+  bottom: 3rem;
   right: 0;
   height: 100vh;
   display: -webkit-box;
