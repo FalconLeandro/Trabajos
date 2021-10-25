@@ -19,14 +19,36 @@
 </head>
 
 <body>
-    <audio src="dist/img/piano-improvisation-6884.mp3"  autoplay preload="metadata" type="audio/mpeg/"></audio>
+
+
+
+
+    <script>
+        function play() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+                $('#play').removeClass('fa-wave-square')
+                $('#play').addClass('fa-pause-circle')
+            } else {
+                audio.pause();
+                audio.currentTime = 0
+                $('#play').addClass('fa-wave-square')
+                $('#play').removeClass('fa-pause-circle')
+            }
+        }
+    </script>
     <div class="social">
         <a target="_blank" href="https://github.com/FalconLeandro"><i class="fab fa-github-square"></i>GitHub</a>
-        <a target='_blank' href="https://www.linkedin.com/in/leandrofalc%C3%B3n/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a target='_blank' href="https://www.linkedin.com/in/leandrofalc%C3%B3n/"><i
+                class="fab fa-linkedin"></i>LinkedIn</a>
         <a target='_blank' href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
-        <a target='_blank' href="https://api.whatsapp.com/send?phone=5493548583686"><i class="fab fa-whatsapp"></i></i>Whatsapp</a>
+        <a target='_blank' href="https://api.whatsapp.com/send?phone=5493548583686"><i
+                class="fab fa-whatsapp"></i></i>Whatsapp</a>
     </div>
     <header class="main-header">
+        <audio src="dist/img/piano-improvisation-6884.mp3" id="audio"></audio>
+        <i class="fas fa-wave-square" id="play" onclick="play()"></i>
         <div class="logo">
             <a href="#banner"><span>lea</span>dev</a>
         </div>
@@ -74,20 +96,25 @@
                         <h2>Hi! I am Leandro</h2>
                     </div>
                     <div>
-                        <p> Este portfolio es mi primer proyecto personal (perdonar lo imperdonable, responsive in progress)
-                            Soy un entusiasta de las nuevas tecnologías, la naturaleza, el diseño y el equilibrio entre estas.
+                        <p> Este portfolio es mi primer proyecto personal (perdonar lo imperdonable, responsive in
+                            progress)
+                            Soy un entusiasta de las nuevas tecnologías, la naturaleza, el diseño y el equilibrio entre
+                            estas.
                             Convencido de la reinvención personal y el auto diseño.
-                            Encontré en la programación el entorno ideal para unir las facetas de las que estoy hecho, arte, tecnología, curiosidad, creatividad.
+                            Encontré en la programación el entorno ideal para unir las facetas de las que estoy hecho,
+                            arte, tecnología, curiosidad, creatividad.
                         </p>
                     </div>
                     <div>
-                        <p> 
-                            Actualmente curso una Licenciatura en Informática en la Siglo 21, a 3 materias de obtener mi titulo intermedio de Técnico 
-                            Universitario de Analista de Sistemas. Paralelamente aprovecho la posibilidad de acceso a todos los contenidos de la carrera Certified
-                            Tech Developer de Digital House. 
+                        <p>
+                            Actualmente curso una Licenciatura en Informática en la Siglo 21, a 3 materias de obtener mi
+                            titulo intermedio de Técnico
+                            Universitario de Analista de Sistemas. Paralelamente aprovecho la posibilidad de acceso a
+                            todos los contenidos de la carrera Certified
+                            Tech Developer de Digital House.
                         </p>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -267,25 +294,25 @@
                             <h4>Research</h4>
                         </div>
                     </div>
-    
+
                 </div>
-    
+
             </div>
 
 
         </div>
-        
+
 
         <section class="contact" id="contact">
             <h3>Contact</h3>
             <form action="https://formsubmit.co/467991df3709f0196227989efe2b1fd6" method="POST" class="container">
 
-                
-                <input type="hidden" name="_next" value= https://portfolio-thankspage.000webhostapp.com/>
+
+                <input type="hidden" name="_next" value=https://portfolio-thankspage.000webhostapp.com />
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Mensaje desde el Portfolio wachin!!!">
                 <div class="row100">
-                
+
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="name" class="firstName" required="required">
@@ -293,7 +320,7 @@
                             <span class="line"></span>
                         </div>
                     </div>
-                    
+
                     <div class="col">
                         <div class="inputBox">
                             <input type="email" name="email" class="email" required="required">
@@ -312,7 +339,8 @@
                 <div class="row100">
                     <div class="col">
                         <div class="inputBox textarea">
-                            <textarea style="overflow: hidden" name="textArea" class="textArea" required="required"></textarea>
+                            <textarea style="overflow: hidden" name="textArea" class="textArea"
+                                required="required"></textarea>
                             <span class="text">Type your message here...</span>
                             <span class="line"></span>
                         </div>
@@ -323,23 +351,23 @@
                         <input type="submit" name="submit" value="SEND">
                     </div>
                 </div>
-                
+
             </form>
-            
+
 
 
         </section>
-        
+
 
     </main>
     <footer>
-        <div >
+        <div>
             <small>Developed and designe by Leandro Falcón</small>
         </div>
         <div class="logo">
             <a href="#banner"><span>lea</span>dev</a>
         </div>
-        
+
     </footer>
     <script src="dist/js/carrusel.js"></script>
 
