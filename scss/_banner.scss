@@ -74,12 +74,13 @@ ul,p{
 
   video {
     z-index: -1;
+    
   }
 
   h1 {
     letter-spacing: 5px;
     position: absolute;
-    font-size: calc(4rem + .5vw);
+    font-size: calc(3rem + .5vw);
     text-transform: uppercase;
     text-align: center;
     background: rgba(0, 0, 0, 0.2);
