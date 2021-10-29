@@ -47,11 +47,16 @@
                 class="fab fa-whatsapp"></i></i>Whatsapp</a>
     </div>
     <header class="main-header">
-        <audio src="dist/img/piano-improvisation-6884.mp3" id="audio"></audio>
-        <i class="fas fa-wave-square" id="play" onclick="play()"></i>
+        
+
         <div class="logo">
-            <a href="#banner"><span>lea</span>dev</a>
+            <audio src="dist/img/piano-improvisation-6884.mp3" id="audio"></audio>
+            <i class="fas fa-wave-square" id="play" onclick="play()"></i>
+            <a id="logo" href="#banner"><span>lea</span>dev</a>
         </div>
+        <script>
+            document.getElementById("myAudio").volume = 0.5;
+        </script>
 
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
@@ -67,7 +72,7 @@
                 <a href="#skillset">Skillset</a>
                 </lia>
             <li class="nav-link">
-                <a href="#about-me_texto">About me</a>
+                <a href="#ref-point">About me</a>
                 </lia>
             <li class="nav-link">
                 <a href="#contact">Contact</a>
@@ -81,7 +86,16 @@
             </video>
 
             <h1>Leandro Falcón</h1>
-            <h2>Licenciatura en informática/FullStack Developer</h2>
+            <div class="wordChanger">
+                <p>Estudiante de </p>
+                    <ul>
+                        <li>Licenciatura en Informatica</li>
+                        <li>Analisis de Sistemas</li>
+                        <li>Full Stack Developer</li>
+                        
+                    </ul>
+                
+            </div> 
 
         </div>
 
@@ -90,19 +104,20 @@
                 <div class="img">
                     <img id="fotoPerfil" src="dist/img/fotoPerfil.jpg" alt="fotoPerfil">
                 </div>
+                <input name="" id="ref-point">
                 <div class="about-me_texto" id="about-me_texto">
 
                     <div id="about-me">
                         <h2>Hi! I am Leandro</h2>
                     </div>
                     <div>
-                        <p> Este portfolio es mi primer proyecto personal (perdonar lo imperdonable, responsive in
+                        <p> Este portfolio es mi primer proyecto personal (responsive in
                             progress)
                             Soy un entusiasta de las nuevas tecnologías, la naturaleza, el diseño y el equilibrio entre
                             estas.
                             Convencido de la reinvención personal y el auto diseño.
-                            Encontré en la programación el entorno ideal para unir las facetas de las que estoy hecho,
-                            arte, tecnología, curiosidad, creatividad.
+                            Encontré en la programación el entorno ideal para unir las partes de las que estoy hecho,
+                            y desarrollar nuevas.
                         </p>
                     </div>
                     <div>
@@ -131,7 +146,7 @@
                         <div class="box">
                             <a target="_blank" href="PetShop/index.html"><img src="dist/img/CapturaPetshop.PNG" alt="">
                                 <div class="text">Pet Shop</div>
-                                <p>Lorem, adipisicing elit. Cumque necess</p>
+                                <p>Proyecto de Digital House</p>
                             </a>
                         </div>
                     </div>
@@ -139,8 +154,8 @@
                         <div class="box">
                             <a target="_blank" href="https://sitioinformativohotel.wordpress.com/"><img
                                     src="dist/img/sitioInformativoHotel.png" alt="">
-                                <div class="text">Sitio Informativo Hotel</div>
-                                <p>Lorem, adipisicing elit. Cumque necess</p>
+                                <div class="text">Sitio Info Hotel</div>
+                                <p>Proyecto personal</p>
                             </a>
                         </div>
                     </div>
@@ -148,15 +163,15 @@
                         <div class="box">
                             <a target="_blank" href="Heroes/index/index.html"><img src="dist/img/heroes.png" alt="">
                                 <div class="text">Heroes</div>
-                                <p>Lorem, adipisicing elit. Cumque necess</p>
+                                <p>Proyecto de Digital House</p>
                             </a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <a target="_blank" href=><img src="dist/img/CapturaPetshop.PNG" alt="">
-                                <div class="text">Pet Shop</div>
-                                <p>Lorem, adipisicing elit. Cumque necess</p>
+                            <a target="_blank" href=><img src="dist/img/inProgress.jpg" alt="">
+                                <div class="text">Coming Soon</div>
+                                <p>Working in Progress</p>
                             </a>
                         </div>
                     </div>
@@ -347,7 +362,7 @@
                     </div>
                 </div>
                 <div class="row100">
-                    <div class="col">
+                    <div class="col" id="submit" >
                         <input type="submit" name="submit" value="SEND">
                     </div>
                 </div>
@@ -362,12 +377,9 @@
     </main>
     <footer>
         <div>
+            <a href="#banner"><span>lea</span>dev</a>
             <small>Developed and designe by Leandro Falcón</small>
         </div>
-        <div class="logo">
-            <a href="#banner"><span>lea</span>dev</a>
-        </div>
-
     </footer>
     <script src="dist/js/carrusel.js"></script>
 

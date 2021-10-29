@@ -16,6 +16,166 @@
   top: 0;
 }
 
+.banner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 69vw;
+  height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 2;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 25%;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.banner ul {
+  list-style: none;
+  padding-left: 10px;
+  -webkit-animation: cambiar 25s infinite;
+          animation: cambiar 25s infinite;
+}
+
+.banner ul, .banner p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@-webkit-keyframes cambiar {
+  0% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+  8% {
+    margin-top: 0px;
+  }
+  16% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+  25% {
+    margin-top: 0px;
+  }
+  32% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+  33% {
+    margin-top: -40px;
+    opacity: 0;
+  }
+  41% {
+    margin-top: -40px;
+  }
+  49% {
+    margin-top: -40px;
+    opacity: 1;
+  }
+  57% {
+    margin-top: -40px;
+  }
+  65% {
+    margin-top: -40px;
+    opacity: 0;
+  }
+  66% {
+    margin-top: -80px;
+    opacity: 0;
+  }
+  74% {
+    margin-top: -80px;
+  }
+  82% {
+    margin-top: -80px;
+    opacity: 1;
+  }
+  90% {
+    margin-top: -80px;
+  }
+  99% {
+    margin-top: -80px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+  8% {
+    margin-top: 0px;
+  }
+  16% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+  25% {
+    margin-top: 0px;
+  }
+  32% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+  33% {
+    margin-top: -40px;
+    opacity: 0;
+  }
+  41% {
+    margin-top: -40px;
+  }
+  49% {
+    margin-top: -40px;
+    opacity: 1;
+  }
+  57% {
+    margin-top: -40px;
+  }
+  65% {
+    margin-top: -40px;
+    opacity: 0;
+  }
+  66% {
+    margin-top: -80px;
+    opacity: 0;
+  }
+  74% {
+    margin-top: -80px;
+  }
+  82% {
+    margin-top: -80px;
+    opacity: 1;
+  }
+  90% {
+    margin-top: -80px;
+  }
+  99% {
+    margin-top: -80px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+}
+
 .banner h3 {
   bottom: 0;
   color: black;
@@ -29,7 +189,7 @@
 .banner h1 {
   letter-spacing: 5px;
   position: absolute;
-  font-size: 4rem;
+  font-size: calc(4rem + .5vw);
   text-transform: uppercase;
   text-align: center;
   background: rgba(0, 0, 0, 0.2);
@@ -38,13 +198,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: aparece 10s;
-          animation: aparece 10s;
+  -webkit-animation: aparece 5s;
+          animation: aparece 5s;
   top: 30vh;
 }
 
 .banner h1::before, .banner h1::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   height: 100%;
@@ -63,15 +223,10 @@
 
 .banner h2 {
   position: absolute;
-  text-transform: uppercase;
-  text-decoration: none;
+  font-size: calc(1rem + .3vw);
   z-index: 2;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-animation: aparece 10s;
-          animation: aparece 10s;
+  left: 30%;
   top: 60vh;
 }
 
@@ -95,10 +250,21 @@
   transition: 1s ease-out;
 }
 
-.main-header .logo, .main-header a {
+.main-header .logo,
+.main-header a,
+.main-header i {
   text-decoration: none;
   color: inherit;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main-header i {
+  margin-right: 1rem;
+  -webkit-animation: latidos 2s infinite;
+          animation: latidos 2s infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .main-header .nav-links {
@@ -109,8 +275,8 @@
 }
 
 .main-header .nav-links .nav-link a {
-  margin: .2rem;
-  padding: 1rem .5rem;
+  margin: 0.2rem;
+  padding: 1rem 0.5rem;
 }
 
 .main-header .nav-links .nav-link a:hover {
@@ -132,19 +298,19 @@
   height: 2px;
   width: 20px;
   border-radius: 4px;
-  -webkit-transition: background .8s ease;
-  transition: background .8s ease;
+  -webkit-transition: background 0.8s ease;
+  transition: background 0.8s ease;
 }
 
 .main-header .menu-icon_line::before, .main-header .menu-icon_line::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 4px;
   background: #000;
-  -webkit-transition: background .8s ease;
-  transition: background .8s ease;
+  -webkit-transition: background 0.8s ease;
+  transition: background 0.8s ease;
 }
 
 .main-header .menu-icon_line::before {
@@ -169,6 +335,36 @@
 
 .main-header .menu-icon_line, .main-header .menu-icon_line::before, .main-header .menu-icon_line::after {
   background: #fff;
+}
+
+@-webkit-keyframes latidos {
+  from {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes latidos {
+  from {
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -196,10 +392,10 @@
     font-size: 2rem;
     color: #fff;
     background: #272727;
-    -webkit-transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
-    transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
-    transition: opacity .8s .5s, clip-path 1s .5s;
-    transition: opacity .8s .5s, clip-path 1s .5s, -webkit-clip-path 1s .5s;
+    -webkit-transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
+    transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
+    transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
+    transition: opacity 0.8s 0.5s, clip-path 1s 0.5s, -webkit-clip-path 1s 0.5s;
     -webkit-clip-path: circle(200px at top right);
             clip-path: circle(200px at top right);
   }
@@ -241,12 +437,12 @@
 
 .portfolio:before {
   content: "";
-  background-image: url("../dist/img/pexels-veeterzy-39811.jpg");
+  background: url("../dist/img/pexels-veeterzy-39811.jpg") no-repeat center;
   background-size: cover;
   position: absolute;
   z-index: 1;
   display: block;
-  opacity: .4;
+  opacity: 0.4;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -258,7 +454,7 @@
 }
 
 .portfolio .carousel .card {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 15px 0px;
   text-align: center;
@@ -267,16 +463,15 @@
 }
 
 .portfolio .carousel .card:hover {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .portfolio .carousel .card:hover .box {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .portfolio .carousel .card:hover .box img {
-  opacity: 1;
   -webkit-transition: 1.2s;
   transition: 1.2s;
 }
@@ -316,12 +511,11 @@
   width: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: .6;
+  opacity: 0.9;
   border-radius: 3%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 2.3vw;
 }
 
 .owl-dots {
@@ -374,19 +568,30 @@
           flex-direction: column;
 }
 
+.about-me div input {
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
 .about-me div div img {
   position: relative;
-  left: 130px;
+  left: 50%;
   border-radius: 50%;
-  width: 25rem;
-  top: 60px;
+  width: 25vw;
+  top: 15vh;
+}
+
+.about-me div .about-me_texto {
+  height: 90vh;
+  top: -35rem;
 }
 
 .about-me div .about-me_texto div {
   position: relative;
   color: white;
-  left: 300%;
-  width: 200%;
+  left: 50vw;
+  width: 40vw;
   border-radius: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,15 +601,19 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
+  padding: 9%;
   margin-bottom: 20px;
 }
 
 .about-me div .about-me_texto div h2 {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: calc(.9rem + .7vw);
   font-weight: unset;
+}
+
+.about-me div .about-me_texto div p {
+  font-size: calc(.8rem + .1vw);
 }
 
 @-webkit-keyframes aparece {
@@ -443,22 +652,22 @@
   position: absolute;
   z-index: 1;
   display: block;
-  opacity: .5;
+  opacity: 0.5;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
 .skillset .hardskills-container {
-  padding: 7rem;
+  padding: 10%;
 }
 
 .skillset .hardskills-container .hardskills {
   display: -ms-grid;
   display: grid;
-  gap: .1rem;
-  -ms-grid-columns: (minmax(6rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+  gap: 0.1rem;
+  -ms-grid-columns: (minmax(4rem, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(4rem, 1fr));
   justify-items: center;
 }
 
@@ -476,23 +685,23 @@
 
 .skillset .hardskills-container .hardskills div span {
   background-color: rgba(255, 255, 255, 0.75);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   position: absolute;
   width: 120px;
   font-size: 1rem;
   left: 50%;
   z-index: 2;
-  top: -25px;
+  top: -40px;
   opacity: 0;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   pointer-events: none;
   text-align: center;
   -webkit-transform: translate(-60px, 10px);
           transform: translate(-60px, 10px);
-  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.4, 0, 1, 1);
-  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.4, 0, 1, 1);
-  transition: opacity 0.3s ease-in-out, transform 0.3s cubic-bezier(0.4, 0, 1, 1);
-  transition: opacity 0.3s ease-in-out, transform 0.3s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s cubic-bezier(0.4, 0, 1, 1);
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s cubic-bezier(0.4, 0, 1, 1);
+  transition: opacity 0.5s ease-in-out, transform 0.5s cubic-bezier(0.4, 0, 1, 1);
+  transition: opacity 0.5s ease-in-out, transform 0.5s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.5s cubic-bezier(0.4, 0, 1, 1);
   color: black;
 }
 
@@ -514,7 +723,6 @@
 
 .soft-skills {
   height: 100vh;
-  background-image: url(../dist/img/pexels-alex-conchillos-3888585.jpg);
   background-size: cover;
   z-index: 3;
 }
@@ -534,23 +742,23 @@
 
 .soft-skills .ssContainer .softskills h4 {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   z-index: 1;
   position: absolute;
 }
 
 .contact {
-  min-height: 100vh;
-  background: #03080a;
+  min-height: 75vh;
+  background: black;
 }
 
 .contact h3 {
+  color: #4D5865;
   text-align: end;
-  padding-right: 8rem;
+  padding-right: 10%;
 }
 
 .contact .container {
-  padding: 20px 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,6 +769,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10%;
 }
 
 .contact .container .row100 {
@@ -577,15 +786,15 @@
   width: 100%;
   padding: 0 10px;
   margin: 30px 0 10px;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .contact .container .row100 .col .inputBox {
   position: relative;
   width: 100%;
   height: 40px;
-  color: white;
+  color: #4D5865;
   text-transform: uppercase;
 }
 
@@ -602,7 +811,7 @@
   font-size: 18px;
   padding: 0 10px;
   z-index: 1;
-  color: #03080a;
+  color: black;
 }
 
 .contact .container .row100 .col .inputBox .text {
@@ -630,7 +839,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: white;
+  background: #4D5865;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 2px;
@@ -646,7 +855,7 @@
   position: relative;
   width: 100%;
   height: 100px;
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 
 .contact .container .row100 .col .inputBox textarea {
@@ -670,19 +879,23 @@
   padding: 7px 35px;
   cursor: pointer;
   outline: none;
-  background: white;
-  color: #000;
+  background: #4D5865;
+  color: black;
   font-size: 18px;
   border-radius: 2px;
 }
 
-.contact .container .row100 .col input[type=number]::-webkit-inner-spin-button,
-.contact .container .row100 .col input[type=number]::-webkit-outer-spin-button {
+.contact .container .row100 .col #submit {
+  text-align: center;
+}
+
+.contact .container .row100 .col input[type="number"]::-webkit-inner-spin-button,
+.contact .container .row100 .col input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.contact .container .row100 .col input[type=number] {
+.contact .container .row100 .col input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -717,10 +930,10 @@
   text-decoration: none;
   display: block;
   margin: 5px;
-  padding: 20px;
+  padding: 15px;
   width: 300px;
   text-align: left;
-  border-radius: 50px;
+  border-radius: 25px;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transition-property: -webkit-transform;
@@ -752,17 +965,36 @@
 }
 
 .social a:hover {
-  -webkit-transform: translate(-140px, 0);
-          transform: translate(-140px, 0);
+  -webkit-transform: translate(-130px, 0);
+          transform: translate(-130px, 0);
 }
 
 footer {
-  background-color: black;
-  text-align: justify;
+  height: 25vh;
+  background-color: #112031;
 }
 
-footer .logo a {
-  background-color: white;
+footer div {
+  height: 25vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div a {
+  margin: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer div a span {
+  color: #A6ABB2;
 }
 
 * {
@@ -770,18 +1002,22 @@ footer .logo a {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+* ::-webkit-scrollbar {
+  display: none;
 }
 
 * h3 {
   text-transform: uppercase;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   z-index: 99;
   text-align: end;
   position: relative;
   z-index: 1;
   padding-top: 4rem;
-  padding-right: 8rem;
+  padding-right: 10%;
 }
 /*# sourceMappingURL=main.css.map */

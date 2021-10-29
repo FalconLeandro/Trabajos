@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Login</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="descuento"><p>Descuentos 20%</p></div>
     <header>
-        <h1 class="heroes">Heroes</h1>
+      <h1 class="heroes">Heroes</h1>
     </header>
 
-<main>
-    <div class= "login">
+    <main>
+      <div class="login">
         <h3>Login</h3>
         <form action="login.json" method="POST">
+          <label for="nombre">Nombre y Apellido</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Juan Pérez"
+            minlength="5"
+            maxlength="30"
+          />
 
-            <label for="nombre">Nombre y Apellido</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" minlength="5" maxlength="30">
+          <label for="pass">Contraseña</label>
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            placeholder="Ingrese Contraseña"
+          />
 
-            <label for="pass">Contraseña</label>
-            <input type="password" id= "pass" name="pass" placeholder="Ingrese Contraseña">
-    
-            <p class="entrar-pag"><a href="../index/index.html">Entrar</a></p>
-    
-            <p class="registrarse">¿No tenés una cuenta?<a href="../registro/registro.html"> Registrarme</a></p>
+          <p class="entrar-pag"><a href="../index/index.html">Entrar</a></p>
+
+          <p class="registrarse">
+            ¿No tenés una cuenta?<a href="../registro/registro.html">
+              Registrarme</a
+            >
+          </p>
         </form>
-    </div>
-</main>
+      </div>
+    </main>
 
-<footer>
-    <p>Todos los derechos reservados a Micaela Gonella</p>
-    <a href="https://micaelagonella.github.io/FrontEnd1/"><i class="fab fa-github git git"></i></a>
-</footer>
-</body>
+    <footer>
+      <p>Todos los derechos reservados a Micaela Gonella</p>
+      <a href="https://micaelagonella.github.io/FrontEnd1/"
+        ><i class="fab fa-github git git"></i
+      ></a>
+    </footer>
+  </body>
 </html>

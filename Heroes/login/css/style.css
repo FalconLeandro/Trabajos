@@ -1,96 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 /********** Body *******/
 
-*{  margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-.descuento{
-    background-color: #1CD1B0;
-    padding: 0 0 0 1rem;
-    font-size: 1rem;
+.descuento {
+  background-color: #1cd1b0;
+  padding: 0 0 0 1rem;
+  font-size: 1rem;
 }
 
 /******* Header *******/
-header{
-    font-size: 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
-    background-color: #00669F;
-    padding: 5px;
+header {
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  background-color: #00669f;
+  padding: 5px;
 }
 
 /************ Main ************/
-.login{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start; 
-    width: 50vw;
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50vw;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-form input, .entrar-pag, .registrarse{
-    margin: 10px 0;
-    width: 100%;
-    padding: 10px;
+form input,
+.entrar-pag,
+.registrarse {
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px;
 }
-.login h3{
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 2rem 0rem;
+.login h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2rem 0rem;
 }
 
 .registrarse {
-    color:#00669F;
-    text-align: center;
+  color: #00669f;
+  text-align: center;
 }
-a{
-    color: black;
-    text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
-.entrar-pag{
-    background-color: #1CD1B0;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 20px;
-    padding: 10px;
+.entrar-pag {
+  background-color: #1cd1b0;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 /*********** Footer **********/
-footer{
-    background-color: #00669F;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
+footer {
+  background-color: #00669f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
 }
-.git{
-    text-decoration: none;
-    color: white;
-    padding: 0 0 0 5px;
+.git {
+  text-decoration: none;
+  color: white;
+  padding: 0 0 0 5px;
 }
 
 /********** Responsive ************/
-@media screen and (max-width: 768px){ 
-
-    .descuento{
-        background-color:#D1891C;
-    }
-    .heroes{
-        color: white;
-    }
+@media screen and (max-width: 768px) {
+  .descuento {
+    background-color: #d1891c;
+  }
+  .heroes {
+    color: white;
+  }
 }
-

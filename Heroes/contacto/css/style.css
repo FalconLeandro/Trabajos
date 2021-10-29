@@ -1,121 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 /********** Body *******/
 
-*{  margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-.descuento{
-    background-color: #1CD1B0;
-    padding: 0 0 0 1rem;
-    font-size: 1rem;
+.descuento {
+  background-color: #1cd1b0;
+  padding: 0 0 0 1rem;
+  font-size: 1rem;
 }
 
 /******* Header *******/
-header{
-    font-size: 2rem;
-    font-weight: bold;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 0 30px rgba(0,0,0,0.6);
-    background-color: #00669F;
-    padding: 5px;
+header {
+  font-size: 2rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  background-color: #00669f;
+  padding: 5px;
 }
 
 /************ Main ************/
-.contacto{
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
+.contacto {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-label{
-    display: block;
+label {
+  display: block;
 }
 
-form input{
-    margin: 10px 0;
-    width: 50vw;
-    padding: 10px;
-    resize: none;
+form input {
+  margin: 10px 0;
+  width: 50vw;
+  padding: 10px;
+  resize: none;
 }
-textarea{
-    width: 50vw;
-    height: 20vh;
+textarea {
+  width: 50vw;
+  height: 20vh;
 }
-.contacto h3{
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 2rem 0;
+.contacto h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 2rem 0;
 }
-a{
-    color: black;
-    text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
-.contacto-botones{
-    display: flex;
+.contacto-botones {
+  display: flex;
 }
-.contacto-botones a, .contacto-botones button{
-    background-color: #1CD1B0;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 20px;
-    width: 24vw;
-    margin: 0.2rem;
-    border: none;
-    padding: 5px;
+.contacto-botones a,
+.contacto-botones button {
+  background-color: #1cd1b0;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  width: 24vw;
+  margin: 0.2rem;
+  border: none;
+  padding: 5px;
 }
-.contacto-botones button{
-    background-color: grey;
-    color: white;
+.contacto-botones button {
+  background-color: grey;
+  color: white;
 }
 .info p a {
-    color:#00669F;
-    text-align: center;
+  color: #00669f;
+  text-align: center;
 }
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*********** Footer **********/
-footer{
-    background-color: #00669F;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer {
+  background-color: #00669f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
 }
-.git{
-    text-decoration: none;
-    color: white;
+.git {
+  text-decoration: none;
+  color: white;
 }
 
 /********** Responsive ************/
-@media screen and (max-width: 768px){
-
-    .descuento{
-        background-color:#D1891C;
-    }
-    .heroes{
-        color: white;
-    }
-    footer{
-        position: fixed;
-        bottom: 0;
-    }
+@media screen and (max-width: 768px) {
+  .descuento {
+    background-color: #d1891c;
+  }
+  .heroes {
+    color: white;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
 }

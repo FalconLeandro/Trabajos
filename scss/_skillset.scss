@@ -1,83 +1,75 @@
-.skillset{
+.skillset {
+  height: 100%;
+  position: relative;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  text-align: center;
+  z-index: 3;
+
+  &:before {
+    content: "";
+    background-image: url("../dist/img/pexels-bekir-çelik-8618700.jpg");
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    opacity: 0.5;
+    background-size: cover;
+    width: 100%;
     height: 100%;
-    position: relative;
-    background: rgb(0,0,0);
-    overflow: hidden;
-    text-align: center;
-    z-index: 3;
+  }
+  .hardskills-container {
+    padding: 10%;
+    .hardskills {
+      display: grid;
+      gap: 0.1rem;
+      grid-template-columns: repeat(4, minmax(4rem, 1fr));
+      justify-items: center;
 
-     &:before {
-        content: "";
-        background-image:  url('../dist/img/pexels-bekir-çelik-8618700.jpg');
-        background-size: cover;
-        position: absolute;
-        z-index: 1;
-        display: block;
-        opacity: .5;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        
-    }
-    .hardskills-container{
-        padding:7rem ;
-        .hardskills{
-        
-            display: grid;
-            gap: .1rem;
-            grid-template-columns: repeat(auto-fill, minmax(6rem,1fr));
-            justify-items: center;
-    
-            
-            div{
-                position: relative;
-                display: inline-block;
-                z-index: 2;
-                padding: 1rem;
-            
-                .iconoskill{ 
-                    font-size: 4rem;
-                    color: white;
-                }
-                span{
-                    background-color:rgba(255,255,255,.75);
-                    border-radius: .5rem;
-                    position: absolute;
-                    width: 120px;
-                    font-size: 1rem;
-                    left: 50%;
-                    z-index: 2;
-                    top: -25px;
-                    opacity: 0;
-                    padding: .5rem 0;
-                    pointer-events: none;
-                    text-align: center;
-                    transform: translate(-60px,10px);
-                    transition: opacity .3s ease-in-out,transform .3s cubic-bezier(0.4,0,1,1);
-                    color:black;
-                
-                    &::after{
-                    border: 5px solid transparent;
-                    border-top-color: rgba(255,255,255,.75);
-                    content: "";
-                    left: 50%;
-                    margin-left: -5px;
-                    position: absolute;
-                    top: 100%;
-                    }
-                }
-            }
+      div {
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+        padding: 1rem;
+
+        .iconoskill {
+          font-size: 4rem;
+          color: white;
         }
-         
+        span {
+          background-color: rgba(255, 255, 255, 0.75);
+          border-radius: 0.5rem;
+          position: absolute;
+          width: 120px;
+          font-size: 1rem;
+          left: 50%;
+          z-index: 2;
+          top: -40px;
+          opacity: 0;
+          padding: 0.5rem 0;
+          pointer-events: none;
+          text-align: center;
+          transform: translate(-60px, 10px);
+          transition: opacity 0.5s ease-in-out,
+            transform 0.5s cubic-bezier(0.4, 0, 1, 1);
+          color: black;
+
+          &::after {
+            border: 5px solid transparent;
+            border-top-color: rgba(255, 255, 255, 0.75);
+            content: "";
+            left: 50%;
+            margin-left: -5px;
+            position: absolute;
+            top: 100%;
+          }
+        }
+      }
     }
+  }
 }
 
-
-    
-         
-    
-.hardskills-container .hardskills div:hover span{
-    opacity: 1;
-    transform: translate(-60px) ;
+.hardskills-container .hardskills div:hover span {
+  opacity: 1;
+  transform: translate(-60px);
 }
-

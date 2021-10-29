@@ -1,12 +1,20 @@
-footer{
-    background-color: black;
-    text-align: justify;
-    .logo{
-        a{
-            background-color: white;
-        }
-         
+footer {
+  height: 25vh;
+  background-color: #112031;
+  
+  
+  div{
+    height: 25vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    a{
+      margin: 10%;
+      text-decoration: none;
+      text-transform: uppercase;
+      span{
+        color: #A6ABB2;
+      }
     }
-    
-    
+  }
 }

@@ -1,57 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Registro</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="descuento"><p>Descuentos 20%</p></div>
 
     <header>
-        <h1 class="heroes">Heroes</h1>
+      <h1 class="heroes">Heroes</h1>
     </header>
 
-
     <main>
-        <div class= "registro">
-            <h3>Registro</h3>
-            <form action="registro.json" method="POST">
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" minlength="5" maxlength="30">
-            
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Jonathan@digitalhouse.com">
-            
-                <label for="pass">Contraseña</label>
-                <input type="password" id=pass name="pass">
-            
-                <label for="pais">Pais</label>
-                <select name="pais" id="pais" >
-                        <option value="argentina">Argentina</option>
-                        <option value="colombia">Colombia</option>
-                        <option value="brasil">Brasil</option>
-                </select>
-            
-                <div class="info">
-                    <div class="contacto-botones">
-                        <a href="../index/index.html">Ingresar</a>
-                        <button type="reset" value="reset">Resetear</button>
-                    </div>
-            
-                    <p>Ya tenes una cuenta? <a href="../index/index.html">Ingresá</a></p>
-                </div>
+      <div class="registro">
+        <h3>Registro</h3>
+        <form action="registro.json" method="POST">
+          <label for="nombre">Nombre y Apellido</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Juan Pérez"
+            minlength="5"
+            maxlength="30"
+          />
 
-            </form>
-        </div>
+          <label for="email">Correo Electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Jonathan@digitalhouse.com"
+          />
+
+          <label for="pass">Contraseña</label>
+          <input type="password" id="pass" name="pass" />
+
+          <label for="pais">Pais</label>
+          <select name="pais" id="pais">
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+            <option value="brasil">Brasil</option>
+          </select>
+
+          <div class="info">
+            <div class="contacto-botones">
+              <a href="../index/index.html">Ingresar</a>
+              <button type="reset" value="reset">Resetear</button>
+            </div>
+
+            <p>
+              Ya tenes una cuenta? <a href="../index/index.html">Ingresá</a>
+            </p>
+          </div>
+        </form>
+      </div>
     </main>
 
     <footer>
-        <p>Todos los derechos reservados a Micaela Gonella</p>
-        <a href="https://micaelagonella.github.io/FrontEnd1/"><i class="fab fa-github git git"></i></a>
+      <p>Todos los derechos reservados a Micaela Gonella</p>
+      <a href="https://micaelagonella.github.io/FrontEnd1/"
+        ><i class="fab fa-github git git"></i
+      ></a>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,53 +1,48 @@
-window.addEventListener("load", function(){
-    let formulario = document.querySelector("form");
-    
-    formulario.addEventListener("submit", function(e) {
-        e.preventDefault();
+window.addEventListener("load", function () {
+  let formulario = document.querySelector("form");
 
-        // let errores = [];
+  formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        // let campoNombre = document.querySelector(".firstName");
-        
+    // let errores = [];
 
-        // if(campoNombre.value == "") {
-        //     errores.push("El campo de nombre tiene que estar completo");
-        // } else if(campoNombre.value.length < 3){
-        //     errores.push("El campo debe contener al menos 3 caracteres");
-        // }
+    // let campoNombre = document.querySelector(".firstName");
 
-        // let campoApellido = document.querySelector(".lastName");
+    // if(campoNombre.value == "") {
+    //     errores.push("El campo de nombre tiene que estar completo");
+    // } else if(campoNombre.value.length < 3){
+    //     errores.push("El campo debe contener al menos 3 caracteres");
+    // }
 
-        // if(campoApellido.value == "") {
-        //     errores.push("El campo de apellido tiene que estar completo");
-        // } else if(campoNombre.value.length < 3){
-        //     errores.push("El campo debe contener al menos 3 caracteres");
-        // }
+    // let campoApellido = document.querySelector(".lastName");
 
-        // let campoEmail = document.querySelector(".email");
+    // if(campoApellido.value == "") {
+    //     errores.push("El campo de apellido tiene que estar completo");
+    // } else if(campoNombre.value.length < 3){
+    //     errores.push("El campo debe contener al menos 3 caracteres");
+    // }
 
-        // if(campoEmail.value == "") {
-        //     errores.push("El campo email tiene que estar completo");
-        // }
+    // let campoEmail = document.querySelector(".email");
 
-        // let campoTelefono = document.querySelector(".mobile");
+    // if(campoEmail.value == "") {
+    //     errores.push("El campo email tiene que estar completo");
+    // }
 
-        // if(campoTelefono.value == "") {
-        //     errores.push("El campo mobile tiene que estar completo");
-        // }
+    // let campoTelefono = document.querySelector(".mobile");
 
-        // if (errores.length > 0) {
-        //     e.preventDefault();
+    // if(campoTelefono.value == "") {
+    //     errores.push("El campo mobile tiene que estar completo");
+    // }
 
-        //     let ulErrores = document.querySelector(".errores ul")
-        //     for (let i = 0; i < errores.length; i++) {
+    // if (errores.length > 0) {
+    //     e.preventDefault();
 
-        //         ulErrores.innerHTML += "<li>" + errores[i] + "</li>"
-        //     }
-        // }
-        console.log('caca');
+    //     let ulErrores = document.querySelector(".errores ul")
+    //     for (let i = 0; i < errores.length; i++) {
 
-        
-
-
-    });
-})
+    //         ulErrores.innerHTML += "<li>" + errores[i] + "</li>"
+    //     }
+    // }
+    console.log("caca");
+  });
+});
