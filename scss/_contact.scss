@@ -34,6 +34,8 @@
           color: #4D5865;
           text-transform: uppercase;
 
+          
+
           input,
           textarea {
             position: absolute;
@@ -93,7 +95,7 @@
           }
           textarea:focus + .text,
           textarea:valid + .text {
-            top: -30px;
+            top: -75px;
             left: -10px;
           }
           textarea:focus ~ .line,
@@ -127,4 +129,10 @@
       }
     }
   }
+}
+.textarea{
+  height: 80px !important;
+}
+.message{
+  line-height: 120px !important;
 }

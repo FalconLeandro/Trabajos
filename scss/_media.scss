@@ -83,7 +83,7 @@
       }
       ul{
         
-        font-size: 1.1rem;
+        font-size: 4vw;
         text-align: center;
         
   
@@ -118,6 +118,24 @@
   }
   .iconoskill{
     font-size: 3rem !important;
+  }
+  .row100{
+    grid-template-columns: repeat(auto-fit, minmax(270px , 1fr) ) !important;
+  }
+  .inputBox input,.text,input[type="submit"]{
+    font-size: 15px !important;
+
+  }
+  .social {
+    bottom: 1.5vh;
+    a{
+      font-size: 17px !important;
+      margin: 3px !important;
+      padding: 10px !important;
+      width: 294px !important;
+      border-radius: 12px !important;}
+    
+
   }
  
   
