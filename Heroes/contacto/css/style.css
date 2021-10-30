@@ -28,6 +28,7 @@ header {
 }
 
 /************ Main ************/
+
 .contacto {
   width: 50vw;
   display: flex;
@@ -35,6 +36,7 @@ header {
   align-items: flex-start;
 }
 main {
+  
   display: flex;
   flex-direction: column;
   align-items: center;

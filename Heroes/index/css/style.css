@@ -9,6 +9,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+main{
+  background-color: #2B2E4A;
+}
 .descuento {
   background-color: #1cd1b0;
   padding: 0 0 0 1rem;
@@ -23,7 +26,7 @@ header {
   top: 0;
   z-index: 100;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-  background-color: #00669f;
+  background-color: #E84545;
 }
 header ul li a {
   text-decoration: none;
@@ -35,7 +38,7 @@ header ul li {
   display: inline-block;
 }
 nav {
-  background-color: #001d2d;
+  background-color: #903749;
   text-align: right;
   padding-bottom: 9px;
 }

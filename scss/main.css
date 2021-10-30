@@ -425,18 +425,35 @@
     transition: opacity 0.4s ease-in-out 1s, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
   }
   .about-me #fotoPerfil {
-    width: 50vw;
-    left: 50%;
+    top: -5vh !important;
+    width: 60vw !important;
+    left: 35% !important;
   }
   .about-me div .about-me_texto {
-    top: -7rem !important;
+    top: -60vh !important;
   }
   .about-me div .about-me_texto div {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
     width: 100vw !important;
     left: 0 !important;
   }
   .banner h1 {
     padding: 5% !important;
+  }
+  .banner div p {
+    font-size: 0%;
+  }
+  .banner div ul {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .banner .wordChanger {
+    width: 75vw !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
   .skillset:before {
     background-position-x: 50% !important;

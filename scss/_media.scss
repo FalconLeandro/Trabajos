@@ -49,9 +49,9 @@
     
       
     #fotoPerfil{
-      
-      width: 50vw;
-      left: 50%;
+      top: -5vh !important;
+      width: 60vw !important;
+      left: 35% !important;
 
     }
     
@@ -59,10 +59,13 @@
   }
   
   .about-me div .about-me_texto{
-    top: -7rem !important;
+    top: -60vh !important;
+    
     div{
+      align-items: center !important;
       width: 100vw !important;
         left: 0 !important;
+        
   
     }
 
@@ -72,7 +75,32 @@
       padding: 5% !important;
 
     }
+    
+    div {
+      
+      p{
+        font-size: 0%;
+      }
+      ul{
+        
+        font-size: 1.1rem;
+        text-align: center;
+        
+  
+      }
+
+    }
+
+    .wordChanger{
+      width: 75vw !important;
+      justify-content: flex-start !important;
+      
+
+    }
+    
+    
   }
+  
   .skillset{
     &:before {
       background-position-x: 50% !important;
