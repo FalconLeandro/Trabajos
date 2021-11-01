@@ -50,7 +50,7 @@
     &_line {
       display: block;
       position: relative;
-      background: #000;
+      color: #000;
       height: 2px;
       width: 20px;
       border-radius: 4px;
@@ -75,7 +75,9 @@
     }
   }
   .menu-btn {
+    
     display: none;
+    
   }
   &.scrolled {
     height: 50px;
@@ -87,6 +89,7 @@
     &_line::before,
     &_line::after {
       background: #fff;
+      
     }
   }
 }

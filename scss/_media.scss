@@ -4,7 +4,12 @@
   .main-header {
     .menu-icon {
       display: block;
+
+      
     }
+    
+    
+    
     .nav-links {
       position: absolute;
       top: 0;
@@ -44,6 +49,7 @@
           transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
       }
     }
+    
   }
   .about-me{
     
@@ -73,6 +79,7 @@
   .banner{
     h1{
       padding: 5% !important;
+      top: 25vh;
 
     }
     
@@ -84,7 +91,7 @@
       ul{
         
         font-size: 4vw;
-        text-align: center;
+        
         
   
       }
