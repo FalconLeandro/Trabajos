@@ -21,7 +21,7 @@ header {
   top: 0;
   z-index: 100;
   background-color: #CBF1F5;
-  padding-left: 2rem;
+  padding: 0 2rem;
   letter-spacing: 5px;
   height: 10vh;
 }
@@ -36,9 +36,10 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 50vw;
+  width: 25vw;
   color: white;
   letter-spacing: 5px;
+  margin-top: 3rem;
 }
 main {
   display: flex;
@@ -52,7 +53,7 @@ form input,
 .entrar-pag,
 .registrarse {
   margin: 10px 0;
-  width: 50vw;
+  width: 100%;
   padding: 10px;
   resize: none;
   border-style: none;
@@ -107,3 +108,37 @@ footer {
 
 /********** Responsive ************/
 
+@media screen and (max-width: 768px) {
+
+  .login{
+    align-items: center;
+    width: 50vw;
+  }
+  
+  .heroes {
+    
+    text-align: center;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    
+  }
+  footer p{
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+  .contacto{
+    align-items: center;
+    width: 75vw;
+  }
+  .contacto-botones a,
+  .contacto-botones button,form input,textarea {
+    width: 100%;
+
+  }
+  label{
+    margin-left: 1rem;
+  }
+}

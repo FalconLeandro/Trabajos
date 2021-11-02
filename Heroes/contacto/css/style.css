@@ -8,6 +8,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body{
+  width: 100vw;
+  
+
+}
 
 /******* Header *******/
 header {
@@ -17,7 +22,7 @@ header {
   top: 0;
   z-index: 100;
   background-color: #11999e;
-  padding-left: 2rem;
+  padding: 0 2rem;
   letter-spacing: 5px;
   font-family: "Bangers", cursive;
 }
@@ -66,6 +71,7 @@ textarea {
   font-size: 1rem;
   letter-spacing: 2px;
   color: #e4f9f5;
+  
 }
 .contacto h3 {
   font-size: 3rem;
@@ -130,14 +136,34 @@ footer {
 
 /********** Responsive ************/
 @media screen and (max-width: 768px) {
-  .descuento {
-    background-color: #d1891c;
+
+  main{
+    height: 85vh;
   }
+  
   .heroes {
     color: white;
+    text-align: center;
   }
   footer {
     position: fixed;
     bottom: 0;
+    
+  }
+  footer p{
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+  .contacto{
+    align-items: center;
+    width: 75vw;
+  }
+  .contacto-botones a,
+  .contacto-botones button,form input,textarea {
+    width: 100%;
+
+  }
+  label{
+    margin-left: 1rem;
   }
 }

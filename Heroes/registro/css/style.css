@@ -30,7 +30,7 @@ h1{
 
 /************ Main ************/
 .registro {
-  width: 50vw;
+  width: 25vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -51,7 +51,7 @@ label {
 form input,
 select {
   margin: 10px 0;
-  width: 50vw;
+  width: 100%;
   padding: 10px;
   resize: none;
   background-color: #71C9CE;
@@ -125,10 +125,27 @@ footer {
 
 /********** Responsive ************/
 @media screen and (max-width: 768px) {
-  
-  
+  .registro{
+    margin-top: 3rem;
+    width: 75vw;
+    align-items: center;
+  }
+  form input,
+select{
+  width: 100%;
+
+}
+.contacto-botones a,
+.contacto-botones button{
+  width: 100%;
+
+}
+label{
+  margin-left: 1rem;
+}
   footer {
     position: fixed;
     bottom: 0;
+    letter-spacing: 0;
   }
 }

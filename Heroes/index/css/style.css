@@ -34,9 +34,10 @@ header {
   background-color: #fc5185;
 }
 header h1 {
-  padding-left: 2rem;
+  padding: 0 2rem;
   letter-spacing: 5px;
   font-family: "Bangers", cursive;
+  
 }
 header ul li a {
   text-decoration: none;
@@ -50,10 +51,10 @@ header ul li {
 nav {
   background-color: #3fc1c9;
   text-align: right;
-  padding-bottom: 9px;
-  padding-right: 2rem;
+  padding: .5rem 2rem;
   font-family: "Mouse Memoirs", sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
+  
 }
 
 /******main******/
@@ -67,6 +68,7 @@ nav {
   height: 50%;
   width: 50%;
   padding: 1rem;
+  
 }
 
 .card-img {
@@ -142,6 +144,7 @@ footer {
 .git {
   text-decoration: none;
   color: #393e46;
+  
 }
 
 /********** Responsive ************/
@@ -169,7 +172,36 @@ footer {
   .container {
     flex-direction: column;
   }
+  .descuento p{
+    text-align: center;
+  }
   .card {
     width: 100vw;
+    
   }
+  nav{
+    text-align: center;
+    padding: .5rem;
+  }
+  nav ul li a{
+    font-size: 1.5rem;
+  }
+  h1{
+    text-align: center;
+  }
+  .card-text{
+    border-radius: 0rem 0rem 1rem 1rem;
+  }
+  footer{
+    font-size: 1rem;
+    padding: 1rem ;
+    justify-content: center;
+    align-items: center;
+  }
+  .git{
+    font-size: 2rem;
+    margin-left: 5px;
+
+  }
+  
 }
