@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Mouse+Memoirs&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 /********** Body *******/
@@ -7,24 +7,25 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Mouse Memoirs", sans-serif;
 }
-.descuento {
-  background-color: #1cd1b0;
-  padding: 0 0 0 1rem;
-  font-size: 1rem;
-}
+
 
 /******* Header *******/
 header {
   font-size: 2rem;
-  font-weight: bold;
+  color: #71C9CE;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-  background-color: #00669f;
-  padding: 5px;
+  background-color: #CBF1F5;
+  padding-left: 2rem;
+  letter-spacing: 5px;
+  height: 10vh;
+}
+h1{
+  font-family: "Bangers", cursive;
+
 }
 
 /************ Main ************/
@@ -33,11 +34,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  color: white;
+  letter-spacing: 5px;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #A6E3E9;
+  height: 84vh;
 }
 label {
   display: block;
@@ -49,6 +54,12 @@ select {
   width: 50vw;
   padding: 10px;
   resize: none;
+  background-color: #71C9CE;
+  border-style: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: white;
 }
 .registro h3 {
   font-size: 3rem;
@@ -56,7 +67,7 @@ select {
   padding: 2rem 0;
 }
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .contacto-botones {
@@ -64,54 +75,58 @@ a {
 }
 .contacto-botones a,
 .contacto-botones button {
-  background-color: #1cd1b0;
-  font-weight: bold;
+  background-color: #71C9CE;
   text-align: center;
   border-radius: 20px;
-  width: 24vw;
-  margin: 0.2rem;
+  width: 12vw;
+  margin: 1rem;
   border: none;
-  padding: 5px;
+  padding: 10px;
 }
 .contacto-botones button {
   background-color: grey;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 5px;
   color: white;
 }
 .registro p a {
-  color: #00669f;
+  color: #11999e;
   text-align: center;
 }
 .info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 /*********** Footer **********/
 footer {
-  background-color: #00669f;
-  color: white;
+  background-color: #71C9CE;
+  color: #e4f9f5;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
+  font-family: "Mouse Memoirs", sans-serif;
   bottom: 0;
   width: 100vw;
-  padding: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  height: 6vh;
 }
 .git {
   text-decoration: none;
-  color: white;
+  color: #e4f9f5;
+  font-size: 1.5rem;
+  margin-left: 1rem
 }
 
 /********** Responsive ************/
 @media screen and (max-width: 768px) {
-  .descuento {
-    background-color: #d1891c;
-  }
-  .heroes {
-    color: white;
-  }
+  
+  
   footer {
     position: fixed;
     bottom: 0;

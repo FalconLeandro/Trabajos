@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Mouse+Memoirs&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 /********** Body *******/
@@ -7,23 +7,27 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Mouse Memoirs", sans-serif;
+  
 }
-.descuento {
-  background-color: #1cd1b0;
-  padding: 0 0 0 1rem;
-  font-size: 1rem;
-}
+
+
 
 /******* Header *******/
 header {
   font-size: 2rem;
+  color: #71C9CE;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
-  background-color: #00669f;
-  padding: 5px;
+  background-color: #CBF1F5;
+  padding-left: 2rem;
+  letter-spacing: 5px;
+  height: 10vh;
+}
+h1{
+  font-family: "Bangers", cursive;
+
 }
 
 /************ Main ************/
@@ -33,18 +37,29 @@ header {
   justify-content: center;
   align-items: flex-start;
   width: 50vw;
+  color: white;
+  letter-spacing: 5px;
 }
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #A6E3E9;
+  height: 84vh;
+  
 }
 form input,
 .entrar-pag,
 .registrarse {
   margin: 10px 0;
-  width: 100%;
+  width: 50vw;
   padding: 10px;
+  resize: none;
+  border-style: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  
 }
 .login h3 {
   font-size: 3rem;
@@ -70,28 +85,25 @@ a {
 
 /*********** Footer **********/
 footer {
-  background-color: #00669f;
-  color: white;
+  background-color: #71C9CE;
+  color: #e4f9f5;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  position: fixed;
+  font-family: "Mouse Memoirs", sans-serif;
   bottom: 0;
-  width: 100vw;
-  padding: 1rem;
+  
+  height: 6vh;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 5px;
 }
 .git {
   text-decoration: none;
-  color: white;
-  padding: 0 0 0 5px;
+  color: #e4f9f5;
+  font-size: 1.5rem;
+  margin-left: 1rem
 }
 
 /********** Responsive ************/
-@media screen and (max-width: 768px) {
-  .descuento {
-    background-color: #d1891c;
-  }
-  .heroes {
-    color: white;
-  }
-}
+

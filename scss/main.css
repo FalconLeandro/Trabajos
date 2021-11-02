@@ -392,17 +392,15 @@
     font-size: 2rem;
     color: #fff;
     background: #272727;
-    -webkit-transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
-    transition: opacity 0.8s 0.5s, -webkit-clip-path 1s 0.5s;
-    transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
-    transition: opacity 0.8s 0.5s, clip-path 1s 0.5s, -webkit-clip-path 1s 0.5s;
+    -webkit-transition: opacity 1s 1s, -webkit-clip-path 2s 1s;
+    transition: opacity 1s 1s, -webkit-clip-path 2s 1s;
+    transition: opacity 1s 1s, clip-path 2s 1s;
+    transition: opacity 1s 1s, clip-path 2s 1s, -webkit-clip-path 2s 1s;
     -webkit-clip-path: circle(200px at top right);
             clip-path: circle(200px at top right);
   }
   .main-header .nav-links .nav-link {
     opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
     width: 100%;
     text-align: center;
   }
@@ -417,12 +415,8 @@
   }
   .main-header .menu-btn:checked ~ .nav-links .nav-link {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transition: opacity 0.4s ease-in-out 1s, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
-    transition: opacity 0.4s ease-in-out 1s, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
-    transition: opacity 0.4s ease-in-out 1s, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
-    transition: opacity 0.4s ease-in-out 1s, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    -webkit-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
   }
   .about-me #fotoPerfil {
     top: -5vh !important;
@@ -438,6 +432,9 @@
             align-items: center !important;
     width: 100vw !important;
     left: 0 !important;
+  }
+  .about-me div .about-me_texto div p {
+    text-align: justify;
   }
   .banner h1 {
     padding: 5% !important;
@@ -1050,6 +1047,10 @@ footer div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+footer div small {
+  color: #A6ABB2;
 }
 
 footer div a {

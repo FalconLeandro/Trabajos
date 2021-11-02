@@ -24,11 +24,11 @@
       font-size: 2rem;
       color: #fff;
       background: #272727;
-      transition: opacity 0.8s 0.5s, clip-path 1s 0.5s;
+      transition: opacity 1s 1s, clip-path 2s 1s;
       clip-path: circle(200px at top right);
       .nav-link {
         opacity: 0;
-        transform: translateX(100%);
+        
         width: 100%;
         text-align: center;
 
@@ -44,9 +44,8 @@
 
       .nav-link {
         opacity: 1;
-        transform: translateX(0);
-        transition: opacity 0.4s ease-in-out 1s,
-          transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+        
+        transition: opacity 2s ease-in-out;
       }
     }
     
@@ -71,7 +70,9 @@
       align-items: center !important;
       width: 100vw !important;
         left: 0 !important;
-        
+        p{
+          text-align: justify;
+        }
   
     }
 
