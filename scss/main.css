@@ -1063,6 +1063,15 @@ footer div a span {
   color: #A6ABB2;
 }
 
+#preloader {
+  background: #000 url(/dist/img/7gP7.gif) no-repeat center center;
+  background-size: 25%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

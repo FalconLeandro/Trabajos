@@ -21,7 +21,9 @@
 <body>
 
 
+    <div id="preloader">
 
+    </div>
 
     <script>
         function play() {
@@ -81,7 +83,7 @@
     </header>
     <main>
         <div class="banner" id="banner">
-             <video   autoplay="" loop="" muted="">
+             <video  poster="/dist/img/Sin título.png" autoplay="" loop="" muted="">
                 <source src="/dist/img/videoFog.mp4">
             </video> 
             
@@ -89,7 +91,7 @@
             <h1>Leandro Falcón</h1>
             
             <div class="wordChanger">
-                <p>Estudiante de></p>
+                <p>Estudiante de =></p>
                     <ul>
                         <li>Licenciatura en Informatica</li>
                         <li>Analisis de Sistemas</li>
@@ -384,6 +386,12 @@
     </footer>
     <script src="dist/js/carrusel.js"></script>
     <script src="dist/js/cerrarMenu.js"></script> 
+     <script >
+        var loader = document.getElementById('preloader');
+        window.addEventListener('load', function(){
+            loader.style.display = 'none';
+        })
+    </script> 
 
 </body>
 
