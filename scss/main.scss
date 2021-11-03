@@ -12,8 +12,11 @@
 @import "preloader";
 
 * {
+ 
+  
   ::-webkit-scrollbar {
     display: none;
+    
   }
   box-sizing: border-box;
 
@@ -32,3 +35,5 @@
     padding-right: 10%;
   }
 }
+
+
