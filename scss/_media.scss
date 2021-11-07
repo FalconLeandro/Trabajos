@@ -4,11 +4,9 @@
   .main-header {
     .menu-icon {
       display: block;
-
-      
     }
     
-    
+     
     
     .nav-links {
       position: absolute;
@@ -50,64 +48,9 @@
     }
     
   }
-  .about-me{
-    
-      
-    #fotoPerfil{
-      top: -5vh !important;
-      width: 60vw !important;
-      left: 35% !important;
-
-    }
-    
-    
-  }
   
-  .about-me div .about-me_texto{
-    top: -60vh !important;
-    
-    div{
-      align-items: center !important;
-      width: 100vw !important;
-        left: 0 !important;
-        p{
-          text-align: justify;
-        }
   
-    }
-
-  } 
-  .banner{
-    h1{
-      padding: 5% !important;
-      top: 25vh;
-
-    }
-    
-    div {
-      
-      p{
-        font-size: 0%;
-      }
-      ul{
-        
-        font-size: 4vw;
-        
-        
   
-      }
-
-    }
-
-    .wordChanger{
-      width: 75vw !important;
-      justify-content: flex-start !important;
-      
-
-    }
-    
-    
-  }
   
   .skillset{
     &:before {

@@ -1,44 +1,44 @@
-.about-me {
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  background: black;
+ 
+  // top: 0;
+  // left: 0;
+  // overflow: hidden;
+  // background: black;
+  
 
   .animado {
     animation: aparece 10s;
   }
-  div {
-    position: absolute;
-    top: 100%;
+  .about-me {
+    
+    // top: 100%;
     display: flex;
-    flex-direction: column;
-    input{
-      position: relative;
-      top: -50px;
-      visibility: hidden;
-    }
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 5% 0;
+    justify-content: space-evenly;
     div img {
-      position: relative;
-      left: 50%;
+      
+      // left: 50%;
       border-radius: 50%;
       width: 25vw;
-      top: 15vh;
+      // top: 15vh;
     }
     .about-me_texto {
-      height: 90vh;
-      top: -35rem;
+      display: flex;
+      flex-direction: column;
+      // top: -35rem;
       div {
-        position: relative;
-        color: white;
-        left: 50vw;
-        width: 40vw;
         
+        color: white;
+        // left: 50vw;
+        width: 40vw;
         border-radius: 20px 0;
-        display: flex;
-        flex-direction: column;
+        
+        margin: 3% 0;
         background: rgba(255, 255, 255, 0.1);
         padding: 9%;
-        margin-bottom: 20px;
+        
 
         h2 {
           text-transform: uppercase;
@@ -54,7 +54,7 @@
       }
     }
   }
-}
+
 
 @keyframes aparece {
   0% {

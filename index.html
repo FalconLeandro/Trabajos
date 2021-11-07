@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,58 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="scss/main.css">
 </head>
-
 <body>
-
-
     <div id="preloader"></div>
-
-    <script>
-        function play() {
-            var audio = document.getElementById('audio');
-            if (audio.paused) {
-                audio.play();
-                $('#play').removeClass('fa-wave-square')
-                $('#play').addClass('fa-pause-circle')
-            } else {
-                audio.pause();
-                audio.currentTime = 0
-                $('#play').addClass('fa-wave-square')
-                $('#play').removeClass('fa-pause-circle')
-            }
-        }
-    </script>
     <div class="social">
         <a target="_blank" href="https://github.com/FalconLeandro"><i class="fab fa-github-square"></i>GitHub</a>
-        <a target='_blank' href="https://www.linkedin.com/in/leandrofalc%C3%B3n/"><i
-                class="fab fa-linkedin"></i>LinkedIn</a>
-        <a target='_blank' href="#"><i class="fab fa-instagram-square"></i>Instagram</a>
-        <a target='_blank' href="https://api.whatsapp.com/send?phone=5493548583686"><i
-                class="fab fa-whatsapp"></i></i>Whatsapp</a>
+        <a target='_blank' href="https://www.linkedin.com/in/leandrofalc%C3%B3n/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a target='_blank' href="https://www.instagram.com/kronosteo_art/"><i class="fab fa-instagram-square"></i>Instagram</a>
+        <a target='_blank' href="https://api.whatsapp.com/send?phone=5493548583686"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+        <a target='_blank' href="https://drive.google.com/file/d/1VAIhd_rbayCU6h3ntX3z29q9ygoZFx2e/view?usp=sharing"><i class="far fa-file-alt"></i>Curriculum</a>
     </div>
     <header id="header" class="main-header">
-        
-
         <div class="logo">
             <audio src="dist/img/piano-improvisation-6884.mp3" id="audio"></audio>
             <i class="fas fa-wave-square" id="play" onclick="play()"></i>
             <a id="logo" href="#banner"><span>lea</span>dev</a>
         </div>
-        
-
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
             <span class="menu-icon_line"></span>
         </label>
-
         <ul class="nav-links">
             <li class="nav-link">
                 <a href="#banner">Home</a>
@@ -72,7 +44,7 @@
                 <a href="#skillset">Skillset</a>
             </li>
             <li class="nav-link">
-                <a href="#ref-point">About me</a>
+                <a href="#fotoPerfil">About me</a>
             </li>
             <li class="nav-link">
                 <a href="#contact">Contact</a>
@@ -80,65 +52,63 @@
         </ul>
     </header>
     <main>
-        <div class="banner" id="banner">
-             <video  autoplay="" loop="" muted="">
-                <source src="dist/img/videooFog.mp4">
-            </video> 
-            
-
-            <h1>Leandro Falcón</h1>
-            
-            <div class="wordChanger">
-                <p>Estudiante de ></p>
-                    <ul>
-                        <li>Licenciatura en Informatica</li>
-                        <li>Analisis de Sistemas</li>
-                        <li>Certified Tech Developer</li>
-                        
-                    </ul>
-                
-            </div> 
-
-        </div>
-
-        <div class="about-me">
-            <div>
-                <div class="img">
-                    <img id="fotoPerfil" src="dist/img/fotoPerfil.jpg" alt="fotoPerfil">
-                </div>
-                <input name="" id="ref-point">
-                <div class="about-me_texto" id="about-me_texto">
-
-                    <div id="about-me">
-                        <h2>Hi! I am Leandro</h2>
-                    </div>
-                    <div>
-                        <p> Este portfolio es mi primer proyecto personal.
-                            Soy un entusiasta de las nuevas tecnologías, la naturaleza, el diseño y el equilibrio entre
-                            estas.
-                            Convencido de la reinvención personal y el auto diseño.
-                            Encontré en la programación el entorno ideal para unir las partes de las que estoy hecho
-                            y desarrollar nuevas.
-                        </p>
-                    </div>
-                    <div>
-                        <p>
-                            Actualmente curso una Licenciatura en Informática en la Siglo 21, a 3 materias de obtener mi
-                            titulo intermedio de Técnico
-                            Universitario de Analisis de Sistemas. Paralelamente aprovecho la posibilidad de acceso a
-                            todos los contenidos de la carrera Certified
-                            Tech Developer de Digital House.
-                        </p>
-                    </div>
-
-                </div>
-
+        <div class="banner content" id="banner">
+            <div class="banner-video">
+               <video  autoplay="" loop="" muted="">
+                   <source src="dist/img/videooFog.mp4">
+               </video>
             </div>
+            <div class="banner-content">
+                <div class="banner-titulo">
+                    <div>
+                        <h1>Leandro Falcón</h1>
+                    </div>
+                    
+                    <div class="wordChanger">
+                        <p>Estudiante de ></p>
+                        <ul>
+                            <li>Licenciatura en Informatica</li>
+                            <li>Analisis de Sistemas</li>
+                            <li>Certified Tech Developer</li>
+                        </ul>
+                    </div> 
+                </div>
+                
+                <div class="about-me">
+                    
+                        <div class="img">
+                            <img id="fotoPerfil" src="dist/img/fotoPerfil.jpg" alt="fotoPerfil">
+                        </div>
+                        <div class="about-me_texto" id="about-me_texto">
+                            <div>
+                                <h2>Hi! I am Leandro</h2>
+                            </div>
+                            <div>
+                                <p> 
+                                    Este portfolio es mi primer proyecto personal.
+                                    Soy un entusiasta de las nuevas tecnologías, la naturaleza, el diseño y el equilibrio entre
+                                    estas.
+                                    Convencido de la reinvención personal y el auto diseño.
+                                    Encontré en la programación el entorno ideal para unir las partes de las que estoy hecho
+                                    y desarrollar nuevas.
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    Actualmente curso una Licenciatura en Informática en la Siglo 21, a 3 materias de obtener mi
+                                    titulo intermedio de Técnico
+                                    Universitario de Analisis de Sistemas. Paralelamente aprovecho la posibilidad de acceso a
+                                    todos los contenidos de la carrera Certified
+                                    Tech Developer de Digital House.
+                                </p>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>  
         </div>
-        <script src="dist/js/main.js"></script>
-
+        
         <div class="portfolio" id="portfolio">
-
             <div class="max-width">
                 <h3>Portfolio</h3>
 
@@ -176,41 +146,18 @@
                             </a>
                         </div>
                     </div>
-                    <!-- <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="PetShop/index.html"><img src="dist/img/CapturaPetshop.PNG" alt="">
-                                <div class="text">Pet Shop</div>
-                                <p>Lorem, adipisicing elit. Cumque necess</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="PetShop/index.html"><img src="dist/img/CapturaPetshop.PNG" alt="">
-                                <div class="text">Pet Shop</div>
-                                <p>Lorem, adipisicing elit. Cumque necess</p>
-                            </a>
-                        </div>
-                    </div>  -->
                 </div>
             </div>
         </div>
-
-
         <div class="skillset" id="skillset">
-
             <div>
                 <h3>Skillset</h3>
-
                 <div class="hardskills-container">
-
                     <div class="hardskills">
-
                         <div>
                             <i class="fab fa-html5 iconoskill"></i>
                             <span class="tooltip">
                                 HTML
-
                             </span>
                         </div>
                         <div>
@@ -279,13 +226,8 @@
                                 WordPress
                             </span>
                         </div>
-
-
                     </div>
-
                 </div>
-
-
             </div>
             <div class="soft-skills">
                 <h3>Soft Skills</h3>
@@ -310,25 +252,16 @@
                             <h4>Research</h4>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
-
         </div>
-
-
-        <section class="contact" id="contact">
+        <div class="contact" id="contact">
             <h3>Contact</h3>
             <form action="https://formsubmit.co/467991df3709f0196227989efe2b1fd6" method="POST" class="container">
-
-
                 <input type="hidden" name="_next" value=https://portfolio-thankspage.000webhostapp.com />
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Mensaje desde el Portfolio wachin!!!">
                 <div class="row100">
-
                     <div class="col">
                         <div class="inputBox">
                             <input type="text" name="name" class="firstName" required="required">
@@ -336,7 +269,6 @@
                             <span class="line"></span>
                         </div>
                     </div>
-
                     <div class="col">
                         <div class="inputBox">
                             <input type="email" name="email" class="email" required="required">
@@ -367,14 +299,8 @@
                         <input type="submit" name="submit" value="SEND">
                     </div>
                 </div>
-
             </form>
-
-
-
-        </section>
-
-
+        </div>
     </main>
     <footer>
         <div>
@@ -382,15 +308,29 @@
             <small>Developed and designe by Leandro Falcón</small>
         </div>
     </footer>
+    <script src="dist/js/main.js"></script>
     <script src="dist/js/carrusel.js"></script>
     <script src="dist/js/cerrarMenu.js"></script> 
-     <script >
+    <script >
         var loader = document.getElementById('preloader');
         window.addEventListener('load', function(){
             loader.style.display = 'none';
         })
     </script> 
-
+    <script>
+        function play() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play();
+                $('#play').removeClass('fa-wave-square')
+                $('#play').addClass('fa-pause-circle')
+            } else {
+                audio.pause();
+                audio.currentTime = 0
+                $('#play').addClass('fa-wave-square')
+                $('#play').removeClass('fa-pause-circle')
+            }
+        }
+    </script>
 </body>
-
 </html>

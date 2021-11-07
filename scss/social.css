@@ -1,5 +1,5 @@
 .social {
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   bottom: 3rem;
   right: 0;
@@ -66,5 +66,12 @@
 .social a:hover {
   -webkit-transform: translate(-130px, 0);
           transform: translate(-130px, 0);
+}
+
+@media screen and (max-width: 480px) {
+  .social a:hover {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 /*# sourceMappingURL=social.css.map */

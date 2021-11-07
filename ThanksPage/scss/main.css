@@ -13,6 +13,9 @@
   height: 100vh;
   background-color: #03080a;
   padding: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .thanks-container h1 {
@@ -21,6 +24,57 @@
 
 .thanks-container h3 {
   color: white;
+}
+
+#img {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+  width: 25vw;
+  -webkit-animation: sello 4s;
+          animation: sello 4s;
+}
+
+@media screen and (max-width: 480px) {
+  #img {
+    width: 50vw;
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    margin-bottom: 5vh;
+  }
+}
+
+@-webkit-keyframes sello {
+  0% {
+    width: 200vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  95% {
+    width: 25vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+@keyframes sello {
+  0% {
+    width: 200vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  95% {
+    width: 25vw;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
 }
 
 * {
