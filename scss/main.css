@@ -649,7 +649,6 @@
 
 @-webkit-keyframes aparece {
   0% {
-    display: none;
     opacity: 0;
   }
   100% {
@@ -659,7 +658,6 @@
 
 @keyframes aparece {
   0% {
-    display: none;
     opacity: 0;
   }
   100% {
