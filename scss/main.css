@@ -8,6 +8,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 5vh;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/3265460/pexels-photo-3265460.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 }
 
 .banner .banner-video {
