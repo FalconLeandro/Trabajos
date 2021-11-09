@@ -52,4 +52,18 @@
   }
 }
 
+@media screen and (max-width: 760px){
+  .social {
+    bottom: 1.5vh;
+    a{
+      font-size: 17px !important;
+      margin: 3px !important;
+      padding: 10px !important;
+      width: 294px !important;
+      border-radius: 12px !important;}
+    
+
+  }
+}
+
 
