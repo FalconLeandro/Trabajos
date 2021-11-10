@@ -24,15 +24,15 @@
 .social a {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   text-decoration: none;
   display: block;
-  margin: 5px;
-  padding: 15px;
-  width: 300px;
+  margin: 3px;
+  padding: 10px;
+  width: 294px;
   text-align: left;
-  border-radius: 25px;
+  border-radius: 12px;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transition-property: -webkit-transform;
@@ -78,13 +78,6 @@
 @media screen and (max-width: 760px) {
   .social {
     bottom: 1.5vh;
-  }
-  .social a {
-    font-size: 17px !important;
-    margin: 3px !important;
-    padding: 10px !important;
-    width: 294px !important;
-    border-radius: 12px !important;
   }
 }
 /*# sourceMappingURL=social.css.map */
