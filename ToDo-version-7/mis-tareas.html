@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ----------------------------- estilos CSS ----------------------------- -->
+  <link rel="stylesheet" href="./styles/lista-tareas.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- ------------------- libreria de iconos Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ----------------------------- sweet alert ----------------------------- -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- CDN example (unpkg) -->
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <!-- logica de la página -->
+  <script src="/ToDo-version-7/scripts/tasks.js"></script>
+
+
+  <title>ToDo</title>
+</head>
+
+<body id="body">
+  <header>
+    <nav>
+      <a href="#">My ToDo's</a>
+    </nav>
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            kygkjhgjk
+        </label>
+    <div class="bgContainer">
+      
+      <button id="btn1">Green Forest</button>
+      <button id="btn2">Blue Ocean</button>
+      <button id="btn3">Red Mountains</button>
+      <button id="btn4">Yellow Nature</button>
+      <button id="btn5">Colorfull</button>
+      <button id="btn6">Darkness</button>
+      <!-- <select id="select" >
+        <option id="option1" value="Green" >Green Forest</option>
+        <option id="option2" value="Blue">Blue Ocean</option>
+        <option id="option3" value="Red">Red Mountains</option>
+        <option id="option4" value="Yellow">Yellow Nature</option>
+        <option id="option5" value="Colorfull">Colorfull</option>
+        <option id="option6" value="Darkness">Darkness</option>
+      </select> -->
+    </div>
+    
+
+    <div class="user-info">
+      <p>username</p>
+      <div class="user-image"></div>
+      <p id="closeApp">Cerrar sesión</p>
+    </div>
+  </header>
+
+
+  <form class="nueva-tarea">
+    <div class="not-done "></div>
+    <input id="nuevaTarea" type="text" placeholder="Nueva tarea">
+    <button type="submit">
+      <img src="./assets/plus.png" alt="Agregar Tarea">
+    </button>
+  </form>
+
+
+  <ul class="tareas-pendientes">
+
+    <div id="skeleton">
+      <li class="tarea">
+        <div class="not-done"></div>
+        <div class="descripcion">
+          <p class="nombre">Nueva tarea</p>
+          <p class="timestamp">Creada: 15/07/21</p>
+        </div>
+      </li>
+      <li class="tarea">
+        <div class="not-done"></div>
+        <div class="descripcion">
+          <p class="nombre">Nueva tarea</p>
+          <p class="timestamp">Creada: 15/07/21</p>
+        </div>
+      </li>
+      <li class="tarea">
+        <div class="not-done"></div>
+        <div class="descripcion">
+          <p class="nombre">Nueva tarea</p>
+          <p class="timestamp">Creada: 15/07/21</p>
+        </div>
+      </li>
+    </div>
+    
+  </ul>
+
+  <h2 class="titulo-terminadas">Tareas terminadas</h2>
+  <ul class="tareas-terminadas">
+
+  </ul>
+  <script>
+    const btn1= document.querySelector('#btn1');
+    const btn2= document.querySelector('#btn2');
+    const btn3= document.querySelector('#btn3');
+    const btn4= document.querySelector('#btn4');
+    const btn5= document.querySelector('#btn5');
+    const btn6= document.querySelector('#btn6');
+
+    btn1.addEventListener('click',()=>{
+      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/4631779/pexels-photo-4631779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+    });
+    btn2.addEventListener('click',()=>{
+      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/2292976/pexels-photo-2292976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+    });
+    btn3.addEventListener('click',()=>{
+      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/3612929/pexels-photo-3612929.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')";
+    });
+    btn4.addEventListener('click',()=>{
+      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+    });
+    btn5.addEventListener('click',()=>{
+      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')";
+    });
+    btn6.addEventListener('click',()=>{
+      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+    });
+    
+    
+    
+    </script>
+
+</body>
+
+</html>

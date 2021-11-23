@@ -1,11 +1,17 @@
-let animado = document.querySelectorAll(".animado");
-function mostrarScroll() {
-  let scrollTop = document.documentElement.scrollTop;
-  for (var i = 0; i < animado.length; i++) {
-    let alturaAnimado = animado[i].offsetTop;
-    if (alturaAnimado < scrollTop) {
-      animado[i].style.opacity = 1;
-    }
+window.addEventListener('scroll',function(){
+  let animacion = document.getElementsByClassName('animado');
+  let posicionObj1 = animacion.getBoundingClientRect().top;
+  console.log(posicionObj1);
+  let tamañoDePantalla = window.innerHeight/2;
+for (let i = 0; i < animacion.length; i++) {
+  if (posicionObj1 < tamañoDePantalla) {
+    animacion.style.animation = 'mover 4s';
+    animacion.style.opacity = '1';
+  }else{
+    animacion.style.animation = 'none';
+    animacion.style.opacity = '0';
   }
+  
 }
-window.addEventListener("scroll", mostrarScroll);
+  
+})

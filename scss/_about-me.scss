@@ -5,9 +5,7 @@
   // background: black;
   
 
-  .animado {
-    animation: aparece 10s;
-  }
+  
   .about-me {
     
     // top: 100%;
@@ -48,6 +46,7 @@
         }
         p{
           font-size: calc(.8rem + .1vw);
+          
         }
         
         
@@ -56,12 +55,21 @@
   }
 
 
-@keyframes aparece {
-  0% {
+// @keyframes aparece {
+//   0% {
     
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+// @keyframes mover {
+//   0% {
+    
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
