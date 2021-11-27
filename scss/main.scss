@@ -11,13 +11,16 @@
 @import "footer";
 @import "preloader";
 
+.snap{
+  scroll-snap-align: start;
+}
 * {
  
   
-  ::-webkit-scrollbar {
-    display: none;
+  // ::-webkit-scrollbar {
+  //   display: none;
     
-  }
+  // }
   box-sizing: border-box;
 
   margin: 0;

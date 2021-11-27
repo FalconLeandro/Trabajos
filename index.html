@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/main.css">
 </head>
-<body>
+<body >
     <div id="preloader"></div>
     <div class="social" >
         <a target="_blank" href="https://github.com/FalconLeandro"><i class="fab fa-github-square"></i>GitHub</a>
@@ -71,13 +71,17 @@
             data-aos-duration="3000">
                 <a href="#about-me">About me</a>
             </li>
-            <li class="nav-link">
+            <li class="nav-link" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="2000"
+            data-aos-offset="0"
+            data-aos-duration="3000">
                 <a href="#contact">Contact</a>
             </li>
         </ul>
     </header>
-    <main>
-        <div class="banner content" id="banner">
+    <main >
+        <div  class="banner content" id="banner">
             <div class="banner-video">
                <video  autoplay="" loop="" muted="">
                    <source src="dist/img/videooFog.mp4">
@@ -85,8 +89,8 @@
                 
                </video>
             </div>
-            <div class="banner-content " >
-                <div class="banner-titulo" data-aos="fade-zoom-in"
+            <div  class="banner-content" >
+                <div class="banner-titulo snap" data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-delay="0"
                 data-aos-offset="0"
@@ -108,24 +112,25 @@
                 <div class="about-me " id="about-me">
                     <!-- <input id="about-me" type="button" value=""> -->
                         <div class="img" >
-                            <img id="fotoPerfil" src="dist/img/fotoPerfil2.jpg" alt="fotoPerfil" data-aos="fade-zoom-in"
+                            <img id="fotoPerfil" src="dist/img/fotoPerfil2.jpg" alt="fotoPerfil" 
+                            data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
                             data-aos-delay="0"
-                            data-aos-offset="0"
+                            data-aos-offset="200"
                             data-aos-duration="1000">
                         </div>
                         <div class="about-me_texto" id="about-me_texto" >
                             <div data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
                             data-aos-delay="0"
-                            data-aos-offset="0"
+                            data-aos-offset="200"
                             data-aos-duration="1000">
                                 <h2 >Hi! I am Leandro</h2>
                             </div>
                             <div data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
                             data-aos-delay="1000"
-                            data-aos-offset="0"
+                            data-aos-offset="200"
                             data-aos-duration="1000" >
                                 <p > 
                                     He aqui un entusiasta de las nuevas tecnologías, la naturaleza, el diseño y el equilibrio entre
@@ -137,7 +142,7 @@
                             <div data-aos="fade-zoom-in"
                             data-aos-easing="ease-in-back"
                             data-aos-delay="1000"
-                            data-aos-offset="0"
+                            data-aos-offset="200"
                             data-aos-duration="1000">
                                 <p >
                                     Actualmente curso una Licenciatura en Informática en la Siglo 21, a 3 materias de obtener mi
@@ -361,7 +366,7 @@
     <footer>
         <div>
             <a href="#banner"><span>lea</span>dev</a>
-            <small>Developed and designe by Leandro Falcón</small>
+            <small>Developed and designed by Leandro Falcón</small>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -369,6 +374,7 @@
         AOS.init();
       </script>
     <!-- <script src="dist/js/animado.js"></script> -->
+    <!-- <script src="dist/js/sonidos.js"></script> -->
     <script src="dist/js/main.js"></script>
     <script src="dist/js/carrusel.js"></script>
     <script src="dist/js/cerrarMenu.js"></script> 
