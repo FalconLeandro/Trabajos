@@ -6,7 +6,7 @@
   height: 65px;
   width: 100vw;
   padding: 0 10vw;
-  color: #000;
+  color: #040404;
   z-index: 10;
   transition: 1s ease-out;
   
@@ -18,8 +18,13 @@
     color: inherit;
     text-transform: uppercase;
     cursor: pointer;
+    span{
+      text-transform: none;
+      color: #4fe1d0;
+    }
   }
   i{
+    color: #4fe1d0;
     margin-right: 1rem;
     animation: latidos 2s infinite;
     transform-origin: center;
@@ -52,7 +57,7 @@
     &_line {
       display: block;
       position: relative;
-      background: #000;
+      background: #4fe1d0;
       height: 2px;
       width: 20px;
       border-radius: 4px;
@@ -65,7 +70,7 @@
         height: 100%;
         width: 100%;
         border-radius: 4px;
-        background: #000;
+        background: #4fe1d0;
         transition: background 0.8s ease;
       }
       &::before {

@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------- */
 /*                   logica aplicada en la pantalla de LOGIN                  */
 /* -------------------------------------------------------------------------- */
-const apiUrl = 'https://ctd-todo-api.herokuapp.com/v1/users';
+const apiUrl = 'https://ctd-fe2-todo.herokuapp.com';
 
 window.addEventListener('load', function(){
 

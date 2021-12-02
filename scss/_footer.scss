@@ -1,6 +1,6 @@
 footer {
   height: 25vh;
-  background-color: #112031;
+  background-color: #2f2f2f;
   
   
   div{
@@ -8,15 +8,19 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
+    
     small{
-      color: #A6ABB2;
+      color: #5b5e62;
+      text-decoration: none;
     }
     a{
       margin: 10%;
       text-decoration: none;
-      text-transform: uppercase;
+      
+      color: #A6ABB2;
       span{
-        color: #A6ABB2;
+        text-transform: uppercase;
+        color: #5b5e62;
       }
     }
   }

@@ -94,11 +94,11 @@
           }
           &::before {
             left: 0;
-            border-bottom: 6px solid #000;
+            border-bottom: 6px solid #040404;
           }
           &::after {
             right: 0;
-            border-top: 6px solid #000;
+            border-top: 6px solid #040404;
           }
         }
       }
@@ -120,11 +120,15 @@
           font-size: calc(.5em + 1vw);
           text-transform: uppercase;
           text-decoration: none;
+          span{
+            color: #4fe1d0;
+          }
         }
         ul {
           list-style: none;
           animation: cambiar 15s infinite;
           text-align: center;
+          color: #2f2f2f;
         }
       }
     }

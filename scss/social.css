@@ -53,14 +53,22 @@
 }
 
 .social a:nth-child(2) i {
-  color: #0e76a8;
+  color: #735acf;
 }
 
 .social a:nth-child(3) i {
   color: transparent;
-  background-image: linear-gradient(45deg, #ffdf9e, #e56969, #8a49a1);
+  background-image: linear-gradient(45deg, #4fe1d0, #b7a8e7, #735acf);
   -webkit-background-clip: text;
   font-weight: 600;
+}
+
+.social a:nth-child(4) i {
+  color: #4fe1d0;
+}
+
+.social a:nth-child(5) i {
+  color: white;
 }
 
 .social a:hover {
