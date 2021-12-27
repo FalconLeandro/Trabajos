@@ -20,7 +20,10 @@
       // left: 50%;
       border-radius: 50%;
       width: 25vw;
+      animation-name: imgChanger;
+      animation-duration: 1s;
       // top: 15vh;
+      
     }
     .about-me_texto {
       display: flex;
@@ -53,6 +56,13 @@
       }
     }
   }
+  
+    
+    
+  
+
+
+
 
 
 // @keyframes aparece {

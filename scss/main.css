@@ -617,6 +617,10 @@
 .about-me div img {
   border-radius: 50%;
   width: 25vw;
+  -webkit-animation-name: imgChanger;
+          animation-name: imgChanger;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .about-me .about-me_texto {
@@ -794,7 +798,7 @@
 }
 
 .contact {
-  min-height: 75vh;
+  min-height: 100vh;
   background: #040404;
   overflow: hidden;
 }
@@ -973,8 +977,8 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transform: translate(230px);
-          transform: translate(230px);
+  -webkit-transform: translate(207px);
+          transform: translate(207px);
 }
 
 .social a {
