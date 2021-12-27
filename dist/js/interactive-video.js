@@ -1,4 +1,4 @@
-var arreglo=['dist/img/6.mp4','dist/img/2.mp4','dist/img/3.mp4#t=0.5s','dist/img/4.mp4','dist/img/5.mp4','dist/img/1.mp4']
+var arreglo=['dist/img/6.mp4','dist/img/2.mp4','dist/img/3.mp4','dist/img/4.mp4','dist/img/5.mp4','dist/img/1.mp4']
 var i = 0;
 
 document.getElementById('sk').addEventListener("click", function( event ) {
