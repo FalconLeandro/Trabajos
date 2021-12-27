@@ -1,25 +1,53 @@
 .soft-skills {
   height: 100vh;
  
-  background-size: cover;
+  
   z-index: 3;
+  video{
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+  }
 
   .ssContainer {
     padding: 10%;
     .softskills {
       background-color: rgba(255, 255, 255, 0.05);
-      
+      z-index: 3;
       height: 50vh;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      
       h4 {
-        
+        cursor: pointer;
         color: white;
         font-size: 2.5rem;
-        z-index: 1;
-        position: absolute;
+        z-index: 4;
+        position: relative;
+        
         
       }
+      
+      
+      
     }
+    .fas{
+      display: none;
+      position: relative;
+      z-index: 4;
+      font-size: 50px;
+      color: white;
+      cursor: pointer;
+    }
+    h4:hover{
+      transform: scale(.9);
+      color:aqua;
+    }
+    .fas:hover{
+      transform: scale(.9);
+      color:aqua;
+    }
+    
   }
 }
