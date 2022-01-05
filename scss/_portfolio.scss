@@ -1,6 +1,6 @@
 .portfolio {
   position: relative;
-  background: rgb(0, 0, 0);
+  background: var(--secondary);
   overflow: hidden;
   text-align: center;
   height: 100vh;
@@ -42,7 +42,7 @@
       }
       a {
         text-decoration: none;
-        color: #646464;
+        color: #5b5e62;
       }
       .box {
         display: flex;
@@ -80,16 +80,12 @@
   outline: none !important;
   border-radius: 50%;
   margin-top: 0 5px;
-  border: 2px solid #4fe1d0 !important;
+  border: 2px solid var(--main) !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {
   width: 35px;
   border-radius: 19px;
-}
-.owl-dot.active,
-.owl-dot:hover {
-  background: #2f2f2f !important;
 }
 .owl-stage{
   transition: all 2s ease 0s !important;

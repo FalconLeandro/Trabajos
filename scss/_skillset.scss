@@ -1,7 +1,7 @@
 .skillset {
   height: 100%;
   position: relative;
-  background: rgb(0, 0, 0);
+  background: var(--secondary);
   overflow: hidden;
   text-align: center;
   z-index: 3;
@@ -52,7 +52,7 @@
           transform: translate(-60px, 10px);
           transition: opacity 0.5s ease-in-out,
           transform 0.5s cubic-bezier(0.4, 0, 1, 1);
-          color: black;
+          color: var(--secondary);
 
           &::after {
             border: 5px solid transparent;
@@ -74,6 +74,8 @@
   transform: translate(-60px);
 }
 .hardskills-container .hardskills div:hover .iconoskill {
-  color:#4fe1d0;
+  color:var(--main);
+  
 }
+
 

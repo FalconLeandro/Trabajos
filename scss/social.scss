@@ -33,22 +33,22 @@
   }
 
   a:nth-child(1) i {
-    color: white;
+    color: #5b5e62;
   }
   a:nth-child(2) i {
     color: #735acf;
   }
   a:nth-child(3) i {
     color: transparent;
-    background-image: linear-gradient(45deg, #4fe1d0, #b7a8e7, #735acf);
+    background-image: linear-gradient(45deg, var(--main), #b7a8e7, #735acf);
     -webkit-background-clip: text;
     font-weight: 600;
   }
   a:nth-child(4) i {
-    color: #4fe1d0;
+    color: var(--main);
   }
   a:nth-child(5) i {
-    color: white;
+    color: #5b5e62;
   }
   a:hover {
     transform: translate(-130px, 0);

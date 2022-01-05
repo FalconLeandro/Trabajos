@@ -11,7 +11,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-color: #03080a;
+  background-color: var(--secondary);
   padding: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
