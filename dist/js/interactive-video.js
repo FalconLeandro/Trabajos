@@ -48,7 +48,7 @@ document.getElementById("sk").addEventListener(
   false
 );
 
-var mediaQ = window.matchMedia("(min-width: 460px)");
+var mediaQ = window.matchMedia("(min-width: 625px)");
 
 if (mediaQ.matches) {
   var v1 = "dist/img/11.mp4";
@@ -101,6 +101,8 @@ if (mediaQ.matches) {
     false
   );
 } else {
+  document.getElementById("video").style.width = "100%";
+
   v1 = "dist/img/1.mp4";
   v2 = "dist/img/2.mp4";
   v3 = "dist/img/3.mp4";

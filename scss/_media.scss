@@ -22,7 +22,7 @@
       font-size: 2rem;
       color: #fff;
       background: #2f2f2f;
-      transition: opacity 1s 1s, clip-path 2s 1s;
+      transition: opacity 1s 0s, clip-path 1s 0s;
       clip-path: circle(200px at top right);
       .nav-link {
         opacity: 0;
@@ -43,7 +43,7 @@
       .nav-link {
         opacity: 1;
         
-        transition: opacity 2s ease-in-out;
+        transition: opacity 1s ease-in-out;
       }
     }
     
