@@ -321,7 +321,7 @@
             </div>
             
         </div>
-        <script src="dist/js/interactive-video.js"></script>
+        
                 </div>
             </div>
         </div>
@@ -387,17 +387,18 @@
       </script>
     <!-- <script src="dist/js/animado.js"></script> -->
     <!-- <script src="dist/js/sonidos.js"></script> -->
+    <script async src="dist/js/interactive-video.js"></script>
     <script src="dist/js/main.js"></script>
     <script src="dist/js/carrusel.js"></script>
     <script src="dist/js/cerrarMenu.js"></script> 
     <!-- <script src="dist/js/imgChanger.js"></script> -->
-    <script >
+    <script async>
         var loader = document.getElementById('preloader');
         window.addEventListener('load', function(){
             loader.style.display = 'none';
         })
     </script> 
-    <script>
+    <script async>
         function play() {
             var audio = document.getElementById('audio');
             if (audio.paused) {
