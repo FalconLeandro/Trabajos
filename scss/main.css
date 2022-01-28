@@ -749,7 +749,7 @@
   width: 100vw;
   position: relative;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.02);
   z-index: 3;
 }
 
@@ -1019,7 +1019,7 @@
 }
 
 .social a:nth-child(1) i {
-  color: #5b5e62;
+  color: gray;
 }
 
 .social a:nth-child(2) i {
@@ -1038,7 +1038,7 @@
 }
 
 .social a:nth-child(5) i {
-  color: #5b5e62;
+  color: gray;
 }
 
 .social a:hover {

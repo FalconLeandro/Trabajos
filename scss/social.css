@@ -49,7 +49,7 @@
 }
 
 .social a:nth-child(1) i {
-  color: #5b5e62;
+  color: gray;
 }
 
 .social a:nth-child(2) i {
@@ -68,7 +68,7 @@
 }
 
 .social a:nth-child(5) i {
-  color: #5b5e62;
+  color: gray;
 }
 
 .social a:hover {
