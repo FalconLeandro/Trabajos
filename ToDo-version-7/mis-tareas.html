@@ -30,14 +30,14 @@
 </head>
 
 <body id="body">
+  <img id="bg" src="" alt="imagen fondo">
   <header>
     <nav>
       <a href="#">My ToDo's</a>
     </nav>
     <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
-            kygkjhgjk
-        </label>
+            Background        </label>
     <div class="bgContainer">
       
       <button id="btn1">Green Forest</button>
@@ -59,7 +59,7 @@
 
 
   <form class="nueva-tarea">
-    <div class="not-done "> <i class="fas fa-check"></i></div>
+    <div class="not-done "> </div>
     <input id="nuevaTarea" type="text" placeholder="Nueva tarea">
     <button type="submit">
       <i class="fas fa-plus-circle"></i>
@@ -107,23 +107,25 @@
     const btn5= document.querySelector('#btn5');
     const btn6= document.querySelector('#btn6');
 
+    const img = document.getElementById("bg");
+
     btn1.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('/assets/pexels-aleksandr-slobodianyk-989941.jpg')";
+      img.src="/assets/pexels-aleksandr-slobodianyk-989941.jpg";
     });
     btn2.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('/assets/pexels-azim-islam-1210276.jpg')";
+      img.src = "/assets/pexels-azim-islam-1210276.jpg";
     });
     btn3.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('/assets/pexels-julie-aagaard-1426718.jpg')";
+      img.src = "/assets/pexels-julie-aagaard-1426718.jpg";
     });
     btn4.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('/assets/pexels-oleg-magni-1040473.jpg')";
+      img.src = "/assets/pexels-oleg-magni-1040473.jpg";
     });
     btn5.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('/assets/pexels-rachel-claire-4993230.jpg')";
+      img.src = "/assets/pexels-rachel-claire-4993230.jpg";
     });
     btn6.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('/assets/pexels-scott-webb-1029604.jpg')";
+      img.src = "/assets/pexels-scott-webb-1029604.jpg";
     });
     
     

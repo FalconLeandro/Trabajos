@@ -105,6 +105,7 @@ window.addEventListener('load', function () {
         nodoTareasPendientes.innerHTML = tareasPendientes.map( tarea => `
                 <li class="tarea" data-aos="flip-up">
                     <div class="not-done change" id="${tarea.id}"></div>
+                    <i class="fas fa-check "></i>
                     <div class="descripcion">
                         <p class="nombre">${tarea.description}</p>
                         <p class="timestamp"><i class="far
