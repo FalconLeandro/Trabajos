@@ -93,7 +93,7 @@ function fetchApiRegister(url,payload) {
         if(data.jwt){
             localStorage.setItem('jwt', data.jwt);
 
-            location.href = './mis-tareas.html'
+            location.href = './ToDo-version-7/mis-tareas.html'
         }
     }).catch( error => console.log(error));
 }
