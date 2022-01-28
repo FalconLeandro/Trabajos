@@ -1,9 +1,11 @@
 @import url('./common.css');
 
-body{
+#bd1{
   display: flex;
-  justify-content: center;
   overflow: hidden;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
 }
 
 
@@ -74,19 +76,12 @@ button {
   color: #9D9AB4;
 }
 .left{
- width: 100%;
- height: 100vh;
- 
+  
 }
 .left img{
-  position: absolute;
-  min-width: 100vw;
-  
-  max-height: 130vh;
-  
-
-}
-
+  max-width: 100vw;
+  max-height: 100vh;
+  }
 .right{
   background-color: #020417;
   height: 100vh;
@@ -94,8 +89,18 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 2;
 }
+
+.logIn{
+  background-color: #020417;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 50vw !important;
+}
+
 
 #spinner{
   width: 50%;

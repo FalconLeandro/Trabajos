@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------- */
 /*                   logica aplicada en la pantalla de LOGIN                  */
 /* -------------------------------------------------------------------------- */
-const apiUrl = 'https://ctd-fe2-todo.herokuapp.com';
+const apiUrl = 'https://ctd-todo-api.herokuapp.com/v1/users';
 
 window.addEventListener('load', function(){
 
@@ -93,7 +93,7 @@ function fetchApiRegister(url,payload) {
         if(data.jwt){
             localStorage.setItem('jwt', data.jwt);
 
-            location.href = '/ToDo-version-7/mis-tareas.html'
+            location.href = '/mis-tareas.html'
         }
     }).catch( error => console.log(error));
 }

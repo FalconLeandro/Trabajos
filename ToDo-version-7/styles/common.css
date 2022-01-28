@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
 :root {
-  --primary: #7898FF;
+  --primary: #020417;
   --secondary: #8E64C5;
   --app-grey: white;
   
@@ -16,6 +16,7 @@
 body {
   background-color: #020417;
   min-height: 100vh;
+  margin: 0;
 }
 
 button {

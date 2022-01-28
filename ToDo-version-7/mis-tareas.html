@@ -23,7 +23,7 @@
 
 
   <!-- logica de la página -->
-  <script src="/ToDo-version-7/scripts/tasks.js"></script>
+  <script src="/scripts/tasks.js"></script>
 
 
   <title>ToDo</title>
@@ -46,14 +46,7 @@
       <button id="btn4">Yellow Nature</button>
       <button id="btn5">Colorfull</button>
       <button id="btn6">Darkness</button>
-      <!-- <select id="select" >
-        <option id="option1" value="Green" >Green Forest</option>
-        <option id="option2" value="Blue">Blue Ocean</option>
-        <option id="option3" value="Red">Red Mountains</option>
-        <option id="option4" value="Yellow">Yellow Nature</option>
-        <option id="option5" value="Colorfull">Colorfull</option>
-        <option id="option6" value="Darkness">Darkness</option>
-      </select> -->
+      
     </div>
     
 
@@ -66,10 +59,10 @@
 
 
   <form class="nueva-tarea">
-    <div class="not-done "></div>
+    <div class="not-done "> <i class="fas fa-check"></i></div>
     <input id="nuevaTarea" type="text" placeholder="Nueva tarea">
     <button type="submit">
-      <img src="./assets/plus.png" alt="Agregar Tarea">
+      <i class="fas fa-plus-circle"></i>
     </button>
   </form>
 
@@ -115,22 +108,22 @@
     const btn6= document.querySelector('#btn6');
 
     btn1.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/4631779/pexels-photo-4631779.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+      document.body.style.backgroundImage = "url('/assets/pexels-aleksandr-slobodianyk-989941.jpg')";
     });
     btn2.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/2292976/pexels-photo-2292976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+      document.body.style.backgroundImage = "url('/assets/pexels-azim-islam-1210276.jpg')";
     });
     btn3.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/3612929/pexels-photo-3612929.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')";
+      document.body.style.backgroundImage = "url('/assets/pexels-julie-aagaard-1426718.jpg')";
     });
     btn4.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+      document.body.style.backgroundImage = "url('/assets/pexels-oleg-magni-1040473.jpg')";
     });
     btn5.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/1834399/pexels-photo-1834399.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')";
+      document.body.style.backgroundImage = "url('/assets/pexels-rachel-claire-4993230.jpg')";
     });
     btn6.addEventListener('click',()=>{
-      document.body.style.backgroundImage = "url('https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')";
+      document.body.style.backgroundImage = "url('/assets/pexels-scott-webb-1029604.jpg')";
     });
     
     

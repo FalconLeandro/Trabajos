@@ -1,11 +1,12 @@
 /* @import url('./common.css'); */
 body{
-  background-image: url('https://images.pexels.com/photos/1802183/pexels-photo-1802183.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background: #020417;
   background-size: cover;
+  margin: 0;
 }
 header {
   display: flex;
-  background: rgba(255, 255, 255, .1);
+  background: #373B5E;
   box-shadow: 0px 3px 5px black;
   padding: 0 3em;
   margin-bottom: 2em;
@@ -89,12 +90,12 @@ a, .menu-icon{
   position: relative;
   display: flex;
   align-items: center;
-  
+  background: #373B5E;
   width: 80%;
   margin: 0 10%;
   padding: 1em;
   box-shadow: 2px 2px 10px black;
-  border-radius: .2em;
+  border-radius: 32px;
   z-index: 20;
 }
 
@@ -102,10 +103,10 @@ a, .menu-icon{
   border: none;
   flex: 1;
   border-bottom: 1px solid lightgrey;
-  border-radius: 0;
   padding: .3em;
   font-size: 1.1em;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: #373B5E;
+  color:white
 }
 
 .nueva-tarea input:focus {
@@ -114,7 +115,7 @@ a, .menu-icon{
 }
 
 .nueva-tarea input::placeholder {
-  color: black;
+  color: lightgrey;
   text-indent: .2em;
 }
 
@@ -126,15 +127,18 @@ a, .menu-icon{
   margin-right: 1em;
   opacity: .5;
   cursor: pointer;
+  border: none;
+  
 }
 
 .nueva-tarea button:hover {
   opacity: 1;
 }
 
-.nueva-tarea button img {
-  height: 100%;
+.nueva-tarea button i{
+  font-size: 2em;
   width: 100%;
+  color: white;
 }
 
 .not-done {
@@ -142,10 +146,13 @@ a, .menu-icon{
   height: 2em;
   background-color: rgba(255, 255, 255, .4);
   margin-right: 1em;
-  
+  border-radius: 50%;
   cursor: pointer;
   text-align: center;
   color: grey;
+}
+.change i{
+color: green;
 }
 
 /* Lista de tareas ----------------------------------------------------------- */
@@ -208,18 +215,20 @@ a, .menu-icon{
   align-items: center;
   justify-content: space-between;
   flex: 1;
-  background-color: rgba(255, 255, 255, .4);
+  background-color: #373B5E;
   padding: 1em 2em;
   box-shadow: 2px 2px 5px black;
+
+  border-radius: 10px;
 }
 
 .tarea .nombre {
-  color: rgb(95, 95, 95);
+  color: gray;
 }
 
 .tarea .timestamp {
   font-size: .9em;
-  color: rgb(134, 134, 134);
+  color: #F4F6FD;
 }
 
 /* Tareas terminadas ----------------------------------------------------------- */
