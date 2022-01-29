@@ -1,6 +1,6 @@
-/* @import url('./common.css'); */
+ @import url('./common.css'); 
 body{
-  background: #020417;
+  background: linear-gradient(to bottom right, black, #020417,#47375e);;
   background-size: cover;
   margin: 0;
   
@@ -87,11 +87,11 @@ a, .menu-icon{
 
 #closeApp{
   margin-left: 15px;
-  font-size: .7em;
-  background-color: rgb(218, 88, 88);
+  font-size: .9em;
+  background-color: #8E64C5;
   color: white;
-  border-radius: 50vh;
-  padding: 5px 10px;
+  border-radius: 5px;
+  padding: 8px 10px;
   cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ a, .menu-icon{
   margin: 0 10%;
   padding: 1em;
   box-shadow: 2px 2px 10px black;
-  border-radius: 32px;
+  border-radius: 24px;
   z-index: 20;
 }
 
@@ -122,7 +122,7 @@ a, .menu-icon{
 
 .nueva-tarea input:focus {
   outline: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #8E64C5;
 }
 
 .nueva-tarea input::placeholder {
@@ -149,7 +149,7 @@ a, .menu-icon{
 .nueva-tarea button i{
   font-size: 2em;
   width: 100%;
-  color: white;
+  color: #F4F6FD;
 }
 
 .not-done {
@@ -173,7 +173,7 @@ a, .menu-icon{
   flex-direction: column;
   width: 70%;
   list-style: none;
-  margin: 2em 15%;
+  margin: 2em 23%;
 }
 
 .tarea {
@@ -194,9 +194,10 @@ a, .menu-icon{
   transition: background-color 200ms linear;
 }
 .fa-check{
-  color: white;
+  color: #F4F6FD;
   z-index: 998;
   position: absolute;
+  left: 5px;
   }
 
 .tarea .not-done:hover {
@@ -220,7 +221,7 @@ a, .menu-icon{
   top: 100%;
   left: calc(.75em - 1px);
   display: block;
-  height: 4.5em;
+  height: 3.1em;
   width: 2px;
   background-color: var(--secondary);
 }
@@ -238,8 +239,11 @@ a, .menu-icon{
 }
 
 .tarea .nombre {
-  color: gray;
+  color: #F4F6FD;
 }
+.tarea .nombre::first-letter{
+  text-transform: uppercase;
+} 
 
 .tarea .timestamp {
   font-size: .9em;
@@ -253,14 +257,15 @@ a, .menu-icon{
   width: 8em;
   text-align: center;
   padding: .5em 1em;
-  background-color: white;
-  border-radius: .2em;
+  background-color: #47375e;
+  border-radius: 10px;
   box-shadow: 3px 3px 5px black;
-  color: rgb(170, 170, 170);
+  color: #F4F6FD;
   font-weight: 400;
   font-size: 1.1em;
   margin-left: calc(15% - 4em);
   z-index: 20;
+
 }
 
 .tareas-terminadas {
@@ -285,7 +290,7 @@ a, .menu-icon{
 }
 
 .tareas-terminadas .tarea .descripcion .nombre {
-  color: grey;
+  color: black;
   text-decoration: line-through;
 }
 

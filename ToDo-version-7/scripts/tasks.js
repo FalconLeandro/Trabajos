@@ -37,7 +37,7 @@ window.addEventListener('load', function () {
           if (result.isConfirmed) {
             // cerrar sesion
             localStorage.clear();
-            location.replace('/');
+            location.replace('https://falconleandro.github.io/Trabajos/ToDo-version-7/index.html');
           }
         })
 
