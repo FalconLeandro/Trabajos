@@ -18,7 +18,7 @@ h1 {
 form {
   /* height: 100vh; */
   max-width: 22em;
-  background-color: #020417;
+  background-color: transparent;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -92,7 +92,7 @@ button {
 }
 
 .logIn{
-  background-color: #020417;
+  background: linear-gradient(to right, black, #020417,#47375e);
   height: 100vh;
   display: flex;
   flex-direction: column;

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
 :root {
-  --primary: #020417;
+  --primary: linear-gradient(to bottom right, black, #020417,#47375e);;
   --secondary: #8E64C5;
   --app-grey: white;
   

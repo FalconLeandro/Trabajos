@@ -1,6 +1,6 @@
  @import url('./common.css'); 
 body{
-  background: linear-gradient(to bottom right, black, #020417,#47375e);;
+  background: linear-gradient(to bottom right, black, #020417,#47375e);
   background-size: cover;
   margin: 0;
   

@@ -12,8 +12,8 @@
     display: flex;
     align-items: center;
     width: 100vw;
-    
-    padding: 5% 0;
+    height: 100vh;
+    // padding: 5% 0;
     justify-content: space-evenly;
     div img {
       
@@ -29,13 +29,13 @@
       display: flex;
       flex-direction: column;
       // top: -35rem;
-      div {
+      #texto {
         
         color: white;
         // left: 50vw;
         width: 40vw;
         border-radius: 20px 0;
-        
+        cursor: pointer;
         margin: 3% 0;
         background: rgba(255, 255, 255, 0.1);
         padding: 9%;
@@ -46,10 +46,11 @@
           text-decoration: none;
           font-size: calc(.9rem + .7vw);
           font-weight: unset;
+          animation: aparece 2s;
         }
         p{
-          font-size: calc(.8rem + .1vw);
-          
+          font-size: calc(.8rem + .2vw);
+          animation: aparece 2s;
         }
         
         
@@ -65,15 +66,15 @@
 
 
 
-// @keyframes aparece {
-//   0% {
+@keyframes aparece {
+  0% {
     
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 // @keyframes mover {
 //   0% {
     

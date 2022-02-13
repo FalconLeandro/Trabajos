@@ -36,7 +36,7 @@
           align-items: center;
   z-index: 2;
   max-height: 1440px;
-  margin: 25vh 5% 8vh 5%;
+  margin: 25vh 5% 0vh 5%;
   position: relative;
 }
 
@@ -507,6 +507,36 @@
   height: 100vh;
 }
 
+.portfolio .owl-nav.disabled {
+  display: inline;
+}
+
+.portfolio .owl-prev, .portfolio .owl-next {
+  position: absolute;
+  top: 25%;
+  font-size: 6rem !important;
+  z-index: 999;
+  color: var(--main) !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.portfolio .owl-prev {
+  left: 1%;
+}
+
+.portfolio .owl-next {
+  right: 1%;
+}
+
+.portfolio .owl-prev span {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.portfolio button.owl-prev:hover, .portfolio button.owl-next:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .portfolio .carousel {
   top: 60px;
   padding: 0% 5%;
@@ -531,8 +561,8 @@
 }
 
 .portfolio .carousel .card:hover .box img {
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .portfolio .carousel .card a {
@@ -599,8 +629,8 @@
 }
 
 .owl-stage {
-  -webkit-transition: all 2s ease 0s !important;
-  transition: all 2s ease 0s !important;
+  -webkit-transition: all 1s ease 0s !important;
+  transition: all 1s ease 0s !important;
 }
 
 .about-me {
@@ -611,7 +641,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  padding: 5% 0;
+  height: 100vh;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -636,24 +666,47 @@
           flex-direction: column;
 }
 
-.about-me .about-me_texto div {
+.about-me .about-me_texto #texto {
   color: white;
   width: 40vw;
   border-radius: 20px 0;
+  cursor: pointer;
   margin: 3% 0;
   background: rgba(255, 255, 255, 0.1);
   padding: 9%;
 }
 
-.about-me .about-me_texto div h2 {
+.about-me .about-me_texto #texto h2 {
   text-transform: uppercase;
   text-decoration: none;
   font-size: calc(.9rem + .7vw);
   font-weight: unset;
+  -webkit-animation: aparece 2s;
+          animation: aparece 2s;
 }
 
-.about-me .about-me_texto div p {
-  font-size: calc(.8rem + .1vw);
+.about-me .about-me_texto #texto p {
+  font-size: calc(.8rem + .2vw);
+  -webkit-animation: aparece 2s;
+          animation: aparece 2s;
+}
+
+@-webkit-keyframes aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .skillset {
@@ -766,16 +819,20 @@
 }
 
 .soft-skills .ssContainer {
-  padding: 10%;
+  padding: 7% 10% 10%;
 }
 
 .soft-skills .ssContainer .softskills {
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 3;
   height: 50vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .soft-skills .ssContainer .softskills h4 {
@@ -971,7 +1028,7 @@
 .social {
   z-index: 3;
   position: fixed;
-  bottom: 25vh;
+  bottom: 45vh;
   right: 0;
   height: 100vh;
   display: -webkit-box;
@@ -987,8 +1044,11 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transform: translate(207px);
-          transform: translate(207px);
+  -webkit-transform: translate(250px);
+          transform: translate(250px);
+  -webkit-transition: 2s ease-out;
+  transition: 2s ease-out;
+  opacity: 0;
 }
 
 .social a {
@@ -1023,7 +1083,7 @@
 }
 
 .social a:nth-child(2) i {
-  color: #735acf;
+  color: var(--main);
 }
 
 .social a:nth-child(3) i {

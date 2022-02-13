@@ -1,7 +1,7 @@
 .social {
   z-index: 3;
   position: fixed;
-  bottom: 25vh;
+  bottom: 45vh;
   right: 0;
   height: 100vh;
   display: -webkit-box;
@@ -17,8 +17,11 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transform: translate(207px);
-          transform: translate(207px);
+  -webkit-transform: translate(250px);
+          transform: translate(250px);
+  -webkit-transition: 2s ease-out;
+  transition: 2s ease-out;
+  opacity: 0;
 }
 
 .social a {
@@ -53,7 +56,7 @@
 }
 
 .social a:nth-child(2) i {
-  color: #735acf;
+  color: var(--main);
 }
 
 .social a:nth-child(3) i {

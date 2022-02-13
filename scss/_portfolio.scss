@@ -18,6 +18,30 @@
     height: 100vh;
   }
 
+  .owl-nav.disabled{
+    display: inline;
+  }
+  .owl-prev, .owl-next{
+    position: absolute;
+    top: 25%;
+    font-size: 6rem !important;
+    z-index: 999;
+    color: var(--main)!important;
+    font-family: "Montserrat", sans-serif !important;
+  }
+  .owl-prev{
+    left: 1%;
+  }
+  .owl-next{
+    right: 1%;
+  }
+  .owl-prev span{
+    font-family: "Montserrat", sans-serif !important;
+  }
+  button.owl-prev:hover, button.owl-next:hover{
+    transform: scale(1.2);
+  }
+   
   .carousel {
     top: 60px;
     padding: 0% 5%;
@@ -35,7 +59,7 @@
           transform: scale(0.95);
           img {
             
-            transition: 1.2s;
+            transition: 1s;
           }
         }
       }
@@ -87,5 +111,5 @@
   border-radius: 19px;
 }
 .owl-stage{
-  transition: all 2s ease 0s !important;
+  transition: all 1s ease 0s !important;
 }

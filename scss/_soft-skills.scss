@@ -17,14 +17,14 @@
   }
 
   .ssContainer {
-    padding: 10%;
+    padding: 7% 10% 10%;
     .softskills {
-      
+      background-color: rgba(0, 0, 0, 0.2);
       z-index: 3;
       height: 50vh;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-      
+      align-items: center;
       h4 {
         cursor: pointer;
         color: white;

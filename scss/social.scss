@@ -1,14 +1,16 @@
 .social {
   z-index: 3;
   position: fixed;
-  bottom: 25vh;
+  bottom: 45vh;
   right: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  transform: translate(207px);
+  transform: translate(250px);
+  transition: 2s ease-out;
+  opacity: 0;
   a {
     color: #fff;
     background: rgba(0, 0, 0, 0.7);
@@ -36,7 +38,7 @@
     color: gray;
   }
   a:nth-child(2) i {
-    color: #735acf;
+    color: var(--main);
   }
   a:nth-child(3) i {
     color: transparent;
