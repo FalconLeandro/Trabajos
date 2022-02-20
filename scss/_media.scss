@@ -32,20 +32,23 @@
 
         a {
           display: block;
-          padding: 2rem 0;
+          padding: 1rem 0;
         }
       }
     }
-    .menu-btn:checked ~ .nav-links {
+    .menu-btn:checked ~ .nav-links{
       opacity: 1;
       clip-path: circle(100% at center);
-
+      
+        
+      
       .nav-link {
         opacity: 1;
-        
         transition: opacity 1s ease-in-out;
       }
     }
+    
+   
     
   }
   

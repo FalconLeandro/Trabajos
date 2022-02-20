@@ -9,7 +9,8 @@
           justify-content: center;
   padding-bottom: 5vh;
   background-size: cover;
-  background-image: url(https://images.pexels.com/photos/3265460/pexels-photo-3265460.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(var(--tertiary)), color-stop(#524E4A), to(white));
+  background: linear-gradient(to top right, black, var(--tertiary), #524E4A, white);
 }
 
 .banner .banner-video {
@@ -100,20 +101,42 @@
 .banner .banner-content .banner-titulo .wordChanger p {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: calc(.5em + 1.5vw);
+  font-size: calc(0.5em + 1.5vw);
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.banner .banner-content .banner-titulo .wordChanger ul span,
-.banner .banner-content .banner-titulo .wordChanger p span {
+.banner .banner-content .banner-titulo .wordChanger ul span i,
+.banner .banner-content .banner-titulo .wordChanger p span i {
   color: var(--main);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-animation: cambiar 15s infinite;
+          animation: cambiar 15s infinite;
+}
+
+.banner .banner-content .banner-titulo .wordChanger ul .second,
+.banner .banner-content .banner-titulo .wordChanger p .second {
+  -webkit-animation: cambiar 15s infinite;
+          animation: cambiar 15s infinite;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.banner .banner-content .banner-titulo .wordChanger ul .third,
+.banner .banner-content .banner-titulo .wordChanger p .third {
+  -webkit-animation: cambiar 15s infinite;
+          animation: cambiar 15s infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .banner .banner-content .banner-titulo .wordChanger ul {
   list-style: none;
   -webkit-animation: cambiar 15s infinite;
           animation: cambiar 15s infinite;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
   text-align: center;
   color: var(--tertiary);
 }
@@ -300,8 +323,8 @@
 .main-header i {
   color: var(--main);
   margin-right: 1rem;
-  -webkit-animation: latidos 2s infinite;
-          animation: latidos 2s infinite;
+  -webkit-animation: latidos 800ms ease-out infinite alternate;
+          animation: latidos 800ms ease-out infinite alternate;
   -webkit-transform-origin: center;
           transform-origin: center;
 }
@@ -380,32 +403,28 @@
 }
 
 @-webkit-keyframes latidos {
-  from {
-    -webkit-transform: none;
-            transform: none;
+  0% {
+    border-color: #0eddc5;
+    -webkit-box-shadow: 0 0 5px rgba(2, 109, 136, 0.2), inset 0 0 5px rgba(1, 36, 42, 0.1);
+            box-shadow: 0 0 5px rgba(2, 109, 136, 0.2), inset 0 0 5px rgba(1, 36, 42, 0.1);
   }
-  50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-  to {
-    -webkit-transform: none;
-            transform: none;
+  100% {
+    border-color: var(--main);
+    -webkit-box-shadow: 0 0 20px rgba(7, 184, 184, 0.6), inset 0 0 10px rgba(5, 130, 146, 0.4);
+            box-shadow: 0 0 20px rgba(7, 184, 184, 0.6), inset 0 0 10px rgba(5, 130, 146, 0.4);
   }
 }
 
 @keyframes latidos {
-  from {
-    -webkit-transform: none;
-            transform: none;
+  0% {
+    border-color: #0eddc5;
+    -webkit-box-shadow: 0 0 5px rgba(2, 109, 136, 0.2), inset 0 0 5px rgba(1, 36, 42, 0.1);
+            box-shadow: 0 0 5px rgba(2, 109, 136, 0.2), inset 0 0 5px rgba(1, 36, 42, 0.1);
   }
-  50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-  to {
-    -webkit-transform: none;
-            transform: none;
+  100% {
+    border-color: var(--main);
+    -webkit-box-shadow: 0 0 20px rgba(7, 184, 184, 0.6), inset 0 0 10px rgba(5, 130, 146, 0.4);
+            box-shadow: 0 0 20px rgba(7, 184, 184, 0.6), inset 0 0 10px rgba(5, 130, 146, 0.4);
   }
 }
 
@@ -452,7 +471,7 @@
   }
   .main-header .nav-links .nav-link a {
     display: block;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
   .main-header .menu-btn:checked ~ .nav-links {
     opacity: 1;
@@ -669,7 +688,7 @@
 .about-me .about-me_texto #texto {
   color: white;
   width: 40vw;
-  border-radius: 20px 0;
+  border-radius: 20px 20px 20px 0;
   cursor: pointer;
   margin: 3% 0;
   background: rgba(255, 255, 255, 0.1);
@@ -679,14 +698,14 @@
 .about-me .about-me_texto #texto h2 {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: calc(.9rem + .7vw);
+  font-size: calc(0.9rem + 0.7vw);
   font-weight: unset;
   -webkit-animation: aparece 2s;
           animation: aparece 2s;
 }
 
 .about-me .about-me_texto #texto p {
-  font-size: calc(.8rem + .2vw);
+  font-size: calc(0.8rem + 0.2vw);
   -webkit-animation: aparece 2s;
           animation: aparece 2s;
 }

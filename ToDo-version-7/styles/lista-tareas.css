@@ -1,65 +1,57 @@
- @import url('./common.css'); 
-body{
-  background: linear-gradient(to bottom right, black, #020417,#47375e);
+@import url("./common.css");
+body {
+  background: linear-gradient(to bottom right, black, #020417, #47375e);
   background-size: cover;
   margin: 0;
-  
 }
-#bg{
+#bg {
   position: absolute;
   width: 100vw;
   min-height: 100vh;
   object-fit: contain;
   top: 0;
   overflow: hidden;
-
 }
 header {
   display: flex;
-  background: #373B5E;
+  background: #373b5e;
   box-shadow: 0px 3px 5px black;
   padding: 0 3em;
   margin-bottom: 2em;
- /* z-index: 999; */
+  /* z-index: 999; */
 }
 
-.bgContainer{
+.bgContainer {
   display: flex;
   flex-direction: column;
   position: absolute;
   left: -10rem;
-  top: 30vh;
+  top: 53vh;
   z-index: 21;
   transition: ease-in-out 1.5s;
-  
-  
 }
-.bgContainer button{
-  background-color: rgba(255, 255, 255, .4);
+.bgContainer button {
+  background-color: #373b5e;
   padding: 1em 2em;
   border-style: none;
   margin-bottom: 4px;
   cursor: pointer;
   border-radius: 10px;
 }
-.menu-btn{
+.menu-btn {
   display: none;
-  
 }
 .menu-btn:checked ~ .bgContainer {
   left: -10px;
   transition: ease-in-out 1s;
-
-  
 }
 
-
-
-a, .menu-icon{
+a,
+.menu-icon {
   display: block;
   width: fit-content;
-  padding: .7em 1em;
-  border-bottom: .2em solid white;
+  padding: 0.7em 1em;
+  border-bottom: 0.2em solid white;
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -81,14 +73,14 @@ a, .menu-icon{
   width: 2em;
   border-radius: 50%;
   background-color: white;
-  opacity: .4;
-  margin-left: .7em;
+  opacity: 0.4;
+  margin-left: 0.7em;
 }
 
-#closeApp{
+#closeApp {
   margin-left: 15px;
-  font-size: .9em;
-  background-color: #8E64C5;
+  font-size: 0.9em;
+  background-color: #8e64c5;
   color: white;
   border-radius: 5px;
   padding: 8px 10px;
@@ -101,7 +93,7 @@ a, .menu-icon{
   position: relative;
   display: flex;
   align-items: center;
-  background: #373B5E;
+  background: #373b5e;
   width: 80%;
   margin: 0 10%;
   padding: 1em;
@@ -110,24 +102,24 @@ a, .menu-icon{
   z-index: 20;
 }
 
-.nueva-tarea input[type=text] {
+.nueva-tarea input[type="text"] {
   border: none;
   flex: 1;
   border-bottom: 1px solid lightgrey;
-  padding: .3em;
+  padding: 0.3em;
   font-size: 1.1em;
-  background-color: #373B5E;
-  color:white
+  background-color: #373b5e;
+  color: white;
 }
 
 .nueva-tarea input:focus {
   outline: none;
-  border-bottom: 1px solid #8E64C5;
+  border-bottom: 1px solid #8e64c5;
 }
 
 .nueva-tarea input::placeholder {
   color: lightgrey;
-  text-indent: .2em;
+  text-indent: 0.2em;
 }
 
 .nueva-tarea button {
@@ -136,20 +128,19 @@ a, .menu-icon{
   background-color: transparent;
   margin-left: 2em;
   margin-right: 1em;
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
   border: none;
-  
 }
 
 .nueva-tarea button:hover {
   opacity: 1;
 }
 
-.nueva-tarea button i{
+.nueva-tarea button i {
   font-size: 2em;
   width: 100%;
-  color: #F4F6FD;
+  color: #f4f6fd;
 }
 
 .not-done {
@@ -161,14 +152,11 @@ a, .menu-icon{
   cursor: pointer;
   text-align: center;
   z-index: 999;
-  
 }
-
 
 /* Lista de tareas ----------------------------------------------------------- */
 
 .tareas-pendientes {
-  
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -177,7 +165,6 @@ a, .menu-icon{
 }
 
 .tarea {
-  
   display: flex;
   align-items: center;
   margin-bottom: 1.5em;
@@ -193,22 +180,22 @@ a, .menu-icon{
   z-index: 999;
   transition: background-color 200ms linear;
 }
-.fa-check{
-  color: #F4F6FD;
+.fa-check {
+  color: #f4f6fd;
   z-index: 998;
   position: absolute;
   left: 5px;
-  }
+}
 
 .tarea .not-done:hover {
   color: greenyellow;
 }
 
 .tarea:first-child .not-done::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 100%;
-  left: calc(.75em - 1px);
+  left: calc(0.75em - 1px);
   display: block;
   height: 3em;
   width: 2px;
@@ -216,10 +203,10 @@ a, .menu-icon{
 }
 
 .tarea:not(:last-child) .not-done::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
-  left: calc(.75em - 1px);
+  left: calc(0.75em - 1px);
   display: block;
   height: 3.1em;
   width: 2px;
@@ -231,7 +218,7 @@ a, .menu-icon{
   align-items: center;
   justify-content: space-between;
   flex: 1;
-  background-color: #373B5E;
+  background-color: #373b5e;
   padding: 1em 2em;
   box-shadow: 2px 2px 5px black;
 
@@ -239,15 +226,15 @@ a, .menu-icon{
 }
 
 .tarea .nombre {
-  color: #F4F6FD;
+  color: #f4f6fd;
 }
-.tarea .nombre::first-letter{
+.tarea .nombre::first-letter {
   text-transform: uppercase;
-} 
+}
 
 .tarea .timestamp {
-  font-size: .9em;
-  color: #F4F6FD;
+  font-size: 0.9em;
+  color: #f4f6fd;
 }
 
 /* Tareas terminadas ----------------------------------------------------------- */
@@ -256,16 +243,15 @@ a, .menu-icon{
   position: relative;
   width: 8em;
   text-align: center;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   background-color: #47375e;
   border-radius: 10px;
   box-shadow: 3px 3px 5px black;
-  color: #F4F6FD;
+  color: #f4f6fd;
   font-weight: 400;
   font-size: 1.1em;
   margin-left: calc(15% - 4em);
   z-index: 20;
-
 }
 
 .tareas-terminadas {
@@ -276,12 +262,11 @@ a, .menu-icon{
   margin: 2em 15%;
 }
 
-
-.tareas-terminadas i{
+.tareas-terminadas i {
   color: grey;
   background-color: rgb(228, 228, 228);
 }
-.tareas-terminadas button{
+.tareas-terminadas button {
   margin-left: 10px;
 }
 
@@ -294,21 +279,25 @@ a, .menu-icon{
   text-decoration: line-through;
 }
 
-#skeleton .descripcion{
+#skeleton .descripcion {
   background-color: rgb(189, 189, 189);
 }
-#skeleton p{
+#skeleton p {
   background-color: rgb(214, 214, 214);
   color: rgb(214, 214, 214);
 }
-#skeleton .not-done{
+#skeleton .not-done {
   background-color: rgb(189, 189, 189);
 }
 
-#skeleton{
-  animation: trasparencia 1s infinite;
+#skeleton {
+  animation: transparencia 1s infinite;
 }
-@keyframes trasparencia {
-  0%{ opacity: 0.5;}
-  100%{ opacity: 0.8;}
+@keyframes transparencia {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }

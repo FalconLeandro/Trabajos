@@ -26,7 +26,7 @@
   i{
     color: var(--main);
     margin-right: 1rem;
-    animation: latidos 2s infinite;
+    animation: latidos 800ms ease-out infinite alternate;
     transform-origin: center;
   }
   
@@ -95,7 +95,6 @@
       &_line::before,
       &_line::after {
         background: #fff !important;
-        
       }
       
     }
@@ -105,9 +104,14 @@
   }
 }
 @keyframes latidos {
-  from { transform: none; }
-  50% { transform: scale(1.4); }
-  to { transform: none; }
+  0% {
+		border-color: #0eddc5;
+		box-shadow: 0 0 5px rgba(2, 109, 136, 0.2), inset 0 0 5px rgba(1, 36, 42, 0.1);
+    }	
+    100% {
+		border-color: var(--main);
+		box-shadow: 0 0 20px rgba(7, 184, 184, 0.6), inset 0 0 10px rgba(5, 130, 146, 0.4);
+    }
 }
 #conta{
   color: var(--main) !important;

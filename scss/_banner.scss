@@ -48,17 +48,20 @@
   justify-content: center;
   padding-bottom: 5vh;
   background-size: cover;
-  
-  background-image: url(https://images.pexels.com/photos/3265460/pexels-photo-3265460.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background: linear-gradient(
+    to top right,
+    black,
+    var(--tertiary),
+    #524E4A,
+    white
+  );
 
-  
   .banner-video {
     position: absolute;
     top: 0;
     overflow: hidden;
     text-align: center;
-    width: -webkit-fill-available;
-    
+    width: -webkit-fill-available; 
   }
   .banner-content {
     display: flex;
@@ -117,16 +120,28 @@
         p {
           margin: 0;
           font-family: "Montserrat", sans-serif;
-          font-size: calc(.5em + 1.5vw);
+          font-size: calc(0.5em + 1.5vw);
           text-transform: uppercase;
           text-decoration: none;
-          span{
+          span i{
             color: var(--main);
+            transform: rotate(180deg);
+            animation: cambiar 15s infinite;
+            
+          }
+          .second{
+            animation: cambiar 15s infinite;
+            animation-delay: 0.2s;
+          }
+          .third{
+            animation: cambiar 15s infinite;
+            animation-delay: 0.5s;
           }
         }
         ul {
           list-style: none;
           animation: cambiar 15s infinite;
+          animation-delay: 0.7s;
           text-align: center;
           color: var(--tertiary);
         }
@@ -205,18 +220,15 @@
   }
 }
 
-@media screen and (max-width: 480px){
-  .about-me{
+@media screen and (max-width: 480px) {
+  .about-me {
     flex-direction: column;
-    .img img{
+    .img img {
       width: 50vw;
       margin-bottom: 20px;
     }
     .about-me_texto div {
       width: 100vw !important;
-  
     }
-    
   }
-  
 }

@@ -83,10 +83,10 @@ function fetchApiLogin(url,payload) {
 }
 
 function mostrarSpinner(){
-    const spinner = document.querySelector('#spinner');
+    const spinner = document.querySelector('.spinner');
     spinner.style.display = "block";
 }
 function ocultarSpinner(){
-    const spinner = document.querySelector('#spinner');
+    const spinner = document.querySelector('.spinner');
     spinner.style.display = "none";
 }

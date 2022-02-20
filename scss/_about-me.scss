@@ -1,74 +1,55 @@
- 
-  // top: 0;
-  // left: 0;
-  // overflow: hidden;
-  // background: black;
-  
+// top: 0;
+// left: 0;
+// overflow: hidden;
+// background: black;
 
-  
-  .about-me {
-    
-    // top: 100%;
+.about-me {
+  // top: 100%;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  // padding: 5% 0;
+  justify-content: space-evenly;
+  div img {
+    // left: 50%;
+    border-radius: 50%;
+    width: 25vw;
+    animation-name: imgChanger;
+    animation-duration: 1s;
+    // top: 15vh;
+  }
+  .about-me_texto {
     display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    // padding: 5% 0;
-    justify-content: space-evenly;
-    div img {
-      
-      // left: 50%;
-      border-radius: 50%;
-      width: 25vw;
-      animation-name: imgChanger;
-      animation-duration: 1s;
-      // top: 15vh;
-      
-    }
-    .about-me_texto {
-      display: flex;
-      flex-direction: column;
-      // top: -35rem;
-      #texto {
-        
-        color: white;
-        // left: 50vw;
-        width: 40vw;
-        border-radius: 20px 0;
-        cursor: pointer;
-        margin: 3% 0;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 9%;
-        
+    flex-direction: column;
+    // top: -35rem;
+    #texto {
+      color: white;
+      // left: 50vw;
+      width: 40vw;
+      border-radius: 20px 20px 20px 0;
+      cursor: pointer;
+      margin: 3% 0;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 9%;
 
-        h2 {
-          text-transform: uppercase;
-          text-decoration: none;
-          font-size: calc(.9rem + .7vw);
-          font-weight: unset;
-          animation: aparece 2s;
-        }
-        p{
-          font-size: calc(.8rem + .2vw);
-          animation: aparece 2s;
-        }
-        
-        
+      h2 {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: calc(0.9rem + 0.7vw);
+        font-weight: unset;
+        animation: aparece 2s;
+      }
+      p {
+        font-size: calc(0.8rem + 0.2vw);
+        animation: aparece 2s;
       }
     }
   }
-  
-    
-    
-  
-
-
-
-
+}
 
 @keyframes aparece {
   0% {
-    
     opacity: 0;
   }
   100% {
@@ -77,7 +58,7 @@
 }
 // @keyframes mover {
 //   0% {
-    
+
 //     opacity: 0;
 //   }
 //   100% {
