@@ -35,8 +35,9 @@
   .owl-next{
     right: 1%;
   }
-  .owl-prev span{
-    font-family: "Montserrat", sans-serif !important;
+  .owl-prev span, .owl-next span{
+    font-family: inherit;
+    font-weight: lighter;
   }
   button.owl-prev:hover, button.owl-next:hover{
     transform: scale(1.2);

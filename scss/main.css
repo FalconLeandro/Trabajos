@@ -101,7 +101,7 @@
 .banner .banner-content .banner-titulo .wordChanger p {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: calc(0.5em + 1.5vw);
+  font-size: calc(0.5em + 2vw);
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -547,8 +547,9 @@
   right: 1%;
 }
 
-.portfolio .owl-prev span {
-  font-family: "Montserrat", sans-serif !important;
+.portfolio .owl-prev span, .portfolio .owl-next span {
+  font-family: inherit;
+  font-weight: lighter;
 }
 
 .portfolio button.owl-prev:hover, .portfolio button.owl-next:hover {
