@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
     blocked();
   } else {
     logo.style.animation = "rolling-back 2s";
-    logo.style.transform = "translate(-23vw, 500px)";
+    logo.style.transform = "translate(-83vw, 500px)";
     logo.style.opacity = ".8";
     i = 0;
   }

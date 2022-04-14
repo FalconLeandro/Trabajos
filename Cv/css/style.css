@@ -1,0 +1,75 @@
+/* Global styles */
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* No hay que poner el margin = 0 en los atributos globales porque interfiere con el margin por defecto de las listas dl */
+
+body{
+    margin: 0; 
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E6E6;
+    padding: 1.5rem 0;
+}
+header a img:hover{
+    transform: rotate(720deg);
+    transition:1s;
+    transition-property: all;
+}
+/*Main*/
+
+main{
+    padding:0 10% 6rem;
+}
+
+h3,h1{
+    background: #C4C4C4;
+    color: #005677;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    padding: .5rem 1rem ;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+ul, dl{
+    list-style-type: disc;
+    margin: 2rem 0 2rem  3rem;
+    font-size:larger;
+}
+ul li span{
+    font-style: italic;
+}
+span{
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    background: #005677;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+footer a img{
+    margin: .1rem 1rem ;
+    align-items: center;
+}
+

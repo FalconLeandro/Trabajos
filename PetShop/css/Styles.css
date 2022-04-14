@@ -52,7 +52,7 @@
   align-items: center;
   background-color: var(--tertiary);
   height: 12vh;
-  padding: 0 3rem;
+  padding: 0 10%;
 }
 
 /*Header - Logo*/
@@ -75,7 +75,7 @@
 /*Header - Menu-Nav*/
 
 nav ul li {
-  margin-left: 1rem;
+  
   list-style: none;
   display: inline;
   font-size: 15.6px;
@@ -83,10 +83,36 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: var(--secondary);
+  padding: 1.7rem .5rem;
+  transition: all .5s;
 }
-nav ul li a img {
-  margin-right: 0.2rem;
+nav ul li a i {
+  margin-right: 0.3rem;
   width: 1.2rem;
+  transition:all .5s;
+}
+
+nav ul li a:hover i{
+  
+  transform: scale(1.4);
+  color: #f0a83e;
+}
+
+nav ul li a:hover {
+  
+  transform: scale(1.4);
+  color: #f0a83e;
+  background: #3c2313;
+  
+}
+
+/*Header - Hamburguer-Menu*/
+
+#hamburguer{
+  color: var(--secondary);
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /*Main - Banner*/
@@ -112,10 +138,12 @@ nav ul li a img {
   color: var(--main);
   font-size: 36px;
   font-weight: 400;
+  text-align: center;
 }
 #banner-text P {
   font-size: 19px;
   margin: 1rem 0;
+  text-align: center;
 }
 #banner-text a {
   text-decoration: none;
@@ -125,6 +153,13 @@ nav ul li a img {
   font-size: 19px;
   border-radius: 8px;
   text-transform: uppercase;
+  transition:all .5s;
+}
+#banner-text a:hover {
+  transform: scale(1.1);
+  
+  background-color: #3c2313;
+  color: #f0a83e;
 }
 
 /*Main - Section Categories*/
@@ -144,6 +179,7 @@ nav ul li a img {
   font-weight: bold;
   color: var(--main);
   margin-bottom: 2rem;
+  text-align: center;
 }
 #product-categories ul li {
   display: inline;
@@ -158,10 +194,10 @@ nav ul li a img {
 #cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 6rem;
+  justify-content:center;
+  margin: 0 10%;
   flex-wrap: wrap;
-  align-items: center;
+  gap: 5%;
 }
 .card {
   display: flex;
@@ -171,9 +207,15 @@ nav ul li a img {
   font-size: 18px;
   background-color: #faf9f5;
   margin: 1.5rem 0;
+  border-radius: 25px;
+  transition:all .5s;
+}
+.card:hover{
+  transform: scale(1.1);
 }
 .card img {
   width: fit-content;
+  border-radius: 25px;
 }
 .card p {
   color: var(--main);
@@ -189,7 +231,7 @@ nav ul li a img {
   text-align: center;
   align-items: center;
   color: var(--main);
-  margin: 6rem;
+  margin: 10%;
 }
 #form h2 {
   font-size: 30px;
@@ -245,8 +287,7 @@ footer {
   background-color: var(--tertiary);
   justify-content: space-between;
   align-items: center;
-  height: 65px;
-  padding: 0 3rem;
+  padding: 2% 5%;
 }
 #suscription-title {
   display: flex;
@@ -257,6 +298,7 @@ footer {
   margin-left: 15px;
   font-size: 24px;
 }
+
 #suscription-inputs input,
 button {
   border: none;
@@ -264,8 +306,10 @@ button {
 }
 #suscription-inputs input {
   height: 45px;
-  width: 350px;
-  padding-left: 15px;
+  width: 300px;
+  padding-left: 4%;
+  font-size: .8rem;
+
 }
 #suscription-inputs button {
   background-color: var(--main);
@@ -284,16 +328,16 @@ button {
   background-color: var(--main);
   align-items: center;
   height: 60vh;
-  padding:  0 15vw 0 6rem;
+  padding:  5% 5%;
 }
-#container {
-    position: absolute;
+/* #container {
+    
     left: 0;
     width: 100%;
-    height: 60vh;
+    height: 100%;
     background: linear-gradient(to left, #180e08, transparent);
     z-index: 1;
-  }
+  } */
 #data-company {
   display: flex;
   flex-direction: column;
@@ -302,10 +346,10 @@ button {
 }
 .data-company-items {
   display: flex;
-  margin: 1rem 0;
+  margin: 2% 0;
 }
 .data-company-items img {
-  width: 5rem;
+  width: 4rem;
 }
 .data-company-items h3 {
   font-size: 1.5rem;
@@ -345,11 +389,11 @@ button {
 
 #sticky{
     width: 8rem;
-    z-index: 2;
+    z-index: 999;
     position: fixed;
     bottom: 50px;
     right: -10vw;
-    opacity: .8;
+    transition:all .5s;
 }
 #sticky:hover{
   opacity: 1!important;
@@ -367,9 +411,43 @@ button {
 }
 @keyframes rolling-back {
     0% {
-        transform: translateX(-53.5vw) rotate(-720deg);
+        transform: translateX(-53.5vw) rotate(720deg);
     }
     100% {
-        transform: translateX(-23vw, 500px) rotate(0deg);
+        transform: translateX(-83vw, 500px) rotate(0deg);
+    }
+}
+@media only screen and (max-width: 768px){
+    #header nav{
+      display: none;
+    }
+    #hamburguer{
+      display: block;
+    }
+    #top-header{
+      display: none;
+    }
+    .logo{
+      font-size: 85%;
+    }
+    #data input {
+      width: 90vw;
+    }
+    #banner-text h1 {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    #suscription-inputs input {
+      width: 60vw;
+      font-size: .8rem;
+    }
+    #suscription{
+      flex-direction: column;
+    }
+    #contact {
+      flex-direction: column;
+    }
+    #data-company{
+      order: 2;
     }
 }
