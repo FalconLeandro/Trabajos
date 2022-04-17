@@ -1,7 +1,7 @@
 # PetShop
 
 
-![Vista Previa](../img/unknown.png)
+![Vista Previa](../dist/img/unknown.png)
 
 
 
