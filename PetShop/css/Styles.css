@@ -83,7 +83,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: var(--secondary);
-  padding: 1.7rem .5rem;
+  padding: 7% .5rem;
   transition: all .5s;
 }
 nav ul li a i {
