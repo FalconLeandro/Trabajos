@@ -34,7 +34,7 @@
           height: 40px;
           color: var(--main);
           text-transform: uppercase;
-
+          
           
 
           input,
@@ -50,6 +50,7 @@
             padding: 0 10px;
             z-index: 1;
             color: var(--secondary);
+            
           }
           .text {
             position: absolute;
@@ -61,11 +62,13 @@
             display: block;
             transition: 0.5s;
             pointer-events: none;
+            
           }
           input:focus + .text,
           input:valid + .text {
             top: -35px;
             left: -10px;
+            
           }
 
           .line {
@@ -78,6 +81,7 @@
             transition: 0.5s;
             border-radius: 2px;
             pointer-events: none;
+            box-shadow: 0 19px 38px rgba(79, 225, 208,0.30), 0 15px 12px rgba(79, 225, 208,0.22);
           }
           input:focus ~ .line,
           input:valid ~ .line {
@@ -113,6 +117,12 @@
           color: var(--secondary);
           font-size: 18px;
           border-radius: 2px;
+          transition: all .5s ease-in;
+          box-shadow: 0 19px 38px rgba(79, 225, 208,0.30), 0 15px 12px rgba(79, 225, 208,0.22);
+          &:hover{
+            transform: scale(1.1);
+           
+          }
           
         }
         #submit{
@@ -122,6 +132,7 @@
         input[type="number"]::-webkit-outer-spin-button {
           -webkit-appearance: none;
           margin: 0;
+          
         }
 
         input[type="number"] {

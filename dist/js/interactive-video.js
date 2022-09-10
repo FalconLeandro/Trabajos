@@ -51,10 +51,10 @@ document.getElementById("sk").addEventListener(
 var mediaQ = window.matchMedia("(min-width: 625px)");
 
 if (mediaQ.matches) {
-  var v1 = "dist/img/11.mp4";
-  var v2 = "dist/img/12.mp4";
-  var v3 = "dist/img/10.mp4";
-  var v4 = "dist/img/7.mp4";
+  var v1 = "dist/img/11.mp4#t=1.2";
+  var v2 = "dist/img/12.mp4#t=1";
+  var v3 = "dist/img/10.mp4#t=1";
+  var v4 = "dist/img/7.mp4#t=0.5";
   var v5 = "dist/img/6.mp4";
   var v6 = "dist/img/8.mp4";
 

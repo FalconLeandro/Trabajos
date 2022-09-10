@@ -23,17 +23,18 @@
   }
   .owl-prev, .owl-next{
     position: absolute;
-    top: 25%;
-    font-size: 6rem !important;
+    top: 40vh;
+    font-size: 4rem !important;
     z-index: 999;
     color: var(--main)!important;
     font-family: "Montserrat", sans-serif !important;
+    transition: all .5s;
   }
   .owl-prev{
-    left: 1%;
+    left: 1.5%;
   }
   .owl-next{
-    right: 1%;
+    right: 1.5%;
   }
   .owl-prev span, .owl-next span{
     font-family: inherit;
@@ -44,8 +45,12 @@
   }
    
   .carousel {
-    top: 60px;
+    top: -60px;
     padding: 0% 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
     .card {
       background: rgba(0, 0, 0, 0.2);
@@ -53,15 +58,18 @@
       border-radius: 6px;
       padding: 15px 0px;
       text-align: center;
-      transition: all 1.2s ease;
+      transition: all .8s ease;
 
       &:hover {
-        background: rgba(0, 0, 0, 0.5);
+        background: linear-gradient( 45deg,transparent,transparent,var(--secondary)) ;
+        
         .box {
           transform: scale(0.95);
           img {
+            // box-shadow: 0 0 10px var(--main);
             
-            transition: 1s;
+            // border: solid 1px var(--main);
+            transition: .5s;
           }
         }
       }
@@ -74,7 +82,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: 1.2s;
+        transition: .8s;
         .text {
           font-size: 25px;
           font-weight: 500;
@@ -106,7 +114,7 @@
   outline: none !important;
   border-radius: 50%;
   margin-top: 0 5px;
-  border: 2px solid var(--main) !important;
+  border: 1px solid var(--main) !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {

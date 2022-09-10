@@ -32,6 +32,8 @@
     font-size: 30px;
     width: 30px;
     height: 30px;
+    transform: rotate(45deg);
+    transition: .5s ease-out;
   }
 
   a:nth-child(1) i {
@@ -58,7 +60,14 @@
       transform: translate(0);
     }
   }
+  a:hover i{
+    transform: rotate(0deg);
+  }
 }
+
+
+
+
 
 @media screen and (max-width: 760px){
   .social {

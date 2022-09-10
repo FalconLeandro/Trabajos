@@ -24,10 +24,9 @@
   }
   
   i{
+    
     color: var(--main);
-    margin-right: 1rem;
     animation: latidos 800ms ease-out infinite alternate;
-    transform-origin: center;
   }
   
 
@@ -106,11 +105,11 @@
 @keyframes latidos {
   0% {
 		border-color: #0eddc5;
-		box-shadow: 0 0 5px rgba(2, 109, 136, 0.2), inset 0 0 5px rgba(1, 36, 42, 0.1);
+		text-shadow: 0 0 0px rgba(2, 109, 136, 0.2); 
     }	
     100% {
 		border-color: var(--main);
-		box-shadow: 0 0 20px rgba(7, 184, 184, 0.6), inset 0 0 10px rgba(5, 130, 146, 0.4);
+		text-shadow: 0 0 15px rgba(7, 184, 184, 1);
     }
 }
 #conta{
