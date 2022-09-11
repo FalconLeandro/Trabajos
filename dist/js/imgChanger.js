@@ -1,4 +1,4 @@
-var arreglo=['dist/img/pexels-alex-conchillos-3888585.jpg','dist/img/pexels-veeterzy-39811.jpg','dist/img/fotoPerfil2.jpg']
+var arreglo=['dist/img/fotoPerfil1.jpg','dist/img/fotoPerfil2.jpg','dist/img/fotoPerfil3.jpg']
 var i = 0;
 
 document.getElementById('fotoPerfil').addEventListener("click", function( event ) {
