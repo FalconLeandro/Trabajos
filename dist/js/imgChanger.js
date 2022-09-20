@@ -1,4 +1,4 @@
-var arreglo=['dist/img/fotoPerfil1.jpg','dist/img/fotoPerfil2.jpg','dist/img/fotoPerfil3.jpg']
+var arreglo=['dist/img/fotoPerfil0.jpg','dist/img/fotoPerfil3.jpg','dist/img/fotoPerfil2.jpg']
 var i = 0;
 
 document.getElementById('fotoPerfil').addEventListener("click", function( event ) {
