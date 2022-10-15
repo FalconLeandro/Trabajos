@@ -5,14 +5,14 @@ footer {
   .credits{
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     
     small{
       color: #5b5e62;
       text-decoration: none;
     }
     a{
-      margin: 10%;
+      margin: 10% 0;
       text-decoration: none;
       
       color: #A6ABB2;

@@ -4,8 +4,11 @@
   overflow: hidden;
   text-align: center;
   height: 100vh;
-  z-index: 3;
-
+  z-index: 5;
+  .max-width span{
+    position: absolute;
+    top: 5%;
+  }
   &:before {
     content: "";
     background: url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat center;
