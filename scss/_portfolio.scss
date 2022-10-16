@@ -5,9 +5,18 @@
   text-align: center;
   height: 100vh;
   z-index: 5;
-  .max-width span{
+  .max-width .newOld{
+    display: flex;
     position: absolute;
-    top: 5%;
+    bottom: 15%;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 999;
+    span{
+      font-size: x-large;
+      color: var(--main);
+    }
   }
   &:before {
     content: "";

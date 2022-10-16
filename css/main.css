@@ -350,9 +350,18 @@
   height: 100vh;
   z-index: 5;
 }
-.portfolio .max-width span {
+.portfolio .max-width .newOld {
+  display: flex;
   position: absolute;
-  top: 5%;
+  bottom: 15%;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0 10%;
+  z-index: 999;
+}
+.portfolio .max-width .newOld span {
+  font-size: x-large;
+  color: var(--main);
 }
 .portfolio:before {
   content: "";
