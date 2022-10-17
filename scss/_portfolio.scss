@@ -66,17 +66,19 @@
     
     .card {
       background: rgba(0, 0, 0, 0.2);
-
       border-radius: 6px;
       padding: 15px 0px;
       text-align: center;
       transition: all .8s ease;
 
       &:hover {
-        background: linear-gradient( 45deg,transparent,transparent,var(--secondary)) ;
+        background: rgba(0, 0, 0, 0);
         
         .box {
           transform: scale(0.95);
+          a p{
+            color: var(--main);
+          }
           img {
             // box-shadow: 0 0 10px var(--main);
             

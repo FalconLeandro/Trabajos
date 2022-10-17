@@ -420,10 +420,13 @@
   transition: all 0.8s ease;
 }
 .portfolio .carousel .card:hover {
-  background: linear-gradient(45deg, transparent, transparent, var(--secondary));
+  background: rgba(0, 0, 0, 0);
 }
 .portfolio .carousel .card:hover .box {
   transform: scale(0.95);
+}
+.portfolio .carousel .card:hover .box a p {
+  color: var(--main);
 }
 .portfolio .carousel .card:hover .box img {
   transition: 0.5s;
