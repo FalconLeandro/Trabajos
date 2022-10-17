@@ -12,7 +12,7 @@
   top: 0;
   overflow: hidden;
   text-align: center;
-  width: -webkit-fill-available;
+  width: stretch;
 }
 .banner .banner-content {
   display: flex;
@@ -621,6 +621,11 @@
 }
 .soft-skills .ssContainer {
   padding: 7% 10% 10%;
+}
+@media screen and (max-width: 620px) {
+  .soft-skills .ssContainer {
+    padding: 20% 10% 10%;
+  }
 }
 .soft-skills .ssContainer .softskills {
   background-color: rgba(0, 0, 0, 0.2);
