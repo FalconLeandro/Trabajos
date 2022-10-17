@@ -61,7 +61,7 @@
     top: 0;
     overflow: hidden;
     text-align: center;
-    width: stretch; 
+    width: 100%; 
     
   }
   .banner-content {
@@ -249,14 +249,18 @@
 }
 
 @media screen and (max-width: 480px) {
+  .banner-titulo{
+    width: 90vw !important;
+  }
   .about-me {
     flex-direction: column;
+    justify-content: center!important;
     .img img {
       width: 50vw;
       margin-bottom: 20px;
     }
     .about-me_texto div {
-      width: 100vw !important;
+      width: 90vw !important;
     }
   }
 }
