@@ -17,7 +17,7 @@
 .banner .banner-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 2;
   max-height: 1440px;
@@ -71,7 +71,6 @@
 .banner .banner-content .banner-titulo .wordChanger ul,
 .banner .banner-content .banner-titulo .wordChanger p {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
   font-size: calc(0.5em + 2vw);
   text-transform: uppercase;
   text-decoration: none;
@@ -358,7 +357,7 @@
 .portfolio .max-width .newOld {
   display: flex;
   position: absolute;
-  bottom: 15%;
+  top: 15%;
   width: 100vw;
   justify-content: space-between;
   padding: 0 10%;
@@ -366,7 +365,7 @@
 }
 .portfolio .max-width .newOld span {
   font-size: x-large;
-  color: var(--main);
+  color: var(--yellow);
 }
 .portfolio:before {
   content: "";
@@ -405,6 +404,7 @@
   transform: scale(1.2);
 }
 .portfolio .carousel {
+  position: relative;
   top: -60px;
   padding: 0% 5%;
   height: 100vh;
@@ -469,12 +469,17 @@
   border-radius: 50%;
   margin-top: 0 5px;
   border: 1px solid var(--main) !important;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
+}
+.owl-dot:hover {
+  transform: scale(1.1);
+  background-color: var(--main) !important;
 }
 
 .owl-dot.active {
   width: 35px;
   border-radius: 19px;
+  background-color: var(--main) !important;
 }
 
 .owl-stage {
@@ -956,6 +961,7 @@ footer .credits a span {
   --secondary:#040404;
   --tertiary:#2f2f2f;
   --quaternary:#fff;
+  --yellow:#e1dc4f;
 }
 
 html, body {

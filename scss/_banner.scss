@@ -67,7 +67,7 @@
   .banner-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 2;
     max-height: 1440px;
@@ -122,7 +122,7 @@
         ul,
         p {
           margin: 0;
-          font-family: "Montserrat", sans-serif;
+          // font-family: "Montserrat", sans-serif;
           font-size: calc(0.5em + 2vw);
           text-transform: uppercase;
           text-decoration: none;
