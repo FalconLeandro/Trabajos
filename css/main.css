@@ -365,7 +365,7 @@
 }
 .portfolio .max-width .newOld span {
   font-size: x-large;
-  color: var(--yellow);
+  color: gray;
 }
 .portfolio:before {
   content: "";
@@ -483,7 +483,8 @@
 }
 
 .owl-stage {
-  transition: all 1s ease 0s !important;
+  transition: none !important;
+  animation: none !important;
 }
 
 .about-me {

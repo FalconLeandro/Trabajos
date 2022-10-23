@@ -2,8 +2,7 @@ $(document).ready(function () {
   $(".carousel").owlCarousel({
     margin: 20,
     loop: true,
-    autoplayTimeOut: 2000,
-    autoplayHoverPause: true,
+    nav: true,
     responsive: {
       0: {
         items: 1,

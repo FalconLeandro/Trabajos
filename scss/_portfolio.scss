@@ -17,7 +17,7 @@
     
     span{
       font-size: x-large;
-      color: var(--yellow);
+      color: gray;
     }
   }
   &:before {
@@ -144,5 +144,6 @@
   background-color: var(--main)!important;
 }
 .owl-stage{
-  transition: all 1s ease 0s !important;
+  transition: none!important;
+  animation: none!important;
 }
