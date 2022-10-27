@@ -1,4 +1,5 @@
 const header = document.querySelector(".main-header");
+const arrow = document.querySelector(".scroll-arrow");
 
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;
@@ -6,9 +7,19 @@ window.addEventListener("scroll", () => {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
+  };
+  if (scrollPos > 100) {
+    arrow.style.opacity = '0';
+  
+  } else {
+    arrow.style.opacity = '1';
   }
 });
 
+// arrow.addEventListener('click', () =>{
+//   window.location.hash = "#about-me";
+  
+// });
 const social = document.querySelector(".social");
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;

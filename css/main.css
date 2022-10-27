@@ -17,7 +17,7 @@
 .banner .banner-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   z-index: 2;
   max-height: 1440px;
@@ -188,6 +188,56 @@
   }
   .about-me .about-me_texto div {
     width: 90vw !important;
+  }
+}
+.scroll-arrow,
+.scroll-arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.scroll-arrow {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.scroll-arrow a {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  left: 0px;
+}
+
+.scroll-arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
   }
 }
 .main-header {
@@ -483,7 +533,6 @@
 }
 
 .owl-stage {
-  transition: none !important;
   animation: none !important;
 }
 
@@ -492,6 +541,7 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
+  margin-bottom: 25%;
   justify-content: space-evenly;
 }
 .about-me div img {
@@ -505,6 +555,11 @@
   display: flex;
   flex-direction: column;
 }
+.about-me .about-me_texto a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
 .about-me .about-me_texto #texto {
   color: white;
   width: 40vw;
@@ -512,11 +567,9 @@
   cursor: pointer;
   margin: 3% 0;
   background: rgba(255, 255, 255, 0.1);
-  padding: 9%;
   transition: all 0.4s ease-in-out;
 }
 .about-me .about-me_texto #texto#texto:hover {
-  background-color: rgba(255, 255, 255, 0.2);
   transform: scale(1.025);
 }
 .about-me .about-me_texto #texto h2 {
@@ -524,10 +577,12 @@
   text-decoration: none;
   font-size: calc(0.9rem + 0.7vw);
   font-weight: unset;
+  padding: 9%;
   animation: aparece 2s;
 }
 .about-me .about-me_texto #texto p {
-  font-size: calc(0.8rem + 0.2vw);
+  padding: 9%;
+  font-size: calc(0.9rem + 0.2vw);
   animation: aparece 2s;
 }
 

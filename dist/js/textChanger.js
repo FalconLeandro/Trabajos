@@ -11,7 +11,7 @@ at Siglo XXI University, 3 subjects away from obtaining my intermediate
 title of University Technician in Systems Analysis. At the same time, 
 I complement my studies with the Digital House Certified Tech Developer career.</p>`;
 
-const p3=`<p>Here some works, I hope you like them! &#128512</p>`;
+const p3=`<a href='#portfolio'><p>Here some works, I hope you like them! &#128512</p></a>`;
 
 const texto=document.getElementById('texto');
 
@@ -25,7 +25,7 @@ texto.addEventListener("click", function( event ) {
     i++;
   } else {
     texto.innerHTML=hi;
-    window.location.hash = "#portfolio";
+    // window.location.hash = "#portfolio";
     i=0;
   }
   

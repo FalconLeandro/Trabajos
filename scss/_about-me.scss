@@ -10,6 +10,7 @@
   width: 100vw;
   height: 100vh;
   // padding: 5% 0;
+  margin-bottom: 25%;
   justify-content: space-evenly;
   div img {
     // left: 50%;
@@ -24,7 +25,11 @@
     display: flex;
     flex-direction: column;
     // top: -35rem;
-    
+    a{
+      width: 100%;
+      text-decoration: none;
+      color: white;
+    }
     #texto {
       color: white;
       // left: 50vw;
@@ -33,10 +38,9 @@
       cursor: pointer;
       margin: 3% 0;
       background: rgba(255, 255, 255, 0.1);
-      padding: 9%;
+      
       transition: all .4s ease-in-out;
       &#texto:hover{
-        background-color :rgba(255, 255, 255, 0.2);;
         transform: scale(1.025);
       }
       
@@ -46,11 +50,15 @@
         text-decoration: none;
         font-size: calc(0.9rem + 0.7vw);
         font-weight: unset;
+        padding: 9%;
         animation: aparece 2s;
       }
+      
       p {
-        font-size: calc(0.8rem + 0.2vw);
+        padding: 9%;
+        font-size: calc(0.9rem + 0.2vw);
         animation: aparece 2s;
+        
       }
     }
   }
