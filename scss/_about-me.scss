@@ -62,7 +62,9 @@
       }
     }
   }
-  
+  @media screen and (min-width: 1020px) {
+    margin-bottom: auto;
+  }
 }
 
 @keyframes aparece {

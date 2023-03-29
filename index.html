@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/4a214415fb.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -78,7 +78,7 @@
     <main>
         <div class="banner content" id="banner">
             <div class="banner-video">
-                <video autobuffer loop="" autoplay muted >
+                <video autobuffer loop="" autoplay muted>
                     <source src="dist/img/videooFog.mp4" type="video/mp4">
 
                 </video>
@@ -102,13 +102,13 @@
                     </div>
                     <div class="scroll-arrow"><a href="#about-me"></a></div>
                 </div>
-                
+
 
                 <div class="about-me " id="about-me">
                     <!-- <input id="about-me" type="button" value=""> -->
                     <div class="img">
                         <img id="fotoPerfil" src="dist/img/fotoPerfil2bis.jpg" alt="fotoPerfil" data-aos="fade-zoom-in"
-                            data-aos-easing="ease-in-back" data-aos-offset="200" data-aos-duration="500">
+                            data-aos-easing="ease-in-back" data-aos-offset="400" data-aos-duration="500">
                     </div>
                     <div class="about-me_texto" id="about-me_texto">
                         <div id="texto" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="200"
@@ -116,138 +116,74 @@
                             <h2 id="hi">Hi! I am Lea</h2>
                         </div>
 
-                    </div> 
+                    </div>
 
                 </div>
-                
+
             </div>
 
         </div>
 
         <div class="portfolio" id="portfolio">
+            <!-- Ventana modal, por defecto no visiblel -->
+            <div id="ventanaModal" class="modal">
+                <div class="contenido-modal"></div>
+                <span class="cerrar">&times;</span>
+            </div>
             <div class="max-width">
                 <h3 data-aos="fade-left" data-aos-duration="1000">Portfolio</h3>
                 <div class="carousel owl-carousel">
+                    <div  class="card">
+                        <div  class="box">
+                            <img id="101" src="https://d2u4q3iydaupsp.cloudfront.net/e91bTvx5YAPJnPNSJOeDGRPmCBTWWKMCCfOGeQz3dkRCwJUcN42Ra9Cf6oI3VhfCmwHoQg9seMLzch66jrDXTbyPxqqQb6z2cXHw8VFsMnjN7d5kIYSY45Kx3FCq3gOI" alt="">
+                            <div class="text">Coming Soon</div>
+                            <p>Work in Progress</p>
+                        </div>
+                    </div>
                     <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="https://media.makeameme.org/created/get-out-of-cba53a79c0.jpg"><img
-                                    src="https://d2u4q3iydaupsp.cloudfront.net/e91bTvx5YAPJnPNSJOeDGRPmCBTWWKMCCfOGeQz3dkRCwJUcN42Ra9Cf6oI3VhfCmwHoQg9seMLzch66jrDXTbyPxqqQb6z2cXHw8VFsMnjN7d5kIYSY45Kx3FCq3gOI"
-                                    alt="">
-                                <div class="text">Coming Soon</div>
-                                <p>Working in Progress</p>
-                            </a>
+                        <div  class="box">
+                            <img id="102" src="dist/img/Captura-sitio-laberinto-oficial.png" alt="Imagen sitio web Laberinto Oficial">
+                            <div class="text">Laberinto de Borges</div>
+                            <p>Official - Freelance</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <a target="_blank" href="https://falconleandro.github.io/laberinto/"><img src="dist/img/CapturaLaberinto.png" alt="">
-                                <div class="text">Laberinto de Borges</div>
-                                <p>Proyecto personal</p>
-                            </a>
+                            <img id="103" src="dist/img/CapturaLaberinto.png" alt="Imagen sitio alternativo Laberinto ">
+                            <div class="text">Laberinto de Borges</div>
+                            <p>Alternative - Freelance</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <a target="_blank" href="https://falconleandro.github.io/femiciencia/"><img src="dist/img/Captura de pantalla 2022-10-16 055816.png" alt="">
-                                <div class="text">Femiciencia</div>
-                                <p>Proyecto personal</p>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="https://falconleandro.github.io/Frontend/"><img
-                                    src="dist/img/unknown.png" alt="">
-                                <div class="text">Trabajos Frontend 1</div>
-                                <p>Cards - Diseño propio</p>
-                            </a>
+                            <img id="104" src="dist/img/Captura de pantalla 2022-10-16 055816.png" alt="Imagen sitio web Femiciencia">
+                            <div class="text">Femiciencia</div>
+                            <p>Freelance</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <a target="_blank"
-                                href="https://falconleandro.github.io/Frontend/ExamenPracticoFinal-FE1-LeandroFalcon/index.html"><img
-                                    src="dist/img/examen.JPG" alt="">
-                                <div class="text">Manage</div>
-                                <p>Proyecto de Digital House</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="https://sitioinformativohotel.wordpress.com/"><img
-                                    src="dist/img/sitioInformativoHotel.png" alt="">
-                                <div class="text">Sitio Info Hotel</div>
-                                <p>Proyecto personal en WordPress</p>
-                            </a>
+                            <img id="105" src="dist/img/unknown.png" alt="">
+                            <div class="text">Trabajos Frontend 1</div>
+                            <p>Cards Desing</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
-                            <a target="_blank" href="ToDo-version-7/index.html"><img src="dist/img/todo.JPG" alt="">
-                                <div class="text">ToDoApp</div>
-                                <p>Proyecto de Digital House</p>
-                            </a>
+                            <img id="106" src="dist/img/sitioInformativoHotel.png" alt="">
+                            <div class="text">Sitio Info Hotel</div>
+                            <p>Freelance</p>
+                            
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="https://falconleandro.github.io/Frontend/PetShop/index.html"><img
-                                    src="dist/img/CapturaPetshop.PNG" alt="">
-                                <div class="text">Pet Shop</div>
-                                <p>Proyecto de Digital House</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="Heroes/index/index.html"><img src="dist/img/heroes.png" alt="">
-                                <div class="text">Heroes</div>
-                                <p>Proyecto de Digital House</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="https://falconleandro.github.io/Frontend/Pizzeria/index.html"><img
-                                    src="dist/img/pizza.JPG" alt="">
-                                <div class="text">Pizzeria</div>
-                                <p>Proyecto de Digital House</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="https://falconleandro.github.io/Frontend/Cv/index.html"><img
-                                    src="dist/img/cv.JPG" alt="">
-                                <div class="text">CV Batman</div>
-                                <p>Proyecto de Digital House</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <a target="_blank" href="https://falconleandro.github.io/Frontend/LemonPie/index.html"><img
-                                    src="dist/img/lemonPie.JPG" alt="">
-                                <div class="text">Lemon Pie</div>
-                                <p>Proyecto de Digital House</p>
-                            </a>
-                        </div>
-                    </div>
-
-                    
-                    
                 </div>
                 <div class="newOld">
                     <span>new &#9754</span>
                     <span>&#9755 old </span>
                 </div>
-                
+
             </div>
-            
+
         </div>
         <div class="skillset" id="skillset">
             <div id="hard-skills">
@@ -276,39 +212,10 @@
                                 </span>
                             </div>
                             <div>
-                                <i data-aos="flip-right" data-aos-duration="1000" class="fab fa-git iconoskill"></i>
+                                <i data-aos="flip-right" data-aos-duration="1000"
+                                    class="fa-brands fa-react iconoskill"></i>
                                 <span class="tooltip">
-                                    GIT
-                                </span>
-                            </div>
-                            <div>
-                                <i data-aos="flip-right" data-aos-duration="1000" class="fas fa-cubes iconoskill"></i>
-                                <span class="tooltip">
-                                    Programacion Orientada a Objetos
-                                </span>
-                            </div>
-                            <div>
-                                <i data-aos="flip-right" data-aos-duration="1000" class="fab fa-node-js iconoskill"></i>
-                                <span class="tooltip">
-                                    Node.js
-                                </span>
-                            </div>
-                            <div>
-                                <i data-aos="flip-right" data-aos-duration="1000" class="fab fa-sass iconoskill"></i>
-                                <span class="tooltip">
-                                    SASS
-                                </span>
-                            </div>
-                            <div>
-                                <i data-aos="flip-right" data-aos-duration="1000" class="fab fa-java iconoskill"></i>
-                                <span class="tooltip">
-                                    Java
-                                </span>
-                            </div>
-                            <div>
-                                <i data-aos="flip-right" data-aos-duration="1000" class="fas fa-server iconoskill"></i>
-                                <span class="tooltip">
-                                    SQL
+                                    React
                                 </span>
                             </div>
                             <div>
@@ -325,10 +232,40 @@
                                 </span>
                             </div>
                             <div>
+                                <i data-aos="flip-right" data-aos-duration="1000" class="fab fa-sass iconoskill"></i>
+                                <span class="tooltip">
+                                    SASS
+                                </span>
+                            </div>
+                            <div>
                                 <i data-aos="flip-right" data-aos-duration="1000"
                                     class="fab fa-wordpress iconoskill"></i>
                                 <span class="tooltip">
                                     WordPress
+                                </span>
+                            </div>
+                            <div>
+                                <i data-aos="flip-right" data-aos-duration="1000" class="fas fa-cubes iconoskill"></i>
+                                <span class="tooltip">
+                                    Programacion Orientada a Objetos
+                                </span>
+                            </div>
+                            <div>
+                                <i data-aos="flip-right" data-aos-duration="1000" class="fab fa-java iconoskill"></i>
+                                <span class="tooltip">
+                                    Java
+                                </span>
+                            </div>
+                            <div>
+                                <i data-aos="flip-right" data-aos-duration="1000" class="fas fa-server iconoskill"></i>
+                                <span class="tooltip">
+                                    SQL
+                                </span>
+                            </div>
+                            <div>
+                                <i data-aos="flip-right" data-aos-duration="1000" class="fab fa-node-js iconoskill"></i>
+                                <span class="tooltip">
+                                    Node.js
                                 </span>
                             </div>
                         </div>
@@ -374,7 +311,7 @@
             <h3 data-aos="fade-left" data-aos-duration="1000">Contact</h3>
             <form action="https://formsubmit.co/467991df3709f0196227989efe2b1fd6" method="POST" class="container"
                 data-aos="fade-right" data-aos-duration="1000">
-                <input type="hidden" name="_next" value=https://falconleandro.github.io/ThanksPage />
+                <input type="hidden" name="_next" value=https://falconleandro.github.io/ThanksPagePortfolio/ />
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Mensaje desde el Portfolio wachin!!!">
                 <div class="row100">
@@ -415,14 +352,16 @@
                         <input type="submit" name="submit" value="SEND">
                     </div>
                     <div class="social-contact">
-                        <a target="_blank" href="https://github.com/FalconLeandro"><i class="fab fa-github-square"></i></a>
+                        <a target="_blank" href="https://github.com/FalconLeandro"><i
+                                class="fab fa-github-square"></i></a>
                         <a target='_blank' href="https://www.linkedin.com/in/leandro-falcon/"><i
                                 class="fab fa-linkedin"></i></a>
                         <a target='_blank' href="https://www.instagram.com/kronosteo_art/"><i
                                 class="fab fa-instagram-square"></i></a>
                         <a target='_blank' href="https://api.whatsapp.com/send?phone=5493548583686"><i
                                 class="fab fa-whatsapp"></i></a>
-                        <a target='_blank' href="https://drive.google.com/file/d/1VAIhd_rbayCU6h3ntX3z29q9ygoZFx2e/view?usp=sharing"><i
+                        <a target='_blank'
+                            href="https://drive.google.com/file/d/1VAIhd_rbayCU6h3ntX3z29q9ygoZFx2e/view?usp=sharing"><i
                                 class="far fa-file-alt"></i></a>
                     </div>
                 </div>
@@ -430,7 +369,7 @@
         </div>
     </main>
     <footer>
-        
+
         <div class="credits">
             <a href="#banner"><span>lea</span>dev</a>
             <small>Developed and designed by Leandro Falcón</small>
@@ -449,6 +388,7 @@
     <script src="dist/js/cerrarMenu.js"></script>
     <script src="dist/js/smoothScroll.js"></script>
     <script src="dist/js/imgChanger.js"></script>
+    <script src="dist/js/modal.js"></script>
     <script async>
         var loader = document.getElementById('preloader');
         window.addEventListener('load', function () {

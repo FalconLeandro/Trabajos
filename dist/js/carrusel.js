@@ -16,6 +16,10 @@ $(document).ready(function () {
         items: 3,
         nav: false,
       },
+      1600: {
+        items: 4,
+        nav: false,
+      },
     },
   });
 });

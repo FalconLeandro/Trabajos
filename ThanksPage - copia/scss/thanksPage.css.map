@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAO;CAK5B;;AAND,AAEI,IAFA,CAEA,CAAC,CAAA;EACG,eAAe,EAAE,MAAM;CAE1B",
-  "sources": [
-    "thanksPage.scss"
-  ],
-  "names": [],
-  "file": "thanksPage.css"
-}
