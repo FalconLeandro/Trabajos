@@ -19,10 +19,10 @@ let modalesContenido = [{
   id: 101,
   title: 'Coming Soon',
   text: 'Actualmente me encuentro desarrollando un proyecto donde aplico mis nuevos conocimientos en React y uso de APIS. "Programar es como cualquier otra habilidad, cuanto más practiques, mejor te volverás". - Satya Nadella',
-  image: './dist/img/',
+  image: './dist/img/fog-g97741b634_1920.jpg',
   techList: ['<span class="techs">html</span>', '<span class="techs">js</span>', '<span class="techs">css</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/PetShop/index.html',
-  linkGithub: './LemonPie/index.html'
+  linkGithub: ''
 }, {
   id: 102,
   title: 'Laberinto de Borges oficial',
@@ -30,7 +30,7 @@ let modalesContenido = [{
   image: './dist/img/capturaLaberintoOficial.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://laberintodeborges.com/',
-  linkGithub: './LemonPie/index.html'
+  linkGithub: ''
 }, {
   id: 103,
   title: 'Laberinto de Borges alternativa',
@@ -38,7 +38,7 @@ let modalesContenido = [{
   image: './dist/img/capturaLaberintoAlt.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/laberinto/',
-  linkGithub: './LemonPie/index.html'
+  linkGithub: ''
 }, {
   id: 104,
   title: 'Femiciencia',
@@ -46,7 +46,7 @@ let modalesContenido = [{
   image: './dist/img/capturaFemiciencia.png',
   linkSitioWeb: '',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>'],
-  linkSitioWeb: 'https://falconleandro.github.io/Frontend/Pizzeria/index.html',
+  linkSitioWeb: 'https://femiciencia.com/',
   linkGithub: ''
 }, {
   id: 105,
@@ -55,15 +55,24 @@ let modalesContenido = [{
   image: './dist/img/capturaTrabajosFrontend.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/',
-  linkGithub: './LemonPie/index.html'
+  linkGithub: ''
 }, {
   id: 106,
+  title: 'Trabajos en React',
+  text: 'Sitio informátivo de un Hotel 4 estrellas ubicado en la ciudad de Puerto Madryn, Chubut de uso interno para el huésped. Cuenta entre sus principales caracteristicas: check-in, consulta de menúes, turnos spa, info general de la ciudad. Primer trabajo freelance.',
+  image: 'dist/img/reactCaptura.png',
+  techList: ['<span class="techs">html</span>','<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
+  linkSitioWeb: 'https://falconleandro.github.io/reactTrabajos/',
+  linkGithub: ''
+},
+{
+  id: 107,
   title: 'Sitio Info Hotel',
   text: 'Sitio informátivo de un Hotel 4 estrellas ubicado en la ciudad de Puerto Madryn, Chubut de uso interno para el huésped. Cuenta entre sus principales caracteristicas: check-in, consulta de menúes, turnos spa, info general de la ciudad. Primer trabajo freelance.',
   image: '/dist/img/capturaSitioHotel.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://sitioinformativohotel.wordpress.com/',
-  linkGithub: './LemonPie/index.html'
+  linkGithub: ''
 }
 ];
 
@@ -97,7 +106,7 @@ function atraparIdCardClickeada() {
                 </div>
             </div>
             <div class="contenedor-modal-preview">
-                <img class="modal-image" src="${modalesContenido[i].image}"/>
+                <img class="${id == 101 || id == 104 || id == 105 || id == 106 ? 'animacion-none' : 'modal-image'}" src="${modalesContenido[i].image}"/>
                 <div id="modal-preview-shadow"></div>
                 <div class="modal-preview-enlaces">
                     <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">GitHub</a>

@@ -407,8 +407,9 @@
 }
 .portfolio .max-width .newOld {
   display: flex;
-  position: absolute;
-  top: 15%;
+  position: relative;
+  cursor: default;
+  bottom: 220px;
   width: 100vw;
   justify-content: space-between;
   padding: 0 10%;
@@ -466,8 +467,9 @@
 .portfolio .carousel .card {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  padding: 15px 0px;
-  text-align: center;
+  padding: 15px 40px;
+  margin: auto;
+  width: max-content;
   transition: all 0.8s ease;
 }
 .portfolio .carousel .card:hover {
@@ -507,6 +509,9 @@
   opacity: 0.9;
   border-radius: 3%;
   align-items: center;
+}
+.portfolio .carousel .card .box p {
+  color: gray;
 }
 
 .owl-dots {
@@ -590,7 +595,7 @@
   margin: unset;
   padding: unset;
   background: none;
-  color: #FFD43B;
+  color: gray;
 }
 
 .contenedor-modal-descripcion p {
@@ -599,12 +604,12 @@
 }
 
 .techs {
-  background-color: #FFD43B;
-  color: #a07d00;
+  background-color: gray;
+  color: var(--secondary);
   border-radius: 2px;
   padding: 2px 6px;
   font-weight: bold;
-  text-shadow: solid 1px 1px 0px #a07d00;
+  text-shadow: solid 1px 1px 0px #006e61;
   text-transform: uppercase;
 }
 
@@ -635,7 +640,6 @@
 }
 
 #modal-preview-shadow {
-  background: linear-gradient(to top, #0c1015, #18212B 7%, transparent 75%);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -643,17 +647,21 @@
 
 .modal-preview-enlaces {
   position: absolute;
-  bottom: 10%;
-  right: 5%;
+  bottom: 14%;
+  right: 13%;
 }
 
 .modal-preview-enlaces a {
   padding: 14px 28px;
   border-radius: 12px;
-  background: #39C9E9;
+  background: var(--secondary);
   text-decoration: none;
   font-weight: 600;
-  color: #18212B;
+  color: var(--main);
+}
+.modal-preview-enlaces a:hover {
+  background: var(--main);
+  color: var(--secondary);
 }
 
 /* Add Animation */
@@ -695,17 +703,17 @@
 }
 .cerrar {
   position: absolute;
-  color: aquamarine;
+  color: var(--secondary);
   text-shadow: 0px 9px 7px rgba(9, 29, 34, 0.64);
-  right: 17%;
-  top: 17%;
+  right: 19%;
+  top: 19%;
   font-size: 30px;
   font-weight: bold;
 }
 
 .cerrar:hover,
 .cerrar:focus {
-  color: #000;
+  color: var(--main);
   text-decoration: none;
   cursor: pointer;
 }
