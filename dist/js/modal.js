@@ -18,11 +18,11 @@ window.addEventListener("click", function (event) {
 let modalesContenido = [{
   id: 101,
   title: 'Coming Soon',
-  text: 'Actualmente me encuentro desarrollando un proyecto donde aplico mis nuevos conocimientos en React y uso de APIS. "Programar es como cualquier otra habilidad, cuanto más practiques, mejor te volverás". - Satya Nadella',
+  text: 'Actualmente me encuentro desarrollando un proyecto donde aplico mis nuevos conocimientos en React y uso de APIS. ',
   image: './dist/img/fog-g97741b634_1920.jpg',
-  techList: ['<span class="techs">html</span>', '<span class="techs">js</span>', '<span class="techs">css</span>'],
-  linkSitioWeb: 'https://falconleandro.github.io/Frontend/PetShop/index.html',
-  linkGithub: ''
+  techList: ['<p>"Programar es como cualquier otra habilidad, cuanto más practiques, mejor te volverás".<br><br> - Satya Nadella<p/>'],
+  linkSitioWeb: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif',
+  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }, {
   id: 102,
   title: 'Laberinto de Borges oficial',
@@ -68,8 +68,8 @@ let modalesContenido = [{
 {
   id: 107,
   title: 'Sitio Info Hotel',
-  text: 'Sitio informátivo de un Hotel 4 estrellas ubicado en la ciudad de Puerto Madryn, Chubut de uso interno para el huésped. Cuenta entre sus principales caracteristicas: check-in, consulta de menúes, turnos spa, info general de la ciudad. Primer trabajo freelance.',
-  image: '/dist/img/capturaSitioHotel.png',
+  text: 'Sitio informátivo de un Hotel 4 estrellas ubicado en la ciudad de Puerto Madryn, Chubut de uso interno para el huésped. Cuenta entre sus principales caracteristicas: check-in, consulta de menús, turnos spa, info general de la ciudad. Primer trabajo freelance.',
+  image: 'dist/img/capturaSitioHotel.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://sitioinformativohotel.wordpress.com/',
   linkGithub: ''
