@@ -34,9 +34,9 @@
         <a target='_blank' href="https://drive.google.com/file/d/1KrQAryIAAbqHtX4g9QyxkWQ2gT_K1xev/view?usp=sharing"><i
                 class="far fa-file-alt"></i>Curriculum</a>
     </div>
-    <header id="header" class="main-header" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2000"
-    data-aos-offset="0" data-aos-duration="3000">
-        <div class="logo" >
+    <header id="header" class="main-header" >
+        <div class="logo" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2000"
+        data-aos-offset="0" data-aos-duration="3000">
             <audio src="dist/img/Dreamy_80_Bm_mp3.mp3" id="audio"></audio>
             <i  class="fa-solid fa-volume-high" id="play" onclick="play()"></i>
             <a id="logo" href="#banner">lea<span>dev</span></a>
@@ -45,7 +45,8 @@
         <label for="menu-btn" class="menu-icon">
             <span class="menu-icon_line"></span>
         </label>
-        <ul class="nav-links" >
+        <ul class="nav-links" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2000"
+        data-aos-offset="0" data-aos-duration="3000" >
             <li class="nav-link" >
                 <a href="#banner">Home</a>
             </li>
@@ -132,6 +133,7 @@
                             <div class="text">Coming Soon</div>
                             <p>Work in Progress</p>
                         </div>
+                        <p class="year">February 2023</p>
                     </div>
                     <div class="card">
                         <div  class="box">
@@ -139,6 +141,7 @@
                             <div class="text">Laberinto de Borges</div>
                             <p>Official - Freelance</p>
                         </div>
+                        <p class="year">December 2022</p>
                     </div>
                     <div class="card">
                         <div class="box">
@@ -146,6 +149,7 @@
                             <div class="text">Laberinto de Borges</div>
                             <p>Alternative - Freelance</p>
                         </div>
+                        <p class="year">October 2022</p>
                     </div>
                     <div class="card">
                         <div class="box">
@@ -153,6 +157,7 @@
                             <div class="text">Femiciencia</div>
                             <p>Freelance</p>
                         </div>
+                        <p class="year">August 2022</p>
                     </div>
                     <div class="card">
                         <div class="box">
@@ -160,6 +165,7 @@
                             <div class="text">Trabajos Frontend 1</div>
                             <p>Digital House</p>
                         </div>
+                        <p class="year">July 2022</p>
                     </div>
                     <div class="card">
                         <div class="box">
@@ -168,6 +174,7 @@
                             <p>Free-Code Camp</p>
                             
                         </div>
+                        <p class="year">September 2022</p>
                     </div>
                     <div class="card">
                         <div class="box">
@@ -176,7 +183,10 @@
                             <p>Freelance</p>
                             
                         </div>
+                        <p class="year">February 2021</p>
+                        
                     </div>
+                    
                 </div>
                 <div class="newOld">
                     <span>new &#9754</span>
@@ -184,7 +194,7 @@
                 </div>
 
             </div>
-
+            
         </div>
         <div class="skillset" id="skillset">
             <div id="hard-skills">
@@ -393,7 +403,8 @@
     <script async>
         var loader = document.getElementById('preloader');
         window.addEventListener('load', function () {
-            loader.style.display = 'none';
+            loader.style.visibility = 'hidden';
+            loader.style.opacity = '0';
         })
     </script>
     <script async>

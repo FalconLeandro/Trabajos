@@ -18,7 +18,7 @@ window.addEventListener("click", function (event) {
 let modalesContenido = [{
   id: 101,
   title: 'Coming Soon',
-  text: 'Actualmente me encuentro desarrollando un proyecto donde aplico mis nuevos conocimientos en React y uso de APIS. ',
+  text: ' I am currently developing a project where I apply my new knowledge in React and use of APIS.',
   image: './dist/img/fog-g97741b634_1920.jpg',
   techList: ['<p>"Programar es como cualquier otra habilidad, cuanto más practiques, mejor te volverás".<br><br> - Satya Nadella<p/>'],
   linkSitioWeb: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif',
@@ -26,53 +26,52 @@ let modalesContenido = [{
 }, {
   id: 102,
   title: 'Laberinto de Borges oficial',
-  text: 'Sitio informátivo de una atracción turistica ubicada en la Finca ¨Los Alamos¨ San Rafael, Mendoza. Trabajo freelance.',
+  text: 'Website for a tourist attraction located in the Finca ¨Los Alamos¨ San Rafael, Mendoza. Freelance work.',
   image: './dist/img/capturaLaberintoOficial.png',
-  techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
+  techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://laberintodeborges.com/',
-  linkGithub: ''
+  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }, {
   id: 103,
   title: 'Laberinto de Borges alternativa',
-  text: 'Sitio con diseño alternativo provista al cliente como segunda opción. Trabajo freelance.',
+  text: 'Site with alternative design provided to the client as a second option. Freelance work.',
   image: './dist/img/capturaLaberintoAlt.png',
-  techList: ['<span class="techs">html</span>', '<span class="techs">css</span>'],
+  techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/laberinto/',
-  linkGithub: ''
+  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }, {
   id: 104,
   title: 'Femiciencia',
-  text: 'Sitio de comunicación de la ciencia con perpectiva de género. Proyecto financiado por Wikipedia para un grupo autogestionado de científicas. Trabajo freelance.',
+  text: 'A gender-sensitive science communication site. Project funded by Wikipedia for a self-managed group of women scientists. Freelance work.',
   image: './dist/img/capturaFemiciencia.png',
-  linkSitioWeb: '',
-  techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>'],
+  techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://femiciencia.com/',
-  linkGithub: ''
+  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }, {
   id: 105,
   title: 'Trabajos Frontend 1',
-  text: 'Primeros trabajos en la academia de programación "Digital House". Ruta de aprendizaje desde maquetado HTML, estilo con css y modularizados con SASS, formularios y funcionalidades con javaScript.  ',
+  text: ' First jobs in the programming academy "Digital House". Learning path from HTML layout, styling with css and modularized with SASS, forms and functionalities with javaScript. ',
   image: './dist/img/capturaTrabajosFrontend.png',
-  techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
+  techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/',
-  linkGithub: ''
+  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }, {
   id: 106,
   title: 'Trabajos en React',
-  text: 'Sitio informátivo de un Hotel 4 estrellas ubicado en la ciudad de Puerto Madryn, Chubut de uso interno para el huésped. Cuenta entre sus principales caracteristicas: check-in, consulta de menúes, turnos spa, info general de la ciudad. Primer trabajo freelance.',
+  text: 'First works in React. Learning path from library, components, functional and class components, props, hooks, and event listeners.',
   image: 'dist/img/reactCaptura.png',
-  techList: ['<span class="techs">html</span>','<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
+  techList: ['<span class="techs">html</span>','<span class="techs">css</span>', '<span class="techs">react</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/reactTrabajos/',
-  linkGithub: ''
+  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 },
 {
   id: 107,
   title: 'Sitio Info Hotel',
-  text: 'Sitio informátivo de un Hotel 4 estrellas ubicado en la ciudad de Puerto Madryn, Chubut de uso interno para el huésped. Cuenta entre sus principales caracteristicas: check-in, consulta de menús, turnos spa, info general de la ciudad. Primer trabajo freelance.',
+  text: 'Informative site of a 4 star Hotel located in the city of Puerto Madryn, Chubut for internal use by the guest. Its main features include: check-in, menu consultation, spa appointments, general information about the city. First freelance job.',
   image: 'dist/img/capturaSitioHotel.png',
-  techList: ['<span class="techs">html</span>', '<span class="techs">react</span>', '<span class="techs">css</span>', '<span class="techs">sass</span>'],
+  techList: ['<span class="techs">php</span>', '<span class="techs">wordpress</span>'],
   linkSitioWeb: 'https://sitioinformativohotel.wordpress.com/',
-  linkGithub: ''
+  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }
 ];
 
@@ -109,7 +108,7 @@ function atraparIdCardClickeada() {
                 <img class="${id == 101 || id == 104 || id == 105 || id == 106 ? 'animacion-none' : 'modal-image'}" src="${modalesContenido[i].image}"/>
                 <div id="modal-preview-shadow"></div>
                 <div class="modal-preview-enlaces">
-                    <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">GitHub</a>
+                    <a href="${modalesContenido[i].linkGithub}" target=" _blank">GitHub</a>
                     <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">Web Site</a>
                 </div>
             </div>
