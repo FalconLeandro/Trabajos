@@ -32,10 +32,6 @@ window.addEventListener("scroll", () => {
     // social.classList.add("social-footer");
     social.style.transform = "translate(250px)";
     social.style.transition = "1s";
-
     social.style.transitionProperty = "transform";
-    
-
   }
-  
 });

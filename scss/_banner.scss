@@ -135,6 +135,9 @@
           font-size: calc(0.5em + 2vw);
           text-transform: uppercase;
           text-decoration: none;
+          @media (max-width: 768px) { 
+            font-size: calc(0.5em + 1.5vw);
+          }
           span i{
             color: var(--main);
             transform: rotate(180deg);
@@ -156,6 +159,9 @@
           animation-delay: 0.7s;
           text-align: center;
           color: var(--tertiary);
+          @media (max-width: 768px) { 
+            color: white;
+          }
         }
       }
     }

@@ -33,6 +33,14 @@
   .nav-links {
     display: flex;
     list-style: none;
+    
+      @media screen and (min-width: 768px) {
+        [data-aos=""] {
+          animation: none;
+          
+        }
+      }
+    
 
     .nav-link {
       a {
