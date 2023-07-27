@@ -5,9 +5,9 @@
     .menu-icon {
       display: block;
     }
-    
-     
-    
+
+
+
     .nav-links {
       position: absolute;
       top: 0;
@@ -24,9 +24,10 @@
       background: #2f2f2f;
       transition: opacity 1s 0s, clip-path 1s 0s;
       clip-path: circle(200px at top right);
+
       .nav-link {
         opacity: 0;
-        
+
         width: 100%;
         text-align: center;
 
@@ -36,58 +37,68 @@
         }
       }
     }
-    .menu-btn:checked ~ .nav-links{
+
+    .menu-btn:checked~.nav-links {
       opacity: 1;
       clip-path: circle(100% at center);
-      
-        
-      
+
+
       .nav-link {
         opacity: 1;
         transition: opacity 1s ease-in-out;
+
+        a {
+          color: #fff !important;
+        }
       }
     }
-    
-   
-    
+
+
+
   }
-  
-  
-  
-  
-  .skillset{
+
+
+
+
+  .skillset {
     &:before {
       background-position-x: 50% !important;
 
     }
-    
+
   }
-  .softskills{
-    video{
+
+  .softskills {
+    video {
       width: 100vw;
       min-height: 100vh;
     }
-    div{
 
-      h4{
+    div {
+
+      h4 {
         font-size: xx-large !important;
       }
-  
+
     }
 
   }
-  
-  .iconoskill{
+
+  .iconoskill {
     font-size: 3rem !important;
   }
-  .row100{
-    grid-template-columns: repeat(auto-fit, minmax(270px , 1fr) ) !important;
+
+  .row100 {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
   }
-  .inputBox input,.text,input[type="submit"]{
+
+  .inputBox input,
+  .text,
+  input[type="submit"] {
     font-size: 15px !important;
 
   }
-  
- 
-  
+
+
+
 }

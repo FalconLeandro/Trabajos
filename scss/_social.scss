@@ -71,14 +71,19 @@
 
 @media screen and (max-width: 760px){
   .social {
-    bottom: 1.5vh;
+    bottom: -58vh;
+    right: -235px;
+    transform: rotate(90deg)!important;
+    transition: 2s ease-out;
     // a{
     //   font-size: 17px !important;
     //   margin: 3px !important;
     //   padding: 10px !important;
     //   width: 294px !important;
     //   border-radius: 12px !important;}
-    
+    i {
+      transform: rotate(270deg);
+    }
 
   }
 }

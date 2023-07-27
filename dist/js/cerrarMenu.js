@@ -1,6 +1,5 @@
 
 const btn = document.querySelector('.menu-btn');
-console.log(btn);
 const links = document.querySelectorAll(".nav-link a");
 
 function scrollMenu() {

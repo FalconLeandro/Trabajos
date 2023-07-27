@@ -2,6 +2,8 @@
   min-height: 100vh;
   background: var(--secondary);
   overflow: hidden;
+  position: relative;
+  z-index: 5;
 
   h3 {
     color: var(--main);

@@ -1,6 +1,7 @@
 footer {
   background-color: var(--tertiary);
-  
+  position: relative;
+  z-index: 5;
   
   .credits{
     align-items: center;
