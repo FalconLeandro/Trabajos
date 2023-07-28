@@ -83,11 +83,11 @@
         background: rgba(0, 0, 0, 0);
         
         
-        @media (width <= 800px) {
-          transition:none;
-        }
+        
       }
-      
+      @media (width <= 800px) {
+        transition:none;
+      }
       a {
         text-decoration: none;
         color: #5b5e62;
@@ -216,7 +216,7 @@
   animation-duration: 0.5s;
   @media screen and (max-width: 480px) {
     flex-direction: column;
-    height: 95%;
+    height: 82%;
     width: 84%;
     border-radius: 12px;
   }
@@ -390,8 +390,9 @@
   font-size: 30px;
   font-weight: bold;
   @media screen and (max-width: 760px){
+    color: gray;
     left: 35%!important;
-    bottom: 94%!important;
+    bottom: 80%!important;
   }
 }
 

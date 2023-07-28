@@ -23,11 +23,10 @@
       color: #fff;
       background: #2f2f2f;
       transition: opacity 1s 0s, clip-path 1s 0s;
-      clip-path: circle(200px at top right);
+      clip-path: circle(50px at top right);
 
       .nav-link {
         opacity: 0;
-
         width: 100%;
         text-align: center;
 

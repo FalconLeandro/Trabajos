@@ -18,9 +18,7 @@
 @media screen and (max-width: 886px) {
   .banner .banner-video {
     height: 200vh;
-    background: #232526; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: radial-gradient(circle at top, #fff, #011412, #232526);
   }
   .banner .banner-video video {
     display: none;
@@ -385,7 +383,7 @@
     color: #fff;
     background: #2f2f2f;
     transition: opacity 1s 0s, clip-path 1s 0s;
-    clip-path: circle(200px at top right);
+    clip-path: circle(50px at top right);
   }
   .main-header .nav-links .nav-link {
     opacity: 0;
@@ -497,7 +495,7 @@
   background: rgba(0, 0, 0, 0);
 }
 @media (width <= 800px) {
-  .portfolio .carousel .card:hover {
+  .portfolio .carousel .card {
     transition: none;
   }
 }
@@ -624,7 +622,7 @@
 @media screen and (max-width: 480px) {
   .contenido-modal {
     flex-direction: column;
-    height: 95%;
+    height: 82%;
     width: 84%;
     border-radius: 12px;
   }
@@ -794,8 +792,9 @@
 }
 @media screen and (max-width: 760px) {
   .cerrar {
+    color: gray;
     left: 35% !important;
-    bottom: 94% !important;
+    bottom: 80% !important;
   }
 }
 
@@ -1254,13 +1253,13 @@
 
 @media screen and (max-width: 760px) {
   .social {
-    bottom: -58vh;
-    right: -235px;
-    transform: rotate(90deg) !important;
-    transition: 2s ease-out;
+    top: -7vh;
+    right: -200px;
+    transform: rotate(0deg) !important;
+    transition: none;
   }
   .social i {
-    transform: rotate(270deg);
+    transform: rotate(45deg);
   }
 }
 footer {

@@ -71,10 +71,10 @@
 
 @media screen and (max-width: 760px){
   .social {
-    bottom: -58vh;
-    right: -235px;
-    transform: rotate(90deg)!important;
-    transition: 2s ease-out;
+    top: -7vh;
+    right: -200px;
+    transform: rotate(0deg) !important;
+    transition: none;
     // a{
     //   font-size: 17px !important;
     //   margin: 3px !important;
@@ -82,7 +82,7 @@
     //   width: 294px !important;
     //   border-radius: 12px !important;}
     i {
-      transform: rotate(270deg);
+      transform: rotate(45deg);
     }
 
   }
