@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .soft-skills {
   height: 100vh;
   width: 100vw;
@@ -6,23 +7,27 @@
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.02);
   z-index: 3;
-  h3{
+
+  h3 {
     z-index: 999;
   }
-  video{
+
+  video {
     left: 0%;
     position: absolute;
     z-index: 2;
     width: 100vw;
     min-height: 100vh;
-    background: linear-gradient(transparent,var(--secondary));
+    background: linear-gradient(transparent, var(--secondary));
   }
 
   .ssContainer {
     padding: 7% 10% 10%;
+
     @media screen and (max-width:620px) {
       padding: 30% 10% 10%;
     }
+
     .softskills {
       background-color: rgba(0, 0, 0, 0.2);
       z-index: 3;
@@ -30,6 +35,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
       align-items: center;
+
       h4 {
         cursor: pointer;
         color: white;
@@ -39,13 +45,21 @@
         font-style: italic;
         font-weight: 300;
         text-transform: uppercase;
-        
+
+        @media screen and (max-width: 886px) {
+          font-size: 2rem !important;
+          font-style: unset;
+          font-weight: 300;
+          text-transform: none;
+        }
+
       }
-      
-      
-      
+
+
+
     }
-    .fas{
+
+    .fas {
       display: none;
       position: relative;
       z-index: 4;
@@ -53,14 +67,16 @@
       color: white;
       cursor: pointer;
     }
-    h4:hover{
+
+    h4:hover {
       transform: scale(.95);
-      color:var(--main);
+      color: var(--main);
     }
-    .fas:hover{
+
+    .fas:hover {
       transform: scale(.95);
-      color:var(--main);
+      color: var(--main);
     }
-    
+
   }
 }
