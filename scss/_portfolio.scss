@@ -188,14 +188,12 @@
   margin-top: 0 5px;
   border: 1px solid var(--main) !important;
   transition: all 0.5s ease;
+  text-shadow: 0 19px 38px rgba(79, 225, 208, 0.3), 0 15px 12px rgba(79, 225, 208, 0.22);
+    -webkit-box-reflect: below .2rem linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
 
   &:hover {
     transform: scale(1.1);
     background-color: var(--main) !important;
-  }
-
-  @media (width <=800px) {
-    transition: none;
   }
 }
 
@@ -219,19 +217,36 @@
   transition: all 0.5s ease-out;
 
   @media (width <=800px) {
-    top: 50%;
-    left: 92%;
-    width: 30px;
-    height: 30px;
+    top: 70%;
+    left: 94%;
+    width: 20px;
+    height: 20px;
   }
 
 }
 
 .prev {
-  left: 10%;
-  -webkit-transform: rotate(134deg);
+  left: 4%;
+   -webkit-transform: rotate(134deg);
+  @media (width <=800px) {
+    display: none;
+  }
+   
+ }
+.swippe{
+  display: none;
+  @media (width <=800px) {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    bottom: 30%;
+    font-size: larger;
+    right: 12%;
+    color: white;
+    font-weight: 400;
+  }
+  
 }
-
 
 
 .modal {

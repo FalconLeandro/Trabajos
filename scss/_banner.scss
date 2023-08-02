@@ -44,7 +44,7 @@
 //   }
 .banner {
   display: flex;
-  color: #fff;
+  
   justify-content: center;
   // padding-bottom: 5vh;
   background-size: cover;
@@ -64,8 +64,8 @@
     width: 100%;
 
     @media screen and (max-width: 886px) {
-      height: 177%;
-      background: radial-gradient(circle at top, #8bc7c0, #030005, #4C4A46);
+      height: inherit;
+      background: radial-gradient(circle at top, #8bc7c0, #030005, #4D4A47);
 
       video {
         display: none;
@@ -100,11 +100,15 @@
           font-size: calc(2rem + 3vw);
           text-transform: uppercase;
           text-align: center;
+          color: #fff;
           background: rgba(0, 0, 0, 0.2);
           padding: 2rem;
           border-radius: 20px 0;
           justify-content: center;
           // animation: aparece 5s;
+          @media (max-width: 768px) {
+            color: #709F9A;
+          }
 
           &::before,
           &::after {

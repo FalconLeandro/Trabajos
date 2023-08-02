@@ -47,6 +47,9 @@
 
       &#texto:hover {
         transform: scale(1.025);
+        h2{
+          animation: none;
+        }
       }
 
 
@@ -57,6 +60,7 @@
         font-weight: unset;
         padding: 9%;
         animation: aparece 2s;
+        animation: latido 1.5s ease-in-out infinite;
       }
 
       p {
@@ -81,6 +85,11 @@
   100% {
     opacity: 1;
   }
+}
+@keyframes latido {
+  from { opacity: 1; }
+    50% { opacity: .2;}
+    to { opacity: 1; }
 }
 
 // @keyframes mover {
