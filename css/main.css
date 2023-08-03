@@ -296,6 +296,7 @@
   color: gray;
 }
 .main-header i {
+  width: 26px;
   color: var(--main);
   animation: latidos 800ms ease-out infinite alternate;
 }
@@ -325,8 +326,8 @@
 .main-header .menu-icon_line {
   display: block;
   position: relative;
-  background: var(--main);
-  height: 2px;
+  background: white;
+  height: 1px;
   width: 20px;
   border-radius: 4px;
   transition: background 0.8s ease;
@@ -337,7 +338,7 @@
   height: 100%;
   width: 100%;
   border-radius: 4px;
-  background: var(--main);
+  background: white;
   transition: background 0.8s ease;
 }
 .main-header .menu-icon_line::before {
@@ -426,7 +427,7 @@
     font-size: xx-large !important;
   }
   .iconoskill {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
   .row100 {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
@@ -527,12 +528,22 @@
 .portfolio .carousel .card .box:hover {
   transform: scale(0.95);
 }
+@media (width <= 800px) {
+  .portfolio .carousel .card .box:hover {
+    transition: none;
+  }
+}
 .portfolio .carousel .card .box:hover a p {
   color: var(--main);
 }
 .portfolio .carousel .card .box:hover img {
   cursor: pointer;
   transition: 0.5s;
+}
+@media (width <= 800px) {
+  .portfolio .carousel .card .box:hover img {
+    transition: none;
+  }
 }
 @media (width <= 800px) {
   .portfolio .carousel .card .box {
@@ -604,8 +615,10 @@
 }
 
 .pf {
+  width: 32px;
+  height: 32px;
   top: 47%;
-  left: 96%;
+  left: 95%;
   -webkit-transform: rotate(316deg);
   border-right: 2px var(--main) solid;
   border-bottom: 2px var(--main) solid;
@@ -622,7 +635,7 @@
 }
 
 .prev {
-  left: 4%;
+  left: 5%;
   -webkit-transform: rotate(134deg);
 }
 @media (width <= 800px) {
@@ -638,7 +651,6 @@
   .swippe {
     display: block;
     position: absolute;
-    z-index: 9999;
     bottom: 30%;
     font-size: larger;
     right: 12%;
@@ -678,7 +690,7 @@
   overflow: hidden;
   height: 80%;
   width: 70%;
-  border-radius: 30px;
+  border-radius: 20px;
   -webkit-animation-name: animarsuperior;
   -webkit-animation-duration: 0.5s;
   animation-name: animarsuperior;
@@ -713,12 +725,13 @@
   margin: unset;
   padding: unset;
   background: none;
-  color: gray;
+  color: white;
 }
 
 .contenedor-modal-descripcion p {
+  margin-top: 26px;
   text-align: left;
-  color: white;
+  color: gray;
 }
 
 .techs {
@@ -766,6 +779,7 @@
 }
 
 #modal-preview-shadow {
+  background: linear-gradient(to top, #000000, #292c32 23%, transparent 60%);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -773,8 +787,8 @@
 
 .modal-preview-enlaces {
   position: absolute;
-  bottom: 14%;
-  right: 13%;
+  bottom: 15%;
+  right: 8%;
 }
 @media screen and (max-width: 480px) {
   .modal-preview-enlaces {
@@ -785,13 +799,14 @@
 .modal-preview-enlaces a {
   padding: 14px 28px;
   border: 1px solid;
-  border-radius: 12px;
+  border-radius: 6px;
   background: var(--secondary);
   text-decoration: none;
   font-weight: 600;
   color: var(--main);
   margin-left: 10px;
   box-shadow: 0px 9px 7px rgba(9, 29, 34, 0.64);
+  transition: all 0.3s ease-in;
 }
 .modal-preview-enlaces a:hover {
   background: var(--main);
@@ -848,7 +863,7 @@
 }
 .cerrar {
   position: relative;
-  color: var(--main);
+  color: gray;
   text-shadow: 0px 9px 7px rgba(9, 29, 34, 0.64);
   bottom: 77%;
   left: 31%;
@@ -865,7 +880,7 @@
 
 .cerrar:hover,
 .cerrar:focus {
-  color: var(--secondary);
+  color: var(--main);
   text-decoration: none;
   cursor: pointer;
 }
@@ -1064,14 +1079,12 @@
   position: relative;
   font-style: italic;
   font-weight: 300;
-  text-transform: uppercase;
 }
 @media screen and (max-width: 886px) {
   .soft-skills .ssContainer .softskills h4 {
     font-size: 2rem !important;
     font-style: unset;
     font-weight: 300;
-    text-transform: none;
   }
 }
 .soft-skills .ssContainer .fas {
@@ -1275,9 +1288,8 @@
 .social {
   z-index: 4;
   position: fixed;
-  bottom: 45vh;
+  bottom: 30vh;
   right: 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1285,6 +1297,11 @@
   transform: translate(250px);
   transition: 2s ease-out;
   opacity: 0;
+}
+@media (width <= 800px) {
+  .social {
+    bottom: 4vh;
+  }
 }
 .social a {
   color: #fff;
@@ -1310,11 +1327,8 @@
   transition: 0.5s ease-out;
   color: gray;
 }
-.social a:nth-child(3) i {
-  color: transparent;
-  background-image: linear-gradient(45deg, white, gray);
-  -webkit-background-clip: text;
-  font-weight: 600;
+.social a:nth-child(5) i {
+  color: var(--main);
 }
 .social a:hover {
   transform: translate(-130px, 0);

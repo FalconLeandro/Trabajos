@@ -97,8 +97,11 @@ function atraparIdCardClickeada() {
           modalContenedor.innerHTML = `
           
             <div class="contenedor-modal-descripcion">
-                <h2 class="modal-descripcion-titulo">${modalesContenido[i].title}</h2>
-                <p>${modalesContenido[i].text}</p>
+                <div>
+                  <h2 class="modal-descripcion-titulo">${modalesContenido[i].title}</h2>
+                  <p>${modalesContenido[i].text}</p>
+                </div>
+                
                 
                 <div>
                   ${modalesContenido[i].techList}

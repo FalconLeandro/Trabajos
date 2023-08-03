@@ -44,13 +44,11 @@
         position: relative;
         font-style: italic;
         font-weight: 300;
-        text-transform: uppercase;
 
         @media screen and (max-width: 886px) {
           font-size: 2rem !important;
           font-style: unset;
           font-weight: 300;
-          text-transform: none;
         }
 
       }

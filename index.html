@@ -38,7 +38,7 @@
         <div class="logo" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="2000"
             data-aos-offset="0" data-aos-duration="3000">
             <audio src="dist/img/Dreamy_80_Bm_mp3.mp3" id="audio"></audio>
-            <i class="fa-solid fa-volume-high" id="play" onclick="play()"></i>
+            <i class="fa-solid fa-volume-xmark" id="play" onclick="play()"></i>
             <a id="logo" href="#banner">lea<span>dev</span></a>
         </div>
         <input type="checkbox" class="menu-btn" id="menu-btn">
@@ -411,7 +411,7 @@
     <script src="dist/js/carrusel.js"></script>
     <script src="dist/js/cerrarMenu.js"></script>
     <script src="dist/js/smoothScroll.js"></script>
-    <script src="dist/js/imgChanger.js"></script>
+    <!-- <script src="dist/js/imgChanger.js"></script> -->
     <script src="dist/js/modal.js"></script>
     <script async>
         var loader = document.getElementById('preloader');
@@ -425,13 +425,13 @@
             var audio = document.getElementById('audio');
             if (audio.paused) {
                 audio.play();
-                $('#play').removeClass('fa-wave-square')
-                $('#play').addClass('fa-pause-circle')
+                $('#play').removeClass('fa-volume-xmark')
+                $('#play').addClass('fa-volume-high')
             } else {
                 audio.pause();
                 audio.currentTime = 0
-                $('#play').addClass('fa-wave-square')
-                $('#play').removeClass('fa-pause-circle')
+                $('#play').addClass('fa-volume-xmark')
+                $('#play').removeClass('fa-volume-high')
             }
         }
     </script>
