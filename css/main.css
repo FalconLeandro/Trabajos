@@ -1345,6 +1345,7 @@
     right: calc(50vw - 140px);
     flex-direction: unset;
     transform: translate(0px);
+    z-index: 99;
   }
   .social a {
     margin: 3px;
