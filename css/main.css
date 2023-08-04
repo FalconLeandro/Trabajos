@@ -426,9 +426,6 @@
   .softskills div h4 {
     font-size: xx-large !important;
   }
-  .iconoskill {
-    font-size: 2rem !important;
-  }
   .row100 {
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
   }
@@ -618,7 +615,7 @@
   width: 32px;
   height: 32px;
   top: 47%;
-  left: 95%;
+  left: 96%;
   -webkit-transform: rotate(316deg);
   border-right: 2px var(--main) solid;
   border-bottom: 2px var(--main) solid;
@@ -635,7 +632,7 @@
 }
 
 .prev {
-  left: 5%;
+  left: 4%;
   -webkit-transform: rotate(134deg);
 }
 @media (width <= 800px) {
@@ -1000,6 +997,11 @@
   font-size: 3rem;
   color: white;
 }
+@media screen and (max-width: 760px) {
+  .skillset .hardskills-container .hardskills div .iconoskill {
+    font-size: 2.3rem;
+  }
+}
 .skillset .hardskills-container .hardskills div span {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 0.5rem;
@@ -1294,14 +1296,9 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  transform: translate(250px);
+  transform: translate(220px);
   transition: 2s ease-out;
   opacity: 0;
-}
-@media (width <= 800px) {
-  .social {
-    bottom: 4vh;
-  }
 }
 .social a {
   color: #fff;
@@ -1344,13 +1341,24 @@
 
 @media screen and (max-width: 760px) {
   .social {
-    top: -7vh;
-    right: -200px;
-    transform: rotate(0deg) !important;
-    transition: none;
+    bottom: -110px;
+    right: calc(50vw - 140px);
+    flex-direction: unset;
+    transform: translate(0px);
+  }
+  .social a {
+    margin: 3px;
+    font-size: 0;
+    height: 100px;
+    padding: 0px;
+    width: 50px;
+    text-align: center;
   }
   .social i {
-    transform: rotate(45deg);
+    transform: rotate(0deg);
+    margin-right: 0px;
+    margin-top: 10px;
+    text-align: center;
   }
 }
 footer {
