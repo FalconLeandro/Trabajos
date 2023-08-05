@@ -23,6 +23,13 @@
     display: none;
   }
 }
+.banner #particles-js {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: -webkit-fill-available;
+  z-index: 1;
+}
 .banner .banner-content {
   display: flex;
   flex-direction: column;
