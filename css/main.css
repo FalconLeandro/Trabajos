@@ -510,12 +510,9 @@
   width: max-content;
   transition: all 0.8s ease;
 }
-.portfolio .carousel .card:hover {
-  background: rgba(0, 0, 0, 0);
-}
-@media (width <= 800px) {
-  .portfolio .carousel .card {
-    transition: none;
+@media (width >= 800px) {
+  .portfolio .carousel .card:hover {
+    background: rgba(0, 0, 0, 0);
   }
 }
 .portfolio .carousel .card a {
@@ -529,29 +526,16 @@
   justify-content: center;
   transition: 0.8s;
 }
-.portfolio .carousel .card .box:hover {
-  transform: scale(0.95);
-}
-@media (width <= 800px) {
+@media (width >= 800px) {
   .portfolio .carousel .card .box:hover {
-    transition: none;
+    transform: scale(0.95);
   }
-}
-.portfolio .carousel .card .box:hover a p {
-  color: var(--main);
-}
-.portfolio .carousel .card .box:hover img {
-  cursor: pointer;
-  transition: 0.5s;
-}
-@media (width <= 800px) {
+  .portfolio .carousel .card .box:hover a p {
+    color: var(--main);
+  }
   .portfolio .carousel .card .box:hover img {
-    transition: none;
-  }
-}
-@media (width <= 800px) {
-  .portfolio .carousel .card .box {
-    transition: none;
+    cursor: pointer;
+    transition: 0.5s;
   }
 }
 .portfolio .carousel .card .box .text {

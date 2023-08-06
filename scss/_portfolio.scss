@@ -88,17 +88,12 @@
       width: max-content;
       //text-align: center;
       transition: all .8s ease;
-
-      &:hover {
-        background: rgba(0, 0, 0, 0);
-
-
-
+      @media (width >=800px) {
+        &:hover {
+          background: rgba(0, 0, 0, 0);
+        }
       }
-
-      @media (width <=800px) {
-        transition: none;
-      }
+      
 
       a {
         text-decoration: none;
@@ -111,30 +106,23 @@
         align-items: center;
         justify-content: center;
         transition: .8s;
-
-        &:hover {
-          transform: scale(0.95);
-          @media (width <=800px) {
-            transition: none;
-          }
-
-          a p {
-            color: var(--main);
-          }
-
-          img {
-            // box-shadow: 0 0 10px var(--main);
-            cursor: pointer;
-            // border: solid 1px var(--main);
-            transition: .5s;
-            @media (width <=800px) {
-              transition: none;
+        @media (width >=800px) {
+          &:hover {
+            transform: scale(0.95);
+            
+  
+            a p {
+              color: var(--main);
+            }
+  
+            img {
+              // box-shadow: 0 0 10px var(--main);
+              cursor: pointer;
+              // border: solid 1px var(--main);
+              transition: .5s;
+              
             }
           }
-        }
-
-        @media (width <=800px) {
-          transition: none;
         }
 
         .text {
