@@ -1398,6 +1398,11 @@ footer .credits a span {
   opacity: 1;
   transition: all 2s ease;
 }
+@media (width <= 800px) {
+  #preloader {
+    display: none;
+  }
+}
 
 :root {
   --main:#4fe1d0;
