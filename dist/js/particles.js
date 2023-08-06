@@ -43,12 +43,12 @@ window.addEventListener("load", () => {
         }
       },
       "size": {
-        "value": 2,
+        "value": 1,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 4,
-          "size_min": 0.2,
+          "size_min": 0.1,
           "sync": false
         }
       },

@@ -42,8 +42,10 @@
       cursor: pointer;
       margin: 3% 0;
       background: rgba(255, 255, 255, 0.1);
-
       transition: all .4s ease-in-out;
+      @media screen and (max-width: 480px) {
+        border-radius: 20px;
+      }
 
       &#texto:hover {
         transform: scale(1.025);
@@ -69,6 +71,12 @@
         animation: aparece 2s;
 
       }
+    }
+    .fa-caret-left{
+      position: absolute;
+      left: 15px;
+      bottom: 11px;
+      color: var(--main);
     }
   }
 

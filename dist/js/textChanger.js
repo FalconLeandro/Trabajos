@@ -14,6 +14,8 @@ const p2=`<p>I am currently studying a Bachelor's Degree in Computer Science
 const p3=`<a href='#portfolio'><p>Here are some works below, I hope you like them! &#128512</p></a>`;
 
 const texto=document.getElementById('texto');
+const backArrow=document.getElementsByClassName('fa-caret-left');
+
 
 var arrayText=[p1,p2,p3]
 var i = 0;
@@ -22,24 +24,25 @@ texto.addEventListener("click", function( event ) {
    
   if (i<=2) {
     texto.innerHTML=arrayText[i];
+    
     i++;
+    
+    
   } else {
     texto.innerHTML=hi;
     // window.location.hash = "#portfolio";
     i=0;
   }
-  
-  
-  
+}, false);
+
+
   
 
-    // texto.innerHTML=arrayText[i];
-    // i++;
-    // if (i==3) {
-    //   i=0;
-    // }
-    
-}, false);
+
+
+
+
+
 
 
     
