@@ -18,9 +18,9 @@ window.addEventListener("click", function (event) {
 let modalesContenido = [{
   id: 101,
   title: 'Coming Soon',
-  text: ' I am currently developing a project where I apply my new knowledge in React and use of APIS.',
+  text: ' I am currently developing a project where I apply my new knowledge in React and use of APIS. I leave you some first practices in React. Learning path from library, components, functional and class components, props, hooks, and event listeners. &#9755 <br><br>"Programar es como cualquier otra habilidad, cuanto más practiques, mejor te volverás".<br><br> - Satya Nadella',
   image: './dist/img/fog-g97741b634_1920.jpg',
-  techList: ['<p>"Programar es como cualquier otra habilidad, cuanto más practiques, mejor te volverás".<br><br> - Satya Nadella<p/>'],
+  techList: [''],
   linkSitioWeb: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif',
   linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }, {
@@ -30,7 +30,7 @@ let modalesContenido = [{
   image: './dist/img/capturaLaberintoOficial.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://laberintodeborges.com/',
-  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
+  linkGithub: 'https://github.com/FalconLeandro/LaberintoDeBorges.git'
 }, {
   id: 103,
   title: 'Laberinto de Borges alternativa',
@@ -38,7 +38,7 @@ let modalesContenido = [{
   image: './dist/img/capturaLaberintoAlt.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/laberinto/',
-  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
+  linkGithub: 'https://github.com/FalconLeandro/laberinto.git'
 }, {
   id: 104,
   title: 'Femiciencia',
@@ -46,7 +46,7 @@ let modalesContenido = [{
   image: './dist/img/capturaFemiciencia.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://femiciencia.com/',
-  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
+  linkGithub: 'https://github.com/FalconLeandro/femiciencia.git'
 }, {
   id: 105,
   title: 'Trabajos Frontend 1',
@@ -54,15 +54,15 @@ let modalesContenido = [{
   image: './dist/img/capturaTrabajosFrontend.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/',
-  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
+  linkGithub: 'https://github.com/FalconLeandro/Frontend.git'
 }, {
   id: 106,
   title: 'Trabajos en React',
-  text: 'First works in React. Learning path from library, components, functional and class components, props, hooks, and event listeners.',
+  text: '',
   image: 'dist/img/reactCaptura.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">react</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/reactTrabajos/',
-  linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
+  linkGithub: 'https://github.com/FalconLeandro/reactTrabajos.git'
 },
 {
   id: 107,
@@ -112,7 +112,7 @@ function atraparIdCardClickeada() {
                 <div id="modal-preview-shadow"></div>
                 <div class="modal-preview-enlaces">
                     <a href="${modalesContenido[i].linkGithub}" target=" _blank">GitHub</a>
-                    <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">Web Site</a>
+                    <a href="${modalesContenido[i].linkSitioWeb}" target=" _blank">Deploy</a>
                 </div>
             </div>
           `
