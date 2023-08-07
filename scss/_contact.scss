@@ -9,11 +9,11 @@
     color: var(--main);
     text-align: end;
     padding-right: 10%;
-    
+
   }
 
   .container {
-    
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -24,20 +24,22 @@
       width: 100%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
       .col {
         position: relative;
         width: 100%;
         padding: 0 10px;
         margin: 30px 0 10px;
         transition: 0.5s;
+
         .inputBox {
           position: relative;
           width: 100%;
           height: 40px;
           color: var(--main);
           text-transform: uppercase;
-          
-          
+
+
 
           input,
           textarea {
@@ -52,8 +54,9 @@
             padding: 0 10px;
             z-index: 1;
             color: var(--secondary);
-            
+
           }
+
           .text {
             position: absolute;
             top: 0;
@@ -64,13 +67,14 @@
             display: block;
             transition: 0.5s;
             pointer-events: none;
-            
+
           }
-          input:focus + .text,
-          input:valid + .text {
+
+          input:focus+.text,
+          input:valid+.text {
             top: -35px;
             left: -10px;
-            
+
           }
 
           .line {
@@ -83,33 +87,39 @@
             transition: 0.5s;
             border-radius: 2px;
             pointer-events: none;
-            box-shadow: 0 19px 38px rgba(79, 225, 208,0.30), 0 15px 12px rgba(79, 225, 208,0.22);
+            box-shadow: 0 19px 38px rgba(79, 225, 208, 0.30), 0 15px 12px rgba(79, 225, 208, 0.22);
           }
-          input:focus ~ .line,
-          input:valid ~ .line {
+
+          input:focus~.line,
+          input:valid~.line {
             height: 100%;
           }
+
           textarea {
             position: relative;
             width: 100%;
             height: 100px;
             padding: 10px 10px;
-            
+
           }
+
           textarea {
             height: 100%;
             resize: none;
           }
-          textarea:focus + .text,
-          textarea:valid + .text {
+
+          textarea:focus+.text,
+          textarea:valid+.text {
             top: -75px;
             left: -10px;
           }
-          textarea:focus ~ .line,
-          textarea:valid ~ .line {
+
+          textarea:focus~.line,
+          textarea:valid~.line {
             height: 100%;
           }
         }
+
         input[type="submit"] {
           border: none;
           padding: 7px 35px;
@@ -120,22 +130,24 @@
           font-size: 18px;
           border-radius: 2px;
           transition: all .3s ease-in;
-          box-shadow: 0 19px 38px rgba(79, 225, 208,0.30), 0 15px 12px rgba(79, 225, 208,0.22);
-          
-          &:hover{
+          box-shadow: 0 19px 38px rgba(79, 225, 208, 0.30), 0 15px 12px rgba(79, 225, 208, 0.22);
+
+          &:hover {
             transform: scale(1.1);
-           
+
           }
-          
+
         }
-        #submit{
+
+        #submit {
           text-align: center;
         }
+
         input[type="number"]::-webkit-inner-spin-button,
         input[type="number"]::-webkit-outer-spin-button {
           -webkit-appearance: none;
           margin: 0;
-          
+
         }
 
         input[type="number"] {
@@ -143,10 +155,12 @@
         }
       }
     }
-    .social-contact{
+
+    .social-contact {
       display: flex;
       justify-content: center;
       margin: 20px 0 10px;
+
       a {
         background: rgba(0, 0, 0, 0.7);
         font-weight: 600;
@@ -154,46 +168,55 @@
         margin: 3px;
         padding: 10px;
         border-radius: 12px;
-        i{
-        font-size: 35px;
-        width: 35px;
-        height: 35px;
-        transition: .4s ease-out;
-        text-align: center;
-        text-shadow: 0 19px 38px rgba(79, 225, 208,0.30), 0 15px 12px rgba(79, 225, 208,0.22);
-        -webkit-box-reflect: below 0rem linear-gradient(transparent,transparent, rgba(0,0,0,0.2));
-          &:hover{
+
+        i {
+          font-size: 35px;
+          width: 35px;
+          height: 35px;
+          transition: .4s ease-out;
+          text-align: center;
+          text-shadow: 0 19px 38px rgba(79, 225, 208, 0.30), 0 15px 12px rgba(79, 225, 208, 0.22);
+          -webkit-box-reflect: below 0rem linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
+
+          &:hover {
             transform: scale(1.2);
           }
         }
       }
+
       a:nth-child(1) i {
         color: gray;
       }
+
       a:nth-child(2) i {
         color: var(--main);
       }
+
       a:nth-child(3) i {
         color: transparent;
         background-image: linear-gradient(45deg, var(--main), #b7a8e7, #735acf);
         -webkit-background-clip: text;
         font-weight: 600;
       }
+
       a:nth-child(4) i {
         color: var(--main);
       }
+
       a:nth-child(5) i {
         color: gray;
       }
-      
-    
-      
+
+
+
     }
   }
 }
-.textarea{
+
+.textarea {
   height: 80px !important;
 }
-.message{
+
+.message {
   line-height: 120px !important;
 }

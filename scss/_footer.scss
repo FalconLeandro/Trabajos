@@ -2,22 +2,24 @@ footer {
   background-color: var(--tertiary);
   position: relative;
   z-index: 5;
-  
-  .credits{
+
+  .credits {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    
-    small{
+
+    small {
       color: #5b5e62;
       text-decoration: none;
     }
-    a{
+
+    a {
       margin: 10% 0;
       text-decoration: none;
-      
+
       color: #A6ABB2;
-      span{
+
+      span {
         text-transform: uppercase;
         color: #5b5e62;
       }

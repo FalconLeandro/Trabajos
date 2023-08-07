@@ -364,7 +364,8 @@
 .main-header.scrolled .menu-icon_line, .main-header.scrolled .menu-icon_line::before, .main-header.scrolled .menu-icon_line::after {
   background: #fff !important;
 }
-.main-header.scrolled a, .main-header.scrolled .nav-links a {
+.main-header.scrolled a,
+.main-header.scrolled .nav-links a {
   color: #fff !important;
 }
 
@@ -1405,15 +1406,17 @@ footer .credits a span {
 }
 
 :root {
-  --main:#4fe1d0;
-  --secondary:#040404;
-  --tertiary:#2f2f2f;
-  --quaternary:#fff;
-  --yellow:#e1dc4f;
+  --main: #4fe1d0;
+  --secondary: #040404;
+  --tertiary: #2f2f2f;
+  --quaternary: #fff;
+  --yellow: #e1dc4f;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 * {
@@ -1425,7 +1428,11 @@ html, body {
 * ::-webkit-scrollbar {
   display: none;
 }
-* h2, * h3, * h4, * p, * li {
+* h2,
+* h3,
+* h4,
+* p,
+* li {
   font-family: "Karla", sans-serif;
 }
 * h3 {

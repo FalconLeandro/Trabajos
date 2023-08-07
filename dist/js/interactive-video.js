@@ -43,7 +43,7 @@ document.getElementById("sk").addEventListener(
     document.getElementById("header").style.visibility = "hidden";
     window.location.href = "#soft-skills";
     document.getElementById("iconBack").style.display = "block";
-    document.getElementById("soft-skills").style.background="black" ;
+    document.getElementById("soft-skills").style.background = "black";
   },
   false
 );
@@ -162,7 +162,7 @@ document.getElementById("iconBack").addEventListener(
     document.body.style.overflowY = "visible";
     document.getElementById("header").style.visibility = "visible";
     document.getElementById("iconBack").style.display = "none";
-    document.getElementById("soft-skills").style.background="rgba(255, 255, 255, 0.05)" ;
+    document.getElementById("soft-skills").style.background = "rgba(255, 255, 255, 0.05)";
   },
   false
 );

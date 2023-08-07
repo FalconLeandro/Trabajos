@@ -17,8 +17,10 @@
     width: 100%;
     height: 100%;
   }
+
   .hardskills-container {
     padding: 10%;
+
     .hardskills {
       display: grid;
       gap: 0.1rem;
@@ -34,11 +36,12 @@
         .iconoskill {
           font-size: 3rem;
           color: white;
+
           @media screen and (max-width: 760px) {
             font-size: 2.3rem;
           }
         }
-        
+
         span {
           background-color: rgba(255, 255, 255, 0.75);
           border-radius: 0.5rem;
@@ -54,7 +57,7 @@
           text-align: center;
           transform: translate(-60px, 10px);
           transition: opacity 0.5s ease-in-out,
-          transform 0.5s cubic-bezier(0.4, 0, 1, 1);
+            transform 0.5s cubic-bezier(0.4, 0, 1, 1);
           color: var(--secondary);
 
           &::after {
@@ -76,9 +79,8 @@
   opacity: 1;
   transform: translate(-60px);
 }
+
 .hardskills-container .hardskills div:hover .iconoskill {
-  color:var(--main);
-  
+  color: var(--main);
+
 }
-
-

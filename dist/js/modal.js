@@ -60,7 +60,7 @@ let modalesContenido = [{
   title: 'Trabajos en React',
   text: 'First works in React. Learning path from library, components, functional and class components, props, hooks, and event listeners.',
   image: 'dist/img/reactCaptura.png',
-  techList: ['<span class="techs">html</span>','<span class="techs">css</span>', '<span class="techs">react</span>'],
+  techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">react</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/reactTrabajos/',
   linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 },

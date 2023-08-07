@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
   };
   if (scrollPos > 100) {
     arrow.style.opacity = '0';
-  
+
   } else {
     arrow.style.opacity = '1';
   }
@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
 
 // arrow.addEventListener('click', () =>{
 //   window.location.hash = "#about-me";
-  
+
 // });
 const social = document.querySelector(".social");
 window.addEventListener("scroll", () => {
@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;
   if (mediaQSocial.matches) {
     console.log('mayor a 780px');
-    if (scrollPos > 10 && scrollPos < 3000 ) {
+    if (scrollPos > 10 && scrollPos < 3000) {
       social.style.transform = "translate(207px)";
       social.style.transition = "1s";
       social.style.opacity = "1";
@@ -38,11 +38,11 @@ window.addEventListener("scroll", () => {
       social.style.transition = "1s";
       social.style.transitionProperty = "transform";
     }
-    
+
   } else {
     console.log('menor a 780px');
 
-    if (scrollPos > 10 && scrollPos < 2500 ) {
+    if (scrollPos > 10 && scrollPos < 2500) {
       social.style.transform = "translateY(-60px)";
       social.style.transition = "1s";
       social.style.opacity = "1";
@@ -54,5 +54,5 @@ window.addEventListener("scroll", () => {
       social.style.transitionProperty = "transform";
     }
   }
-  
+
 });

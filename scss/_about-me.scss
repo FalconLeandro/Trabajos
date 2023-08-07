@@ -43,13 +43,15 @@
       margin: 3% 0;
       background: rgba(255, 255, 255, 0.1);
       transition: all .4s ease-in-out;
+
       @media screen and (max-width: 480px) {
         border-radius: 20px;
       }
 
       &#texto:hover {
         transform: scale(1.025);
-        h2{
+
+        h2 {
           animation: none;
         }
       }
@@ -72,7 +74,8 @@
 
       }
     }
-    .fa-caret-left{
+
+    .fa-caret-left {
       position: absolute;
       left: 15px;
       bottom: 11px;
@@ -94,10 +97,19 @@
     opacity: 1;
   }
 }
+
 @keyframes latido {
-  from { opacity: 1; }
-    50% { opacity: .2;}
-    to { opacity: 1; }
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 // @keyframes mover {

@@ -44,7 +44,7 @@
 //   }
 .banner {
   display: flex;
-  
+
   justify-content: center;
   // padding-bottom: 5vh;
   background-size: cover;
@@ -62,7 +62,7 @@
     overflow: hidden;
     text-align: center;
     width: 100%;
-    
+
 
     @media screen and (max-width: 886px) {
       height: inherit;
@@ -74,12 +74,13 @@
     }
 
   }
-  #particles-js{
+
+  #particles-js {
     width: 100%;
-  position: absolute;
-  top: 0;
-  height: -webkit-fill-available;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    height: -webkit-fill-available;
+    z-index: 1;
   }
 
   .banner-content {
@@ -113,6 +114,7 @@
           padding: 2rem;
           border-radius: 20px 0;
           justify-content: center;
+
           // animation: aparece 5s;
           @media (max-width: 768px) {
             color: #709F9A;
