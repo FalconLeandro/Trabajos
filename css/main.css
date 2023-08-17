@@ -525,9 +525,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 0.8s;
 }
 @media (width >= 800px) {
+  .portfolio .carousel .card .box {
+    transition: 0.8s;
+  }
   .portfolio .carousel .card .box:hover {
     transform: scale(0.95);
   }

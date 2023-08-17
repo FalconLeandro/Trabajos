@@ -18,10 +18,10 @@ window.addEventListener("click", function (event) {
 let modalesContenido = [{
   id: 101,
   title: 'Coming Soon',
-  text: ' I am currently developing a project where I apply my new knowledge in React and use of APIS. I leave you some first practices in React. Learning path from library, components, functional and class components, props, hooks, and event listeners. &#9755 <br><br>"Programar es como cualquier otra habilidad, cuanto más practiques, mejor te volverás".<br><br> - Satya Nadella',
+  text: 'I am currently developing a project where I apply my new knowledge in React and use of APIS. But for now, I leave you with some first practices in React where I explore concepts such as: functional and class components, props, hooks and event listeners. &#9755 <br><br>"Programming is like any other skill, the more you practice the better you will become".<br><br> - Satya Nadella',
   image: './dist/img/fog-g97741b634_1920.jpg',
   techList: [''],
-  linkSitioWeb: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif',
+  linkSitioWeb: 'https://falconleandro.github.io/reactTrabajos/',
   linkGithub: 'https://media.tenor.com/SAj1RiRJdz4AAAAC/get-out-get-outta-here.gif'
 }, {
   id: 102,
@@ -50,22 +50,13 @@ let modalesContenido = [{
 }, {
   id: 105,
   title: 'Trabajos Frontend 1',
-  text: ' First jobs in the programming academy "Digital House". Learning path from HTML layout, styling with css and modularized with SASS, forms and functionalities with javaScript. ',
+  text: ' First practices in the programming academy "Digital House". Learning path from HTML layout, styling with css and modularized with SASS, forms and functionalities with javaScript. ',
   image: './dist/img/capturaTrabajosFrontend.png',
   techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">js</span>', '<span class="techs">sass</span>'],
   linkSitioWeb: 'https://falconleandro.github.io/Frontend/',
   linkGithub: 'https://github.com/FalconLeandro/Frontend.git'
-}, {
+},{
   id: 106,
-  title: 'Trabajos en React',
-  text: '',
-  image: 'dist/img/reactCaptura.png',
-  techList: ['<span class="techs">html</span>', '<span class="techs">css</span>', '<span class="techs">react</span>'],
-  linkSitioWeb: 'https://falconleandro.github.io/reactTrabajos/',
-  linkGithub: 'https://github.com/FalconLeandro/reactTrabajos.git'
-},
-{
-  id: 107,
   title: 'Sitio Info Hotel',
   text: 'Informative site of a 4 star Hotel located in the city of Puerto Madryn, Chubut for internal use by the guest. Its main features include: check-in, menu consultation, spa appointments, general information about the city. First freelance job.',
   image: 'dist/img/capturaSitioHotel.png',
@@ -108,7 +99,7 @@ function atraparIdCardClickeada() {
                 </div>
             </div>
             <div class="contenedor-modal-preview">
-                <img class="${id == 101 || id == 104 || id == 105 || id == 106 ? 'animacion-none' : 'modal-image'}" src="${modalesContenido[i].image}"/>
+                <img class="${id == 101 || id == 104 || id == 105 ? 'animacion-none' : 'modal-image'}" src="${modalesContenido[i].image}"/>
                 <div id="modal-preview-shadow"></div>
                 <div class="modal-preview-enlaces">
                     <a href="${modalesContenido[i].linkGithub}" target=" _blank">GitHub</a>
