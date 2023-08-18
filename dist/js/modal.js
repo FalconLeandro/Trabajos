@@ -92,8 +92,6 @@ function atraparIdCardClickeada() {
                   <h2 class="modal-descripcion-titulo">${modalesContenido[i].title}</h2>
                   <p>${modalesContenido[i].text}</p>
                 </div>
-                
-                
                 <div>
                   ${modalesContenido[i].techList}
                 </div>
