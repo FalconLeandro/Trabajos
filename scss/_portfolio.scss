@@ -87,6 +87,7 @@
       margin: auto;
       width: max-content;
       //text-align: center;
+      cursor: grab;
       transition: all .8s ease;
 
       @media (width >=800px) {
@@ -251,7 +252,7 @@
   /* Posición fija */
   z-index: 9999;
   /* Se situará por encima de otros elementos de la página*/
-  padding-top: 140px;
+  padding-top: 90px;
   /* El contenido estará situado a 200px de la parte superior */
   left: 0;
   top: 0;
@@ -274,7 +275,7 @@
   margin: auto;
   /* Centrada */
   overflow: hidden;
-  height: 80%;
+  height: 90%;
   width: 70%;
   border-radius: 20px;
   -webkit-animation-name: animarsuperior;
@@ -462,7 +463,7 @@
   position: relative;
   color: gray;
   text-shadow: 0px 9px 7px rgb(9 29 34 / 64%);
-  bottom: 77%;
+  bottom: 85%;
   left: 31%;
   font-size: 30px;
   font-weight: bold;
