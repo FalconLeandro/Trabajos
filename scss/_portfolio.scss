@@ -89,6 +89,9 @@
       //text-align: center;
       cursor: grab;
       transition: all .8s ease;
+      &:active {
+        cursor: grabbing;
+      }
 
       @media (width >=800px) {
         &:hover {
@@ -461,7 +464,7 @@
 
 .cerrar {
   position: relative;
-  color: gray;
+  color: whitesmoke;
   text-shadow: 0px 9px 7px rgb(9 29 34 / 64%);
   bottom: 85%;
   left: 31%;
@@ -469,7 +472,6 @@
   font-weight: bold;
 
   @media screen and (max-width: 760px) {
-    color: gray;
     left: 35% !important;
     bottom: 80% !important;
   }
@@ -477,7 +479,7 @@
 
 .cerrar:hover,
 .cerrar:focus {
-  color: var(--main);
+  color: gray;
   text-decoration: none;
   cursor: pointer;
 }

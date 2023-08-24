@@ -512,6 +512,9 @@
   cursor: grab;
   transition: all 0.8s ease;
 }
+.portfolio .carousel .card:active {
+  cursor: grabbing;
+}
 @media (width >= 800px) {
   .portfolio .carousel .card:hover {
     background: rgba(0, 0, 0, 0);
@@ -855,7 +858,7 @@
 }
 .cerrar {
   position: relative;
-  color: gray;
+  color: whitesmoke;
   text-shadow: 0px 9px 7px rgba(9, 29, 34, 0.64);
   bottom: 85%;
   left: 31%;
@@ -864,7 +867,6 @@
 }
 @media screen and (max-width: 760px) {
   .cerrar {
-    color: gray;
     left: 35% !important;
     bottom: 80% !important;
   }
@@ -872,7 +874,7 @@
 
 .cerrar:hover,
 .cerrar:focus {
-  color: var(--main);
+  color: gray;
   text-decoration: none;
   cursor: pointer;
 }
@@ -889,7 +891,7 @@
   width: 25vw;
   animation-name: imgChanger;
   animation-duration: 1s;
-  cursor: pointer;
+  cursor: unset;
 }
 .about-me .about-me_texto {
   display: flex;
@@ -1220,15 +1222,19 @@
   padding: 7px 35px;
   cursor: pointer;
   outline: none;
-  background: var(--main);
-  color: var(--secondary);
+  border: solid 1px var(--main);
+  background: var(--secondary);
+  color: var(--main);
+  box-shadow: 0 19px 38px rgba(79, 225, 208, 0.1), 0 15px 12px rgba(79, 225, 208, 0.05);
+  text-shadow: 0 19px 38px rgba(79, 225, 208, 0.1), 0 15px 12px rgba(79, 225, 208, 0.05);
   font-size: 18px;
   border-radius: 2px;
   transition: all 0.3s ease-in;
-  box-shadow: 0 19px 38px rgba(79, 225, 208, 0.3), 0 15px 12px rgba(79, 225, 208, 0.22);
 }
 .contact .container .row100 .col input[type=submit]:hover {
-  transform: scale(1.1);
+  background: var(--main);
+  color: var(--secondary);
+  box-shadow: 0 19px 38px rgba(79, 225, 208, 0.3), 0 15px 12px rgba(79, 225, 208, 0.22);
 }
 .contact .container .row100 .col #submit {
   text-align: center;
@@ -1258,13 +1264,13 @@
   font-size: 35px;
   width: 35px;
   height: 35px;
-  transition: 0.4s ease-out;
+  transition: 0.2s ease-out;
   text-align: center;
   text-shadow: 0 19px 38px rgba(79, 225, 208, 0.3), 0 15px 12px rgba(79, 225, 208, 0.22);
   -webkit-box-reflect: below 0rem linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2));
 }
 .contact .container .social-contact a i:hover {
-  transform: scale(1.2);
+  transform: scale(1.08);
 }
 .contact .container .social-contact a:nth-child(1) i {
   color: gray;
