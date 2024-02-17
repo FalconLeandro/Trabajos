@@ -1,3 +1,5 @@
+//Ventana modal que se abre al seleccionar cada card la cual contiene una descripcion y enlaces 
+
 // Ventana modal
 var modal = document.getElementById("ventanaModal");
 
@@ -14,6 +16,8 @@ window.addEventListener("click", function (event) {
     modal.style.display = "none";
   }
 });
+
+//contenidos de cada modal:
 
 let modalesContenido = [{
   id: 101,
@@ -76,7 +80,7 @@ function atraparIdCardClickeada() {
   for (let i = 0; i < cards.length; i++) {
     cards[i].addEventListener('click', e => {
 
-      //accedo al id que tiene la card clickeada
+      //accedo al id que tiene la card cliqueada
       var id = e.target.getAttribute("id");
       console.log(id);
 

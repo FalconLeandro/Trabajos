@@ -1,41 +1,4 @@
-// var arreglo = [
-//   "dist/img/6.mp4",
-//   "dist/img/13.mp4",
-//   "dist/img/10.mp4",
-//   "dist/img/7.mp4",
-//   "dist/img/11.mp4",
-//   "dist/img/8.mp4",
-// ];
-// var i = 0;
-
-// document.getElementById("sk").addEventListener(
-//   "click",
-//   function (event) {
-//     document.getElementById("video").src = arreglo[i];
-//     i++;
-//     if (i == 6) {
-//       i = 0;
-//     }
-//     document.body.style.overflowY = "hidden";
-//     document.getElementById("header").style.visibility = "hidden";
-//     window.location.href = "#soft-skills";
-//     document.getElementById("iconBack").style.display = "block";
-//   },
-//   false
-// );
-
-// document.getElementById("iconBack").addEventListener(
-//   "click",
-//   function (event) {
-//     document.getElementById("video").src = "/";
-
-//     document.body.style.overflowY = "visible";
-//     document.getElementById("header").style.visibility = "visible";
-//     document.getElementById("iconBack").style.display = "none";
-//   },
-//   false
-// );
-
+//reproduce un video al hacer click en las palabras de la section soft skills
 document.getElementById("sk").addEventListener(
   "click",
   function (event) {

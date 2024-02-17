@@ -1,4 +1,8 @@
+// ocultamientos al hacer scroll:
+
+//menu header
 const header = document.querySelector(".main-header");
+//flecha de desplazamiento
 const arrow = document.querySelector(".scroll-arrow");
 
 window.addEventListener("scroll", () => {
@@ -16,10 +20,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// arrow.addEventListener('click', () =>{
-//   window.location.hash = "#about-me";
 
-// });
+//menu lateral - entra y sale en diferentes posiciones segun el tamaño de la pantalla
 const social = document.querySelector(".social");
 window.addEventListener("scroll", () => {
 

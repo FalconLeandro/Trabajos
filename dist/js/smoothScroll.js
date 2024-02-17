@@ -1,4 +1,4 @@
-
+//Funcion para que se deslicen suavemente los cambios de secciones
 
 $(document).ready(function () {
   // Add smooth scrolling to all links

@@ -1,7 +1,4 @@
-// top: 0;
-// left: 0;
-// overflow: hidden;
-// background: black;
+//about me section:
 
 .about-me {
   // top: 100%;
@@ -13,6 +10,7 @@
   // margin-bottom: 25%;
   justify-content: space-evenly;
 
+  //div donde esta la foto
   div img {
     // left: 50%;
     border-radius: 50%;
@@ -22,7 +20,7 @@
     cursor: unset;
     // top: 15vh;
   }
-
+  //div donde esta el texto
   .about-me_texto {
     display: flex;
     flex-direction: column;
@@ -88,6 +86,7 @@
   }
 }
 
+//animaciones para los globos de texto:
 @keyframes aparece {
   0% {
     opacity: 0;
@@ -111,13 +110,3 @@
     opacity: 1;
   }
 }
-
-// @keyframes mover {
-//   0% {
-
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }

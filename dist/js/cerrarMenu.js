@@ -1,4 +1,4 @@
-
+//Script para cerrar el menu hamburguesa
 const btn = document.querySelector('.menu-btn');
 const links = document.querySelectorAll(".nav-link a");
 

@@ -25,9 +25,13 @@
   }
 
   i {
+    transition: .2s;
     width: 26px;
     color: var(--main);
     animation: latidos 800ms ease-out infinite alternate;
+  }
+  i:hover {
+    transform: scale(1.2);
   }
 
 
@@ -45,6 +49,7 @@
 
     .nav-link {
       a {
+        transition: 0.5s;
         margin: 0.2rem;
         padding: 1rem 0.5rem;
       }
@@ -128,7 +133,7 @@
 
   100% {
     border-color: var(--main);
-    text-shadow: 0 0 15px rgba(7, 184, 184, 1);
+    text-shadow: 0 0 15px rgb(14, 255, 255);
   }
 }
 

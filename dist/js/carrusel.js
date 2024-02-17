@@ -1,3 +1,4 @@
+//Slider for portfolio cards
 $(document).ready(function () {
   $(".carousel").owlCarousel({
     margin: 20,

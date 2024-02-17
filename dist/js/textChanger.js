@@ -1,3 +1,5 @@
+//funcion para cambiar el texto al clickear los globos de texto de la section about me:
+
 const hi = `<h2 id="hi">Hi! I am Lea</h2>`;
 
 const p1 = `<p>Here is an enthusiast of new technologies, nature, 

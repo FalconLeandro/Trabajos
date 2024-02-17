@@ -303,9 +303,13 @@
   color: gray;
 }
 .main-header i {
+  transition: 0.2s;
   width: 26px;
   color: var(--main);
   animation: latidos 800ms ease-out infinite alternate;
+}
+.main-header i:hover {
+  transform: scale(1.2);
 }
 .main-header .nav-links {
   display: flex;
@@ -317,6 +321,7 @@
   }
 }
 .main-header .nav-links .nav-link a {
+  transition: 0.5s;
   margin: 0.2rem;
   padding: 1rem 0.5rem;
 }
@@ -376,7 +381,7 @@
   }
   100% {
     border-color: var(--main);
-    text-shadow: 0 0 15px rgb(7, 184, 184);
+    text-shadow: 0 0 15px rgb(14, 255, 255);
   }
 }
 #conta {
@@ -509,11 +514,7 @@
   padding: 15px 40px;
   margin: auto;
   width: max-content;
-  cursor: grab;
   transition: all 0.8s ease;
-}
-.portfolio .carousel .card:active {
-  cursor: grabbing;
 }
 @media (width >= 800px) {
   .portfolio .carousel .card:hover {
@@ -533,14 +534,18 @@
 @media (width >= 800px) {
   .portfolio .carousel .card .box {
     transition: 0.8s;
+    cursor: grab;
   }
-  .portfolio .carousel .card .box:hover {
+  .portfolio .carousel .card .box:active {
+    cursor: grabbing;
+  }
+  .portfolio .carousel .card .box img:hover {
     transform: scale(0.95);
   }
-  .portfolio .carousel .card .box:hover a p {
+  .portfolio .carousel .card .box img:hover a p {
     color: var(--main);
   }
-  .portfolio .carousel .card .box:hover img {
+  .portfolio .carousel .card .box img {
     cursor: pointer;
     transition: 0.5s;
   }
@@ -552,6 +557,7 @@
   color: white;
 }
 .portfolio .carousel .card .box img {
+  transition: 0.8s;
   height: 250px;
   width: 250px;
   object-fit: cover;
@@ -795,18 +801,19 @@
   padding: 14px 28px;
   border: 1px solid;
   border-radius: 6px;
-  background: var(--secondary);
+  background: linear-gradient(179deg, var(--secondary) 50%, transparent);
   text-decoration: none;
   font-weight: 600;
   color: var(--main);
   margin-left: 10px;
-  box-shadow: 0px 9px 7px rgba(9, 29, 34, 0.64);
+  box-shadow: 0 19px 38px rgba(79, 225, 208, 0.1), 0 15px 12px rgba(79, 225, 208, 0.05);
   transition: all 0.3s ease-in;
 }
 .modal-preview-enlaces a:hover {
   background: var(--main);
   color: var(--secondary);
   border: 1px solid var(--main);
+  box-shadow: 0 19px 38px rgba(79, 225, 208, 0.3), 0 15px 12px rgba(79, 225, 208, 0.22);
 }
 
 /* Add Animation */
