@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leandro Falcón</title>
-    <meta name="description" content="Estudiante de Informática en Bahía Blanca. Software sobre operaciones reales: eventos de hotel y un agente de preventa.">
+    <meta name="description" content="Estudiante de Informática en Bahía Blanca. Hotel Argos Planner, la app interna de eventos del hotel, y un agente de preventa.">
     <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
         <section class="intro">
             <p class="kicker">Bahía Blanca · Licenciatura en Informática, Universidad Siglo 21</p>
             <h1>Software sobre operaciones reales.</h1>
-            <p class="lead">Una aplicación de escritorio que un hotel usa para sus eventos, y un agente de preventa en n8n hecho en equipo durante la práctica profesional. EFIP I aprobado. TOEIC Bridge aprobado.</p>
+            <p class="lead">Hotel Argos Planner, la aplicación web con la que recepción, restaurante y gerencia llevan un evento de la cotización al día de la jornada. Y un agente de preventa en n8n, hecho en equipo durante la práctica profesional. EFIP I aprobado. TOEIC Bridge aprobado.</p>
             <p class="contact"><a href="mailto:falconleandro@gmail.com">falconleandro@gmail.com</a></p>
         </section>
 
@@ -30,15 +30,16 @@
             <h2>Trabajo</h2>
 
             <article class="case">
-                <p class="meta">Solo · en uso · escritorio</p>
-                <h3>Gestión de eventos, Hotel Argos</h3>
-                <p>El hotel coordinaba salones, empresas, catering y servicios adicionales sin un sistema. Desarrollé la aplicación de escritorio que el equipo usa para crear y modificar eventos, consultar el calendario, administrar salones, formatos, catering, servicios y usuarios, y generar el PDF de cada evento.</p>
-                <p>La versión web es el paso siguiente: un asistente que arme una propuesta de salón, formato y catering, muestre los datos en los que se basa, y deje la confirmación en manos de quien opera el hotel.</p>
+                <p class="meta">Solo · en uso · web interna · Bahía Blanca</p>
+                <h3>Hotel Argos Planner</h3>
+                <p>El hotel había perdido la edición de su planner anterior y solo conservaba un acceso de invitado. Armé la aplicación interna que lo reemplaza. La usan al mismo tiempo recepción, restaurante y gerencia, en computadoras, teléfonos y tablets. No es una reserva pública.</p>
+                <p>De cada evento salen la ficha interna, el voucher del cliente, la comanda de cocina, el vale de administración, el presupuesto, el cronograma y el plano del salón. El calendario se ve por mes, semana y día, y hay una planilla por salón. Si dos eventos se pisan, incluido el armado y el desarme, la app avisa y solo guarda si alguien confirma el choque.</p>
+                <p>Hay tres entradas. El admin crea organizadores y puede apagar el enlace de invitado. Los organizadores cargan eventos y presupuestos. El invitado, sin usuario, ve la operación del día y no ve cotización ni facturas. Los números de documento los da el servidor. También hay alertas de pago, estadísticas del mes, importación de un archivo .ics, backup, y un texto listo para copiar al grupo de WhatsApp de los jefes de área: la app no envía ese mensaje.</p>
+                <p>Dejé afuera, a propósito, un agente que redacte la jornada. Conviene cuando el hotel esté cargando eventos reales, no antes.</p>
+                <p><a href="https://hotel-argos-planner.vercel.app" target="_blank" rel="noopener">hotel-argos-planner.vercel.app</a></p>
                 <ul class="tags">
-                    <li>Java 21</li>
-                    <li>JavaFX</li>
-                    <li>MySQL</li>
-                    <li>iText</li>
+                    <li>Next.js</li>
+                    <li>Vercel</li>
                 </ul>
             </article>
 
@@ -94,7 +95,7 @@
 
     <footer>
         <p>Universidad Siglo 21, Licenciatura en Informática (en curso). Certified Tech Developer, Digital House.</p>
-        <p>Java, SQL, JavaScript, HTML, CSS, Git, n8n.</p>
+        <p>Next.js, JavaScript, SQL, Java, Git, n8n.</p>
     </footer>
 </body>
 </html>
