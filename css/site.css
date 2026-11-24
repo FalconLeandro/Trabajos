@@ -247,42 +247,26 @@ h3 {
 .shot img {
     width: 100%;
     height: auto;
+    display: block;
     border-radius: 12px;
     border: 1px solid var(--line);
-    background: #111114;
+    object-fit: contain;
 }
 
 .shots {
     display: grid;
     gap: 0.7rem;
     margin-top: 1rem;
+    align-items: start;
 }
 
 .shots-4 { grid-template-columns: 1fr 1fr; }
 
-.phone {
-    height: 460px;
-    object-fit: contain;
-    object-position: top;
-    background: #0e0e10;
-}
-
-.shots-3 img:not(.phone) {
-    height: 280px;
-    object-fit: contain;
-    object-position: top;
-    background: #0e0e10;
-}
-
+.phone,
 .strip {
-    height: 220px;
-    object-fit: cover;
-    object-position: top;
+    width: min(100%, 280px);
+    margin-inline: auto;
 }
-
-.strip.mid { object-position: center; }
-
-.strip.low { object-position: center 80%; }
 
 .shot figcaption {
     margin-top: 0.4rem;
@@ -337,12 +321,12 @@ h3 {
     padding: 0.7rem;
 }
 
-.card-media img,
 .card-small img {
     width: 100%;
-    height: 180px;
+    height: auto;
+    aspect-ratio: 1188 / 615;
     object-fit: cover;
-    object-position: center 18%;
+    object-position: top center;
     border-radius: 12px;
     border: 1px solid var(--line);
 }
@@ -387,11 +371,7 @@ h3 {
 
     .shots-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
 
-    .shots-3 img:not(.phone) { height: 340px; }
-
     .shot-panel { margin-top: 0.7rem; }
-
-    .phone { height: 520px; }
 
     .card-media { grid-column: 1 / -1; grid-template-columns: 280px 1fr; align-items: center; }
 
