@@ -43,55 +43,97 @@
                 <p data-en="Tools built for a real operation, not a course brief.">Herramientas para una operación real, no para un enunciado de cursada.</p>
             </div>
             <div class="bento">
-                <article class="card card-main">
+                <article class="card card-wide">
                     <p class="meta" data-en="Solo · internal web app · in use">Solo · web interna · en uso</p>
                     <h3>Hotel Argos Planner</h3>
-                    <div class="spec">
-                        <div>
-                            <p class="label" data-en="Problem">Problema</p>
-                            <p data-en="The hotel could no longer edit its previous planner. It only had guest access.">El hotel ya no podía editar su planner anterior. Solo conservaba acceso de invitado.</p>
+                    <div class="case-split">
+                        <div class="case-copy">
+                            <div class="spec">
+                                <div>
+                                    <p class="label" data-en="Problem">Problema</p>
+                                    <p data-en="The hotel could no longer edit its previous planner. It only had guest access.">El hotel ya no podía editar su planner anterior. Solo conservaba acceso de invitado.</p>
+                                </div>
+                                <div>
+                                    <p class="label" data-en="Decision">Decisión</p>
+                                    <p data-en="An internal app for front desk, restaurant, and management, on desktop, phone, and tablet. If two events overlap, including setup and teardown, it saves only after a person confirms. I left out an agent that would draft the run of show until the hotel is loading real events.">App interna para recepción, restaurante y gerencia, en computadora, teléfono y tablet. Si dos eventos se pisan, incluido el armado y el desarme, solo se guarda si alguien confirma. Dejé afuera un agente que redacte la jornada hasta que carguen eventos reales.</p>
+                                </div>
+                                <div>
+                                    <p class="label" data-en="Result">Resultado</p>
+                                    <p data-en="Each event produces an internal sheet, client voucher, kitchen ticket, admin slip, quote, timeline, and floor plan. The app prepares the WhatsApp text for area leads and does not send it.">De cada evento salen ficha, voucher, comanda, vale, presupuesto, cronograma y plano. La app arma el texto de WhatsApp para los jefes de área y no lo envía.</p>
+                                </div>
+                            </div>
+                            <ul class="tags">
+                                <li>Next.js</li>
+                                <li>Vercel</li>
+                            </ul>
+                            <div class="actions">
+                                <a class="btn btn-primary" href="https://hotel-argos-planner.vercel.app" target="_blank" rel="noopener" data-en="Open the planner">Abrir el planner</a>
+                            </div>
                         </div>
-                        <div>
-                            <p class="label" data-en="Decision">Decisión</p>
-                            <p data-en="An internal app for front desk, restaurant, and management, on desktop, phone, and tablet. If two events overlap, including setup and teardown, it saves only after a person confirms. I left out an agent that would draft the run of show until the hotel is loading real events.">App interna para recepción, restaurante y gerencia, en computadora, teléfono y tablet. Si dos eventos se pisan, incluido el armado y el desarme, solo se guarda si alguien confirma. Dejé afuera un agente que redacte la jornada hasta que carguen eventos reales.</p>
-                        </div>
-                        <div>
-                            <p class="label" data-en="Result">Resultado</p>
-                            <p data-en="Each event produces an internal sheet, client voucher, kitchen ticket, admin slip, quote, timeline, and floor plan. The app prepares the WhatsApp text for area leads and does not send it.">De cada evento salen ficha, voucher, comanda, vale, presupuesto, cronograma y plano. La app arma el texto de WhatsApp para los jefes de área y no lo envía.</p>
-                        </div>
+                        <figure class="shot">
+                            <img src="img/argos-calendario.jpg" alt="Calendario de noviembre de Hotel Argos Planner" width="1400" height="800">
+                            <figcaption data-en="November calendar, guest view.">Calendario de noviembre, vista de invitado.</figcaption>
+                        </figure>
                     </div>
-                    <ul class="tags">
-                        <li>Next.js</li>
-                        <li>Vercel</li>
-                    </ul>
-                    <div class="actions">
-                        <a class="btn btn-primary" href="https://hotel-argos-planner.vercel.app" target="_blank" rel="noopener" data-en="Open the planner">Abrir el planner</a>
+                    <div class="shots shots-3">
+                        <figure class="shot">
+                            <img src="img/argos-plano.jpg" alt="Plano de un salón armado en Hotel Argos Planner" width="1200" height="700">
+                            <figcaption data-en="Floor plan: stage, tables, buffet, and entrance.">Plano: escenario, mesas, buffet e ingreso.</figcaption>
+                        </figure>
+                        <figure class="shot">
+                            <img src="img/argos-ficha.jpg" alt="Ficha de un evento con tarifa y servicios" width="900" height="1200">
+                            <figcaption data-en="Event sheet with the quote and what was paid.">Ficha del evento, con la cotización y lo pagado.</figcaption>
+                        </figure>
+                        <figure class="shot">
+                            <img src="img/argos-estadisticas.jpg" alt="Estadísticas del mes en Hotel Argos Planner" width="1400" height="800">
+                            <figcaption data-en="Month stats: quoted, collected, and balance.">Estadísticas del mes: cotizado, cobrado y saldo.</figcaption>
+                        </figure>
                     </div>
                 </article>
 
-                <article class="card">
+                <article class="card card-wide">
                     <p class="meta" data-en="Degree internship · 2026">Práctica profesional · 2026</p>
                     <h3>SUPLAI minoristas</h3>
-                    <div class="spec">
-                        <div>
-                            <p class="label" data-en="Problem">Problema</p>
-                            <p data-en="Neighborhood stores take loose orders and close payment in chat.">Almacenes, kioscos y comercios de cercanía toman pedidos sueltos y cierran el cobro por chat.</p>
+                    <div class="case-copy">
+                        <div class="spec">
+                            <div>
+                                <p class="label" data-en="Problem">Problema</p>
+                                <p data-en="Neighborhood stores take loose orders and close payment in chat.">Almacenes, kioscos y comercios de cercanía toman pedidos sueltos y cierran el cobro por chat.</p>
+                            </div>
+                            <div>
+                                <p class="label" data-en="Decision">Decisión</p>
+                                <p data-en="A public catalog. The customer builds the order on a phone, with no account and no online payment. The order is saved and WhatsApp opens with the message written. Stock drops when the order is delivered, not at checkout. n8n assists the owner with real data and saves nothing on its own.">Catálogo público. El cliente arma el pedido en el celular, sin cuenta y sin pagar online. El pedido se guarda y se abre WhatsApp con el mensaje escrito. El stock baja al entregar, no en el checkout. n8n asiste al dueño con datos reales y no guarda nada solo.</p>
+                            </div>
+                            <div>
+                                <p class="label" data-en="Result">Resultado</p>
+                                <p data-en="Two apps. Login does not mix the store menu with the SUPLAI team menu. Imported products stay paused until the owner publishes them.">Dos aplicaciones. El login no mezcla el menú del local con el del equipo de SUPLAI. Lo importado queda pausado hasta que el dueño lo publica.</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="label" data-en="Decision">Decisión</p>
-                            <p data-en="A public catalog. The customer builds the order on a phone, with no account and no online payment. The order is saved and WhatsApp opens with the message written. Stock drops when the order is delivered, not at checkout. n8n assists the owner with real data and saves nothing on its own.">Catálogo público. El cliente arma el pedido en el celular, sin cuenta y sin pagar online. El pedido se guarda y se abre WhatsApp con el mensaje escrito. El stock baja al entregar, no en el checkout. n8n asiste al dueño con datos reales y no guarda nada solo.</p>
-                        </div>
-                        <div>
-                            <p class="label" data-en="Result">Resultado</p>
-                            <p data-en="Two apps. Login does not mix the store menu with the SUPLAI team menu. Imported products stay paused until the owner publishes them.">Dos aplicaciones. El login no mezcla el menú del local con el del equipo de SUPLAI. Lo importado queda pausado hasta que el dueño lo publica.</p>
-                        </div>
+                        <ul class="tags">
+                            <li>Next.js</li>
+                            <li>React</li>
+                            <li>Postgres</li>
+                            <li>n8n</li>
+                        </ul>
                     </div>
-                    <ul class="tags">
-                        <li>Next.js</li>
-                        <li>React</li>
-                        <li>Postgres</li>
-                        <li>n8n</li>
-                    </ul>
+                    <div class="shots shots-3">
+                        <figure class="shot">
+                            <img class="phone" src="img/suplai-catalogo.jpg" alt="Catálogo público de un almacén en el celular" width="400" height="800">
+                            <figcaption data-en="Public catalog on a phone">Catálogo público en el celular</figcaption>
+                        </figure>
+                        <figure class="shot">
+                            <img class="phone" src="img/suplai-carrito.jpg" alt="Carrito con el botón para continuar a WhatsApp" width="400" height="800">
+                            <figcaption data-en="Cart. The next step opens WhatsApp.">Carrito. El paso siguiente abre WhatsApp.</figcaption>
+                        </figure>
+                        <figure class="shot">
+                            <img class="phone" src="img/suplai-checkout.jpg" alt="Confirmación del pedido antes de abrir WhatsApp" width="400" height="800">
+                            <figcaption data-en="Checkout. Payment and delivery stay in the chat.">Confirmación. El cobro y la entrega siguen en el chat.</figcaption>
+                        </figure>
+                    </div>
+                    <figure class="shot shot-panel">
+                        <img src="img/suplai-panel.jpg" alt="Panel del dueño del comercio en SUPLAI" width="1400" height="800">
+                        <figcaption data-en="Store owner panel.">Panel del dueño.</figcaption>
+                    </figure>
                 </article>
 
                 <article class="card card-media">

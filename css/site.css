@@ -240,6 +240,45 @@ h3 {
     gap: 0.9rem;
 }
 
+.case-split { display: block; }
+
+.shot { margin: 0; }
+
+.shot img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: #111114;
+}
+
+.shots {
+    display: grid;
+    gap: 0.7rem;
+    margin-top: 1rem;
+}
+
+.phone {
+    height: 460px;
+    object-fit: contain;
+    object-position: top;
+    background: #0e0e10;
+}
+
+.shots-3 img:not(.phone) {
+    height: 280px;
+    object-fit: contain;
+    object-position: top;
+    background: #0e0e10;
+}
+
+.shot figcaption {
+    margin-top: 0.4rem;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 0.72rem;
+}
+
 .label {
     margin: 0 0 0.2rem;
     color: var(--text);
@@ -320,10 +359,25 @@ h3 {
 
 @media (min-width: 860px) {
     .bento {
-        grid-template-columns: 1.35fr 1fr;
+        grid-template-columns: 1fr;
     }
 
-    .card-main { grid-column: 1; grid-row: 1 / span 1; }
+    .card-wide { grid-column: 1 / -1; }
+
+    .case-split {
+        display: grid;
+        grid-template-columns: 1fr 1.05fr;
+        gap: 1.25rem;
+        align-items: start;
+    }
+
+    .shots-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+    .shots-3 img:not(.phone) { height: 340px; }
+
+    .shot-panel { margin-top: 0.7rem; }
+
+    .phone { height: 520px; }
 
     .card-media { grid-column: 1 / -1; grid-template-columns: 280px 1fr; align-items: center; }
 
