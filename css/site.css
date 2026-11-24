@@ -258,6 +258,8 @@ h3 {
     margin-top: 1rem;
 }
 
+.shots-4 { grid-template-columns: 1fr 1fr; }
+
 .phone {
     height: 460px;
     object-fit: contain;
@@ -271,6 +273,16 @@ h3 {
     object-position: top;
     background: #0e0e10;
 }
+
+.strip {
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.strip.mid { object-position: center; }
+
+.strip.low { object-position: center 80%; }
 
 .shot figcaption {
     margin-top: 0.4rem;
@@ -372,6 +384,8 @@ h3 {
     }
 
     .shots-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+    .shots-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
 
     .shots-3 img:not(.phone) { height: 340px; }
 
