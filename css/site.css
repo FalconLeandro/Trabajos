@@ -270,6 +270,27 @@ h3 {
     margin-inline: auto;
 }
 
+/* Same frame height inside each row. The box matches the tallest shot; shorter ones sit inside it. */
+.shots-3 img:not(.phone) {
+    aspect-ratio: 1024 / 768;
+    object-fit: contain;
+    object-position: center;
+}
+
+.shots-3 .phone {
+    width: min(100%, 280px);
+    aspect-ratio: 314 / 706;
+    object-fit: contain;
+    object-position: center;
+}
+
+.shots-4 .strip {
+    width: min(100%, 280px);
+    aspect-ratio: 323 / 711;
+    object-fit: contain;
+    object-position: center;
+}
+
 .shot figcaption {
     margin-top: 0.4rem;
     color: var(--muted);
