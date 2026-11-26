@@ -242,6 +242,8 @@ h3 {
 
 .case-split { display: block; }
 
+.case-split > .shot { margin-top: 1.5rem; }
+
 .shot { margin: 0; }
 
 .shot img {
@@ -366,6 +368,8 @@ h3 {
         gap: 1.25rem;
         align-items: start;
     }
+
+    .case-split > .shot { margin-top: 0; }
 
     .shots-3 { grid-template-columns: 1fr 1fr 1fr; }
 
